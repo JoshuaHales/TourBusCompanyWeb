@@ -190,108 +190,62 @@
             $username = '';
         }
         ?>
-        <form action="checkLogin.php" method="POST">
-            <table id="t01"
-                   border="0">
-                <tbody>
-                    <tr>
-                        <th>Username : </th>
-                        <td>
-                            <input type="text"
-                                   name="username"
-                                   value="<?php echo $username; ?>" />
-                            <span id="usernameError" class="error">
-                                <?php
-                                if (isset($errorMessage) && isset($errorMessage['username'])) {
-                                    echo $errorMessage['username'];
-                                }
-                                ?>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Password : </th>
-                        <td>
-                            <input type="password" name="password" value="" />
-                            <span id="passwordError" class="error">
-                                <?php
-                                if (isset($errorMessage) && isset($errorMessage['password'])) {
-                                    echo $errorMessage['password'];
-                                }
-                                ?>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr></tbody>
-            </table>
-
-
-            <br>
-            <input type="submit" value="Login" name="login" />
-            <br>
-            <br>
-            <p><a href="register.php">Register</a></p>
-            <p><a href="forgotPassword.php">Forgot your password?</a></p>
-            <div class="col-lg-push-4 col-lg-4 centered">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <span class="glyphicon glyphicon-lock"></span> Login</div>
-                    <div class="panel-body">
-                        <form class="form-horizontal" role="form">
-                            <div class="form-group">
-                                <label for="inputEmail3" class="col-sm-3 control-label">
-                                    Username</label>
-                                <div class="col-sm-9">
-                                    <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" required  value="<?php echo $username; ?>">
+      
+        <div class="col-lg-push-4 col-lg-4 centered">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-lock"></span> Login</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form" action="checkLogin.php" method="POST">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">
+                                Username</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Username" required  value="<?php echo $username; ?>">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 control-label">
+                                Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" name="password" class="form-control" value="" id="inputPassword3" placeholder="Password" required>
+                                <span id="passwordError" class="error">
+                                    <?php
+                                    if (isset($errorMessage) && isset($errorMessage['password'])) {
+                                        echo $errorMessage['password'];
+                                    }
+                                    ?>
+                                </span>
+                                <span id="usernameError" class="error">
+                                    <?php
+                                    if (isset($errorMessage) && isset($errorMessage['username'])) {
+                                        echo $errorMessage['username'];
+                                    }
+                                    ?>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"/>
+                                        I agree with the <b>terms and conditions</b>.
+                                    </label>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="inputPassword3" class="col-sm-3 control-label">
-                                    Password</label>
-                                <div class="col-sm-9">
-                                    <input type="password" name="password" class="form-control" value="" id="inputPassword3" placeholder="Password" required>
-                                    <span id="passwordError" class="error">
-                                        <?php
-                                        if (isset($errorMessage) && isset($errorMessage['password'])) {
-                                            echo $errorMessage['password'];
-                                        }
-                                        ?>
-                                    </span>
-                                    <span id="usernameError" class="error">
-                                        <?php
-                                        if (isset($errorMessage) && isset($errorMessage['username'])) {
-                                            echo $errorMessage['username'];
-                                        }
-                                        ?>
-                                    </span>
-                                </div>
+                        </div>
+                        <div class="form-group last">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" value="Login" name="login" class="btn btn-success btn-sm">
+                                    Sign in</button>
                             </div>
-                            <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-9">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"/>
-                                            I agree with the <b>terms and conditions</b>.
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group last">
-                                <div class="col-sm-offset-3 col-sm-9">
-                                    <button type="submit" value="Login" name="login" class="btn btn-success btn-sm">
-                                        Sign in</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="panel-footer">
-                        Not Registred? <a class="registerP" href="register.php">Register here</a> Forgotten Password? <a href="register.php">Click Here</a></div>
+                        </div>
+                    </form>
                 </div>
+                <div class="panel-footer">
+                    Not Registred? <a class="registerP" href="register.php">Register here</a> Forgotten Password? <a href="forgotPassword.php">Click Here</a></div>
             </div>
-
-
-        </form>
-
         <!-- start Lower Footer -->
         <div class="footer1_bg navbar-fixed-bottom"><!-- start footer1 -->
             <div class="container">

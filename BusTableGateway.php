@@ -96,7 +96,7 @@ class BusTableGateway {
                 "busSeats = :busSeats, " .
                 "busEngineSize = :busEngineSize, " .
                 "purchaseDate = :purchaseDate, " .
-                "dueServiceDate = :dueServiceDate " .
+                "dueServiceDate = :dueServiceDate, " .
                 "garageID = :garageID " .
                 " WHERE busID = :busID"; 
         
@@ -113,8 +113,11 @@ class BusTableGateway {
             "garageID" => $gid
         );
         
+        //Code to help debug the code
         /*echo '<pre>';
+        print_r($_POST);
         print_r($params);
+        print_r($sqlQuery);
         echo '</pre>';*/
         
         $status = $statement->execute($params);
