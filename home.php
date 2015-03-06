@@ -84,10 +84,10 @@ if (!isset($_SESSION['username'])) {
             <div class="row">
                 <div class="hidden-xs col-sm-3 col-md-2 sidebar">
                     <ul class="nav nav-sidebar">
-                        <h4>Tables</h4>
+                        <img class="img userL img-circle" src="img/userL.jpg" height="120px" width="120px" alt="">
                         <?php
                         $username = $_SESSION['username'];
-                        echo '<h1>Welcome: ' . $username . '</h1>';
+                        echo '<h1 class="userW">Welcome: ' . $username . '</h1>';
                         ?>
                         <li class="active"><a href="#">Buses table<span class="sr-only">(current)</span></a></li>
                         <li><a href="#">Garages table</a></li>
@@ -193,6 +193,13 @@ if (!isset($_SESSION['username'])) {
                 </div>
             </div>
         </div>
+        
+         <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/javascript.js"></script>
              
 
     </body>

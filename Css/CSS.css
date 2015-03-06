@@ -635,7 +635,7 @@ ul.nav a:focus
 
 .sidebar{
     margin-top: 20px;
-    background-color: red;
+    background-color: #e2534b;
     position:fixed;
 }
 
@@ -1038,4 +1038,21 @@ margin-top:30px;
 .registerP
 {
     margin-right: 180px;
+}
+
+.indexBody
+{
+    background-image: url(../img/indexB.jpg);
+}
+
+.userL
+{
+    margin-top: 10px;
+}
+
+h1
+{
+    font-size: 18px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
 }
