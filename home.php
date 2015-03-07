@@ -74,7 +74,6 @@ if (!isset($_SESSION['username'])) {
     </script>
     <body>
         <?php require 'navBar.php' ?>
-        <?php require 'toolbar.php' ?>
         <?php
         if (isset($message)) {
             echo '<p>' . $message . '</p>';
@@ -89,6 +88,7 @@ if (!isset($_SESSION['username'])) {
                         $username = $_SESSION['username'];
                         echo '<h1 class="userW">Welcome: ' . $username . '</h1>';
                         ?>
+                        <?php require 'toolbar.php' ?>
                         <li class="active"><a href="#">Buses table<span class="sr-only">(current)</span></a></li>
                         <li><a href="#">Garages table</a></li>
                         <li><a href="#">Drivers table</a></li>
