@@ -10,6 +10,17 @@
         <meta charset="UTF-8">
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
+    <?php
+        require_once 'connection.php';
+        require_once 'GarageTableGateway.php';
+        require 'ensureUserLoggedIn.php';
+        
+        $conn = Connection::getInstance();
+        $garageGateway = new GarageTableGateway($conn);
+        
+        $garages = $garageGateway->getGarages();
+    ?>
+    
     <body> 
         <!-- Main Container -->
         <img src="images/mainLogo.png" alt="Main Logo">
@@ -147,21 +158,20 @@
                             </span>
                         </td>
                     </tr>
-                     <tr>
+                    <tr>
                         <td>garage ID</td>
                         <td>
-                            <input type="text" name="garageID" value="<?php
-                                    if (isset($_POST) && isset($_POST['garageID'])) {
-                                        echo $_POST['garageID'];
-                                    }
-                                    ?>" />
-                            <span id="dueServiceDateError" class="error">
+                            <select name="garage_id">
+                                <option value="-1">No Garage</option>
                                 <?php
-                                if (isset($errorMessage) && isset($errorMessage['garageID'])) {
-                                    echo $errorMessage['garageID'];
-                                }
+                                    $g = $garages->fetch(PHO::FETCH_ASSOC);
+                                    while ($g)
+                                    {
+                                        echo '<option value="' . $g['garageID'] . '">' . $g['garageName'] . '</option>';
+                                        $g = $garages->fetch(PHO::FETCH_ASSOC);
+                                    }
                                 ?>
-                            </span>
+                            </select>
                         </td>
                     </tr>
                     <tr>

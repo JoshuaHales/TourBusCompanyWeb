@@ -747,6 +747,11 @@ ul.nav a:focus
     font-size: 30px;
 }
 
+.tourtxt2
+{
+    margin-top: 60px;
+}
+
 .tourB p
 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -1055,4 +1060,12 @@ h1
     font-size: 18px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
+}
+
+
+.ratingM
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    margin-top: -5px;
 }

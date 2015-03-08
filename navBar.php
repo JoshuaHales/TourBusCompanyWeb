@@ -68,6 +68,10 @@
                                 <li><a href="index.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Shopping Basket</a></li>
                                 <li><a href="index.html"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
                                 <li class="divider"></li>
+                                 <li><?php
+                                $username = $_SESSION['username'];
+                                echo '<a class="userW">' . $username . '</a>';
+                                ?></li>
                                 <li><a href="index.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Login</a></li>
                                 <li><a href="register.php"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Register</a></li>
                             </ul>

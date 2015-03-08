@@ -7,9 +7,9 @@ class GarageTableGateway {
     public function __construct($c) {
         $this->connection = $c;
     }
-    public function getGarage() {
+    public function getGarages() {
         // Execute A Query To Get All Garages:
-        $sqlQuery = "SELECT * FROM garage";
+        $sqlQuery = "SELECT * FROM garages";
         
         $statement = $this->connection->prepare($sqlQuery);
         $status = $statement->execute();
@@ -21,9 +21,9 @@ class GarageTableGateway {
         return $statement;
     }
     
-    public function getGarageById($garageID) {
+    public function getGaragesById($garageID) {
         // Execute A Query To Get The User With The Specified garageID:
-        $sqlQuery = "SELECT * FROM garage WHERE garageID = :garageID";
+        $sqlQuery = "SELECT * FROM garages WHERE garageID = :garageID";
         
         $statement = $this->connection->prepare($sqlQuery);
         $params = array(
@@ -40,8 +40,8 @@ class GarageTableGateway {
     }
     
     //Code to Insert A New Garage:
-    public function insertGarage($gn, $ga, $gpn, $mn) {
-        $sqlQuery = "INSERT INTO garage " .
+    public function insertGarages($gn, $ga, $gpn, $mn) {
+        $sqlQuery = "INSERT INTO garages " .
                 "(garageName, garageAddress, garagePhoneNo, managerName) " .
                 "VALUES (:garageName, :garageAddress, :garagePhoneNo, :managerName)";
         
@@ -65,8 +65,8 @@ class GarageTableGateway {
     }
     
     //Code To Delete An Existing Garage:
-    public function deleteGarage ($garageID) {
-        $sqlQuery = "DELETE FROM garage WHERE garageID = :garageID";
+    public function deleteGarages ($garageID) {
+        $sqlQuery = "DELETE FROM garages WHERE garageID = :garageID";
 
         $statement = $this->connection->prepare($sqlQuery);
         $params = array(
@@ -83,9 +83,9 @@ class GarageTableGateway {
     }
     
     //Code To Update An Existing Garage:
-    public function updateGarage($gid, $gn, $ga, $gpn, $mn) {
+    public function updateGarages($gid, $gn, $ga, $gpn, $mn) {
         $sqlQuery =
-                "UPDATE garage SET " .
+                "UPDATE garages SET " .
                 "garageName = :garageName, " .
                 "garageAddress = :garageAddress, " .
                 "garagePhoneNo = :garagePhoneNo, " .

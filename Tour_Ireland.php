@@ -163,14 +163,14 @@
             <div class="row text-center">
                 <div class="col-md-3 col-sm-6 hero-feature">
                     <div class="thumbnail tourB boxt">
-                        <img  class="img-responsive" src="img/dublin.jpg" alt="Dublin City">
+                        <img  class="img-responsive" src="img/Tours/dublin.jpg" alt="Dublin City">
                         <div class="caption">
                             <h3>DAY TOURS FROM DUBLIN</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Connemara is truly the wilderness of Ireland, ravaged during the great potato famine of 1847-1851. this landscape was left barren however its true beauty intact. With fabulous lakes, romantic castles...</p>
                             <br>
                             <p>
-                                <a href="index.html" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="index.html" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                                <a href="index.html" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="#pop1"  data-toggle="modal" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="#pop1"  data-toggle="modal" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="#pop1"  data-toggle="modal" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
                             </p>
                             <br>
                             <div class="ratings">
@@ -189,14 +189,14 @@
 
                 <div class="col-md-3 col-sm-6 hero-feature">
                     <div class="thumbnail tourB boxt">
-                        <img  class="img-responsive" src="img/blarneyStone.jpg" alt="Blarney Castle">
+                        <img  class="img-responsive" src="img/Tours/BlarneyCastle.jpg" alt="Blarney Castle">
                         <div class="caption">
                             <h3>BLARNEY DAY TOURS</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Visit the most famous castle in all of Ireland - Blarney Castle. Lay back and kiss the magical Blarney Stone and receive the gift of eloquent speech for 7 years. Also visit Cobh, the last departure port for...</p>
                             <br>
                             <p>
-                                <a href="index.html" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="index.html" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                                <a href="index.html" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="index.html" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="#pop2"  data-toggle="modal" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="#pop2"  data-toggle="modal" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
                             </p>
                             <br>
                             <div class="ratings">
@@ -215,18 +215,44 @@
 
                 <div class="col-md-3 col-sm-6 hero-feature">
                     <div class="thumbnail tourB boxt">
-                        <img  class="img-responsive" src="img/cork.jpg" alt="Cork City">
+                        <img  class="img-responsive" src="img/Tours/cork.jpg" alt="Cork City">
                         <div class="caption">
                             <h3>DAY TOURS FROM CORK</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>The Rock of Cashel is situated in county Tipperary. On top of the rock you can enjoy fine views of the Tipperary countryside. You will explore one of the finest religious sites in Ireland...</p>
                             <br>
                             <p>
-                                <a href="index.html" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="index.html" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                                <a href="index.html" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="index.html" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="#pop3"  data-toggle="modal" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="#pop3"  data-toggle="modal" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
                             </p>
                             <br>
                             <div class="ratings">
                                 <p class="pull-right">7 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail tourB boxt">
+                        <img  class="img-responsive" src="img/Tours/giantsCausway.jpg" alt="Giants Causway">
+                        <div class="caption">
+                            <h3>GIANT'S CAUSEWAY TOUR FROM DUBLIN</h3>
+                            <p>You cannot truly visit Ireland without a visit to the legendary Giant's Causeway! Volcanic activity helped Finn McCool forge this wonder of the world...</p>
+                            <br>
+                            <p>
+                                <a href="Tour_Ireland.php" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="#pop4"  data-toggle="modal" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="#pop4"  data-toggle="modal" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                            </p>
+                            <br>
+                            <div class="ratings">
+                                <p class="pull-right">56 reviews</p>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -238,107 +264,25 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 col-sm-6 hero-feature">
-                    <div class="thumbnail tourB boxt">
-                        <img  class="img-responsive" src="img/giantsCausway.jpg" alt="Giants Causway">
-                        <div class="caption">
-                            <h3>GIANTS WAY TOURS</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <br>
-                            <p>
-                                <a href="index.html" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="index.html" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                                <a href="index.html" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="index.html" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                            </p>
-                            <br>
-                            <div class="ratings">
-                                <p class="pull-right">56 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <a class="btn pull-right">View More</a>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p class="tourtxt">Most Popular</p>
+            <a href="Tour_Ireland.php" class="btn pull-right">View More</a>
+            <p class="tourtxt tourtxt2">Most Popular</p>
             <hr>
             <div class="row text-center">
                 <div class="col-md-3 col-sm-6 hero-feature">
                     <div class="thumbnail tourB boxt">
-                        <img  class="img-responsive" src="img/dublin.jpg" alt="Dublin City">
+                        <img  class="img-responsive" src="img/Tours/Dingle.jpg" alt="Dublin City">
                         <div class="caption">
-                            <h3>DAY TOURS FROM DUBLIN</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h3>DINGLE DAY TOUR FROM KILLARNEY</h3>
+                            <p>The Dingle Peninsula has amazing mountain scenery and unusual antiquities to see as you travel around this spectacular peninsula. You will stop at the famed Inch beach...</p>
                             <br>
                             <p>
-                                <a href="index.html" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="index.html" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                                <a href="index.html" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="#pop1"  data-toggle="modal" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="#pop5"  data-toggle="modal" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="#pop5"  data-toggle="modal" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
                             </p>
                             <br>
                             <div class="ratings">
-                                <p class="pull-right">15 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 hero-feature">
-                    <div class="thumbnail tourB boxt">
-                        <img  class="img-responsive" src="img/blarneyStone.jpg" alt="Blarney Castle">
-                        <div class="caption">
-                            <h3>BLARNEY DAY TOURS</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <br>
-                            <p>
-                                <a href="index.html" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="index.html" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                                <a href="index.html" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="index.html" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                            </p>
-                            <br>
-                            <div class="ratings">
-                                <p class="pull-right">34 reviews</p>
-                                <p>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-6 hero-feature">
-                    <div class="thumbnail tourB boxt">
-                        <img  class="img-responsive" src="img/cork.jpg" alt="Cork City">
-                        <div class="caption">
-                            <h3>DAY TOURS FROM CORK</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <br>
-                            <p>
-                                <a href="index.html" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="index.html" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                                <a href="index.html" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="index.html" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                            </p>
-                            <br>
-                            <div class="ratings">
-                                <p class="pull-right">7 reviews</p>
+                                <p class="pull-right">115 reviews</p>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -353,18 +297,70 @@
 
                 <div class="col-md-3 col-sm-6 hero-feature">
                     <div class="thumbnail tourB boxt">
-                        <img  class="img-responsive" src="img/giantsCausway.jpg" alt="Giants Causway">
+                        <img  class="img-responsive" src="img/Tours/CliffOfMohar.jpg" alt="Blarney Castle">
                         <div class="caption">
-                            <h3>GIANTS WAY TOURS</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h3>2 DAY SOUTH TOUR - CLIFFS OF MOHER</h3>
+                            <p>See the world famous Cliffs of Moher,wonder in the barren beauty of the Burren, and stroll through the grounds of Blarney Castle and stay overnight in Cork...</p>
                             <br>
                             <p>
-                                <a href="index.html" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="index.html" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
-                                <a href="index.html" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="index.html" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="#pop6"  data-toggle="modal" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="#pop6"  data-toggle="modal" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
                             </p>
                             <br>
                             <div class="ratings">
-                                <p class="pull-right">56 reviews</p>
+                                <p class="pull-right">413 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail tourB boxt">
+                        <img  class="img-responsive" src="img/Tours/RingOfKerry.jpg" alt="Cork City">
+                        <div class="caption">
+                            <h3>RING OF KERRY DAY TOUR FROM GALWAY</h3>
+                            <p>The Ring of Kerry is considered one of the finest drives in the world. From rugged cliffs to golden beaches, small villages and pastures green to peat bogs and...</p>
+                            <br>
+                            <p>
+                                <a href="Tour_Ireland.php" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="#pop7"  data-toggle="modal" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="#pop7"  data-toggle="modal" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                            </p>
+                            <br>
+                            <div class="ratings">
+                                <p class="pull-right">41 reviews</p>
+                                <p>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star-empty"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail tourB boxt">
+                        <img  class="img-responsive" src="img/Tours/CorkNight.jpg" alt="Giants Causway">
+                        <div class="caption">
+                            <h3>CORK CITY SIGHTSEEING (CORK HOPPER)</h3>
+                            <p>Experience Cork’s main attractions in one day with Paddywagon’s Hopper Tour! With the Cork Hopper passengers can hop-on board any time of day and use..</p>
+                            <br>
+                            <p>
+                                <a href="Tour_Ireland.php" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="#pop8"  data-toggle="modal" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                                <a href="Tour_Ireland.php" class="hidden-md btn1 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now</a> <a href="#pop8"  data-toggle="modal" class="hidden-md btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
+                            </p>
+                            <br>
+                            <div class="ratings">
+                                <p class="pull-right">301 reviews</p>
                                 <p>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
@@ -377,7 +373,7 @@
                     </div>
                 </div>
             </div>
-            <a class="btn pull-right">View More</a>
+            <a href="Tour_Ireland.php" class="btn pull-right">View More</a>
             <!-- Tours Boxs End -->
     </div>
     <!-- ==== SECTION DIVIDER1 -->
@@ -392,6 +388,8 @@
     <br>
     <br>
     <div class="container">
+        <p class="tourtxt">Journey Planer</p>
+        <hr>
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 tourtxt">
             <form role="form">
                 <h2>Plan your journey <small>Buy online and save</small></h2>
@@ -544,6 +542,9 @@
                 <div class="row">
                         <!--<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>-->
                     <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Book now</a></div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
             </form>
         </div>
@@ -562,19 +563,45 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="690" height="430" frameborder="0" style="border:0"></iframe>
             </div>
         </div>
-        <!-- Modal -->
-        <!--<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                        <h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
-                                </div>
-                        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
+        <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Services</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    </div>
     <!-- ==== SECTION DIVIDER2 -->
     <section class="section-divider textdivider divider2">
         <div class="container tourB1">
@@ -813,21 +840,127 @@
             </div>
         </div>
     </div>
+    
+    <!-- Model Box One -->
     <div id="pop1" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
             <div class="modal-header">
                 <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-                <h1>DAY TRIP FROM DUBLIN</h1>
+                <h3>DAY TRIP FROM DUBLIN</h3>
             </div>
             <div class="modal-body">
-                <img src="img/dublin.jpg" class="img-responsive pull-left" width="300" height="300">
-                <br>
-                <small>The Kerry Day Tour visits the highlights of the mystical & unspoiled region of Ireland that has attracted visitors for hundreds of years. Its spectacular beauty is beyond question. A true Celtic wilderness - visit Connemara - Ireland's most rugged and beautiful region in a wonderful day tour from Dublin. From famine valleys to views of Galway Bay.</small>
-
-                <p class="inline cutprice">$21.99</p> <p><strong>$16.99</strong></p>
+                <img src="img/Tours/dublin.jpg" class="img-responsive pull-left" width="300" height="300">
+                <small>Connemara is truly the wilderness of Ireland, ravaged during the great potato famine of 1847-1851. this landscape was left barren however its true beauty intact. 
+                       With fabulous lakes, romantic castles, stone walls, and deserted valleys Connemara features in many blockbuster movies ie The Quiet Man with John Wayne and Maureen O'Hara, and the Guard with Brendan Gleeson. 
+                       On this tour we introduce you to this amazing part of Ireland, but also take you to Galway city for a 2 hrs stop with a FREE walking tour of the highlights of this traditional, colorful and beautiful tribal city.
+                </small>
+                <div class="ratings">
+                    <p class="pull-left">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </p>
+                    <p class="pull-left ratingM">15 reviews</p>
+                    <br>
+                </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-primary" data-dismiss="modal">Back</button>
+                <p class="pull-left"><strong>Price: €16.99</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+            </div>
+        </div>
+    </div>
+    <!-- Model Box Two -->
+    <div id="pop2" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                <h3>BLARNEY DAY TOURS</h3>
+            </div>
+            <div class="modal-body">
+                <img src="img/Tours/BlarneyCastle.jpg" class="img-responsive pull-left" width="300" height="300">
+                <small>Visit the most famous castle in all of Ireland - Blarney Castle. Lay back and kiss the magical Blarney Stone and receive the gift of eloquent speech for 7 years. Also visit Cobh, the last departure port for RMS Titanic in April 1912. 
+                       Enjoy a stroll in Cobh and visit St Coleman's Cathedral, overlooking Cork Harbour. We will also take a panoramic drive through Cork City, and make a stop for one hour to see the highlights of the Southern Capital including the English Markets which were recently visited by Queen Elizabeth.
+                       This tour allows you to see the best of County Cork on this 1 day adventure from Dublin.
+                </small>
+                <div class="ratings">
+                    <p class="pull-left">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </p>
+                    <p class="pull-left ratingM">34 reviews</p>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="pull-left"><strong>Price: €19.99</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Model Box Three -->
+    <div id="pop3" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                <h3>DAY TOURS FROM CORK</h3>
+            </div>
+            <div class="modal-body">
+                <img src="img/Tours/cork.jpg" class="img-responsive pull-left" width="300" height="300">
+                <small>The Rock of Cashel is situated in county Tipperary. On top of the rock you can enjoy fine views of the Tipperary countryside. You will explore one of the finest religious sites in Ireland, and marvel at the fine architecture. 
+                       Onwards to Kilkenny. You will enjoy 2 hours of free time in Ireland's medieval capital. Condider an optional visit to the Castle or St Canice's Cathedral. Enjoy a walk in the Castle Gardens, with pleasant views of the River Nore or a pint of Kilkenny beer in a haunted pub! A great day tour from Cork!
+                </small>
+                <div class="ratings">
+                    <p class="pull-left">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </p>
+                    <p class="pull-left ratingM">7 reviews</p>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="pull-left"><strong>Price: €35</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Model Box Four -->
+    <div id="pop4" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                <h3>GIANT'S CAUSEWAY TOUR FROM DUBLIN</h3>
+            </div>
+            <div class="modal-body">
+                <img src="img/Tours/giantsCausway.jpg" class="img-responsive pull-left" width="300" height="300">
+                <small>You cannot truly visit Ireland without a visit to the legendary Giant's Causeway! Volcanic activity helped Finn McCool forge this wonder of the world some 60 million years ago. The 6km of sheer cliffs rising to over 90m and forming a series of bays are spectacular. We include the all-new innovative and imaginative Giant's Causeway Visitors' Center. You will be provided with free audio guides! 
+                       We visit the Dark Hedges and Ballintoy, famed by the hit TV series Game of Thrones!
+                       From the Giant's Causeway to Belfast, and the magnificent rope bridge this tour has it all! Definitely the most comprehensive tour of Northern Ireland!
+                       Our office is open 24hrs a day, 365 days a the year and our online booking engine allows bookings to be made right up until the last minute.
+                       For the most memorable day out jump aboard the Paddywagon and let our world famous guides inspire you with songs and stories, making this a wonderful trip with memories to last a lifetime! 
+                </small>
+                <div class="ratings">
+                    <p class="pull-left">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </p>
+                    <p class="pull-left ratingM">56 reviews</p>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="pull-left"><strong>Price: €60</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
             </div>
         </div>
     </div>
