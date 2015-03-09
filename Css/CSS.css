@@ -747,9 +747,30 @@ ul.nav a:focus
     font-size: 30px;
 }
 
+.tourtxt3
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    margin-top: -50px;
+}
+
 .tourtxt2
 {
     margin-top: 60px;
+}
+
+.cheddar
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.cheddar1
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 30px;
+    margin-top: -90px;
 }
 
 .tourB p
@@ -832,6 +853,8 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
 }
 
 .timeline {
@@ -936,6 +959,8 @@ section h3.section-subheading {
 .timeline .timeline-heading h4 {
     margin-top: 0;
     color: inherit;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
 }
 
 .timeline .timeline-heading h4.subheading {
@@ -945,6 +970,8 @@ section h3.section-subheading {
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
     margin-bottom: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
 }
 
 @media(min-width:768px) {
@@ -1052,7 +1079,7 @@ margin-top:30px;
 
 .userL
 {
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 h1
@@ -1068,4 +1095,70 @@ h1
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
     margin-top: -5px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green a {
+    color: #5cb85c;
+}
+
+.panel-green a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red a {
+    color: #d9534f;
+}
+
+.panel-red a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow a {
+    color: #f0ad4e;
+}
+
+.panel-yellow a:hover {
+    color: #df8a13;
+}
+
+
+p2
+{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 18px;
+}
+
+#services
+{
+    margin-bottom: -90px;
 }
