@@ -66,10 +66,10 @@
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle loginBtn"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Account <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="index.html"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Bookings</a></li>
-                                <li><a href="index.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Shopping Basket</a></li>
+                                <li><a href="home.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Account</a></li>
                                 <li><a href="index.html"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
                                 <li class="divider"></li>
-                                <li><a href="index.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Login</a></li>
+                                <li><a href="index.php"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Login</a></li>
                                 <li><a href="register.php"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Register</a></li>
                             </ul>
                         </li>
@@ -274,7 +274,7 @@
                         <img  class="img-responsive" src="img/Tours/Dingle.jpg" alt="Dublin City">
                         <div class="caption">
                             <h3>DINGLE DAY TOUR FROM KILLARNEY</h3>
-                            <p>The Dingle Peninsula has amazing mountain scenery and unusual antiquities to see as you travel around this spectacular peninsula. You will stop at the famed Inch beach...</p>
+                            <p>The Dingle Peninsula has amazing mountain scenery and unusual antiquities to see as you travel around this spectacular peninsula. You will stop at the famed...</p>
                             <br>
                             <p>
                                 <a href="Tour_Ireland.php" class="visible-md col_md-12 btn2 btn-primary"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Book Now<br></a> <a href="#pop5"  data-toggle="modal" class="visible-md col_md-12 btn1 btn-default"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> More Info</a>
