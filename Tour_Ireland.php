@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Meta Data -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,18 +9,11 @@
         <meta name="author" content="">
         <!-- Title -->
         <title>Tour | Ireland.ie</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="Css/half-slider.css" rel="stylesheet">
-        <link href="Css/css.css" rel="stylesheet">
-        <link href="Css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="Css/font-awesome.css" rel="stylesheet" type="text/css">
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="http://faviconist.com/icons/65eb3c9ab4a8bb171257df39a8b9c1cc/favicon.ico" />
-        <!-- Javascript -->
-        <script src="js/respond.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+        <!-- Style & Script Code -->
+        <?php
+            require 'styles.php';
+            require 'scripts.php';
+        ?> 
     </head>
 
     <body>
@@ -542,9 +536,6 @@
                 <div class="row">
                         <!--<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>-->
                     <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Book now</a></div>
-                    <br>
-                    <br>
-                    <br>
                 </div>
             </form>
         </div>
@@ -563,39 +554,36 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="690" height="430" frameborder="0" style="border:0"></iframe>
             </div>
         </div>
+    </div>  
         <!-- Services Section -->
     <section id="services">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
+            <p class="tourtxt3">Our Services</p>
+            <hr>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading"><b>E-Commerce</b></h4>
+                    <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading"><b>Online Booking</b></h4>
+                    <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading"><b>Online Security</b></h4>
+                    <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
                 </div>
             </div>
         </div>
@@ -611,14 +599,17 @@
         </div><!-- container -->
     </section><!-- section -->
 
-    <!-- ==== TEAM MEMBERS ==== -->
+    <!-- TEAM MEMBERS -->
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h4 class="cheddar">Our Team</h4>
+        <hr>
+    </div>
     <div class="container teamtxt" id="team" name="team">
         <br>
         <div class="row white centered">
-            <h1 class="centered">MEET OUR AWESOME TEAM</h1>
-            <hr>
-            <br>
-            <br>
             <center>
                 <div class="col-lg-3 col-md-6 col-sm-6 centered">
                     <img class="img img-circle" src="img/Team/team1.jpg" height="120px" width="120px" alt="">
@@ -640,7 +631,7 @@
                     <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
                     <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
                     <a href="#"><i class="fa fa-envelope social-em2"></i></a>
-                    <p>Tim is an experienced marcoms practitioner and manages projects from inception to delivery. He understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
+                    <p>Tim is an experienced Carissa practitioner and manages projects from inception to delivery. She understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
                 </div><!-- col-lg-3 -->
             </center>
             <center>
@@ -652,7 +643,7 @@
                     <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
                     <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
                     <a href="#"><i class="fa fa-envelope social-em2"></i></a>
-                    <p>Be a creative director is a hard task, but Michele loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
+                    <p>Be a creative director is a hard task, but Cheddar loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
                 </div><!-- col-lg-3 -->
             </center>
             <center>
@@ -673,24 +664,21 @@
     <br>
     <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
+        <div class="container">  
+            <h4 class="cheddar1">About Us</h4>
+            <hr>
+            <br>
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/irishMountain.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                    <h4 class="subheading"><b>How We Started</b></h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -699,12 +687,12 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/tourBus.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
+                                    <h4 class="subheading"><b>Beginning Of Tour | Ireland.ie</b></h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -713,12 +701,12 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/team.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4 class="subheading"><b>Transition to Full Service</b></h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -727,12 +715,12 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/busDriver.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4 class="subheading"><b>Phase Two Expansion</b></h4>
                                 </div>
                                 <div class="timeline-body">
                                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
@@ -964,16 +952,135 @@
             </div>
         </div>
     </div>
+    
+    <!-- Model Box Five -->
+    <div id="pop5" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                <h3>DINGLE DAY TOUR FROM KILLARNEY</h3>
+            </div>
+            <div class="modal-body">
+                <img src="img/Tours/Dingle.jpg" class="img-responsive pull-left" width="300" height="300">
+                <small>The Dingle Peninsula has amazing mountain scenery and unusual antiquities to see as you travel around this spectacular peninsula. You will stop at the famed Inch beach, one of the most famous beaches in Ireland, which is a site of outstanding natural beauty. 
+                       Then to the most westerly drive in Europe known as the Slea Head drive. Marvel at the Atlantic Coast as you travel on this spectacular road which hugs the western shoreline. Enjoy great views of the Blasket Islands and maybe even see the "Sleeping Giant Island." 
+                       You will also stop in Dingle town. This is one of the most picturesque fishing towns in Ireland, and is also famed for Fungi the dolphin who has been a local for almost 30 years. Dingle town is the heart and soul of the Peninsula. Today is attracts visitors, including artists and musicians, from all over the world.
+                </small>
+                <div class="ratings">
+                    <p class="pull-left">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </p>
+                    <p class="pull-left ratingM">115 reviews</p>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="pull-left"><strong>Price: €25</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Model Box Six -->
+    <div id="pop6" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                <h3>2 DAY SOUTH TOUR - CLIFFS OF MOHER</h3>
+            </div>
+            <div class="modal-body">
+                <img src="img/Tours/CliffOfMohar.jpg" class="img-responsive pull-left" width="300" height="300">
+                <small>Your journey on this Cliff of Moher tour will take you from the banks of Dublin’s river Liffey to Ireland’s Wild Atlantic Way. You’ll see the biggest visitor attraction in all of Ireland and experience the nature, geology, history, culture and music of the region as we travel together.
+                       The Cliffs of Moher are 66% as tall as New York's Empire State and stretch for almost 10km. Forming part of the edge of Western Europe, this landscape really is a "must see" on a visit to Ireland. You'll enjoy 1.5 hours at the Cliffs of Moher, which is just the right amount of time according to the 90,000 passengers who travel with us annually!
+                </small>
+                <div class="ratings">
+                    <p class="pull-left">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </p>
+                    <p class="pull-left ratingM">413 reviews</p>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="pull-left"><strong>Price: €40</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Model Box Seven -->
+    <div id="pop7" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                <h3>RING OF KERRY DAY TOUR FROM GALWAY</h3>
+            </div>
+            <div class="modal-body">
+                <img src="img/Tours/RingOfKerry.jpg" class="img-responsive pull-left" width="300" height="300">
+                <small>The Ring of Kerry is considered one of the finest drives in the world. From rugged cliffs to golden beaches, small villages and pastures green to peat bogs and picturesque mountain ranges. This peninsula illustrates all that is beautiful, wonderful and wild in our beloved motherland. 
+                       The variety of attractions makes this one of the most diverse and interesting day tours that one is likely to experience in their travel adventures. From ancient stone forts to landscapes carved out of rock by the Ice Age, from sparkling lakes to winding mountain passes our day trip shall be a highlight and shall ensure lasting memories of the beautiful Kingdom of Kerry.
+                </small>
+                <div class="ratings">
+                    <p class="pull-left">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </p>
+                    <p class="pull-left ratingM">41 reviews</p>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="pull-left"><strong>Price: €45</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Model Box Eight -->
+    <div id="pop8" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                <h3>CORK CITY SIGHTSEEING (CORK HOPPER)</h3>
+            </div>
+            <div class="modal-body">
+                <img src="img/Tours/CorkNight.jpg" class="img-responsive pull-left" width="300" height="300">
+                <small>Experience Cork’s main attractions in one day with Paddywagon’s Hopper Tour!
+                       With the Cork Hopper passengers can hop-on board any time of day and use their ticket over 24 or 48 hours to take in the ‘must see’ attractions in County Cork. 
+                       Visit the iconic Blarney Castle, Jameson Experience Midleton, Titanic Experience in Cobh or explore Fota Wildlife Park, or Fota House and Gardens.
+                       Blarney Castle: 
+                       Nearly six centuries old and synonymous around the world with Ireland. We stop here five times throughout the day making it the perfect first or last stop!
+                </small>
+                <div class="ratings">
+                    <p class="pull-left">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </p>
+                    <p class="pull-left ratingM">301 reviews</p>
+                    <br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p class="pull-left"><strong>Price: €20</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+            </div>
+        </div>
+    </div>
 
 
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/javascript.js"></script>
+   
 
     <!-- Script to Activate the Carousel -->
     <!--<script>

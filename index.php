@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Meta Data -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,23 +9,12 @@
         <meta name="author" content="">
         <!-- Title -->
         <title>Tour | Ireland.ie</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="Css/half-slider.css" rel="stylesheet">
-        <link href="Css/css.css" rel="stylesheet">
-        <link href="Css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="Css/font-awesome.css" rel="stylesheet" type="text/css">
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="http://faviconist.com/icons/65eb3c9ab4a8bb171257df39a8b9c1cc/favicon.ico" />
-        <!-- Javascript -->
-        <script src="js/respond.js"></script>
-        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+        <!-- Style & Script Code -->
+        <?php
+            require 'styles.php';
+            require 'scripts.php';
+        ?>   
     </head>
-
-
-
-
     <body class="indexBody">
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -147,7 +137,7 @@
                                 <li><a href="index.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Shopping Basket</a></li>
                                 <li><a href="index.html"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
                                 <li class="divider"></li>
-                                <li><a href="index.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Login</a></li>
+                                <li><a href="index.php"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Login</a></li>
                                 <li><a href="register.php"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Register</a></li>
                             </ul>
                         </li>
@@ -246,6 +236,7 @@
                 <div class="panel-footer">
                     Not Registred? <a class="registerP" href="register.php">Register here</a> Forgotten Password? <a href="forgotPassword.php">Click Here</a></div>
             </div>
+        </div>
         <!-- start Lower Footer -->
         <div class="footer1_bg navbar-fixed-bottom"><!-- start footer1 -->
             <div class="container">
@@ -263,10 +254,5 @@
                 </div>
             </div>
         </div>
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/javascript.js"></script>
     </body>
 </html>

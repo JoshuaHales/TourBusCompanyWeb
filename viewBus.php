@@ -52,7 +52,7 @@ $statement = $gateway->getbusesById($id);
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
     <body>
-         <?php require 'navBar.php' ?>
+        <?php require 'navBar.php' ?>
         <?php require 'toolbar.php' ?>
         <?php
         if (isset($message)) {
@@ -75,37 +75,106 @@ $statement = $gateway->getbusesById($id);
                         <li><a href="#">Service History table</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                    <h1 class="page-header">Dashboard</h1>
-
-                    <div class="row placeholders">
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/add.svg" class="img-responsive dashboardIcons" alt="Create">
-                            <h4 class="dashboardOptionsTxt text-center">Create</h4>
-                            <p class="text-center">Add a new row to a table</p>
+               <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                    <br>
+                    <h2 class="page-header">Dashboard</h2>
+                    <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-comments fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">26</div>
+                                    <div>New Comments!</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/edit.svg" class="img-responsive dashboardIcons" alt="Edit">
-                            <h4 class="dashboardOptionsTxt text-center">Update</h4>
-                            <p class="text-center">Edit any row in the table</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/view.svg" class="img-responsive dashboardIcons" alt="View">
-                            <h4 class="dashboardOptionsTxt text-center">View</h4>
-                            <p class="text-center">View a single row in the table</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/delete.svg" class="img-responsive dashboardIcons" alt="Delete">
-                            <h4 class="dashboardOptionsTxt text-center">Delete</h4>
-                            <p class="text-center">Remove a row in the </p>
-                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
                     </div>
-                <h3> View Bus </h3>
-                <!-- makes the html table -->
-                        <div id="tableStyle">
-                            <table id ="table" border="1">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">12</div>
+                                    <div>New Tasks!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">124</div>
+                                    <div>New Orders!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-support fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">13</div>
+                                    <div>Support Tickets!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <h2 class="sub-header">Bus Table</h2>
+                    <hr>
+                    <form id="homePageForm" method="POST" action="deleteSelectedBuses.php">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
                                 <thead>
-                                    <tr>
+                                    <tr>                                        
                                         <th>Bus ID</th>
                                         <th>Registration Number</th>
                                         <th>Bus Make</th>
@@ -120,7 +189,7 @@ $statement = $gateway->getbusesById($id);
                                 <tbody>
                                     <?php
                                     $row = $statement->fetch(PDO::FETCH_ASSOC);
-                                    
+                                
                                         echo '<td>' . $row['busID'] . '</td>';
                                         echo '<td>' . $row['registrationNo'] . '</td>';
                                         echo '<td>' . $row['busMake'] . '</td>';
@@ -130,21 +199,21 @@ $statement = $gateway->getbusesById($id);
                                         echo '<td>' . $row['purchaseDate'] . '</td>';
                                         echo '<td>' . $row['dueServiceDate'] . '</td>';
                                         echo '<td>' . $row['garageID'] . '</td>';
-                                        echo '</tr>';
-
-                                       
+                                        echo '<td>'
                                     ?>
                                 </tbody>
                             </table>
                         </div>
-                <p>
-                    <!--<a href="editBusForm.php?id=<?php echo $row['busID']; ?>">
-                        Edit Bus</a>
-                    <a class="deleteBus" href="deleteBus.php?id=<?php echo $row['busID']; ?>">Delete Bus</a>
-                    -->
-                <input id="editBusBtn"   type="button" value="Edit Bus"   name="Edit"   data-bus-id="<?php echo $row['busID']; ?>" />
-                <input id="deleteBusBtn" type="button" value="Delete Bus" name="Delete" data-bus-id="<?php echo $row['busID']; ?>" />
-                </p>
+                        <br/>
+                        <p>
+                            <!--<a href="editBusForm.php?id=<?php echo $row['busID']; ?>">
+                            Edit Bus</a>
+                            <a class="deleteBus" href="deleteBus.php?id=<?php echo $row['busID']; ?>">Delete Bus</a>
+                            -->
+                            <input id="editBusBtn"   type="button" value="Edit Bus"   name="Edit"   data-bus-id="<?php echo $row['busID']; ?>" />
+                            <input id="deleteBusBtn" type="button" value="Delete Bus" name="Delete" data-bus-id="<?php echo $row['busID']; ?>" />
+                        </p>
+                    </form>
               
             </div>
         </div>

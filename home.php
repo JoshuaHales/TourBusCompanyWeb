@@ -44,22 +44,12 @@ if (!isset($_SESSION['username'])) {
         <meta name="description" content="">
         <meta name="author" content="">
         <!-- Title -->
-        <title>Tour | Ireland</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="Css/half-slider.css" rel="stylesheet">
-        <link href="Css/css.css" rel="stylesheet">
-        <link href="Css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="Css/font-awesome.css" rel="stylesheet" type="text/css">
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="http://faviconist.com/icons/65eb3c9ab4a8bb171257df39a8b9c1cc/favicon.ico" />
-        <!-- Javascript -->
-        <script src="js/respond.js"></script>
-        <link rel="stylesheet" type="text/css" href=Css/style.css>
-        <!-- Loading the favicon for the html page -->
-        <link rel="shortcut icon" href="http://faviconist.com/icons/23b861d4741a75d9a77f659196f5f3c8/favicon.ico" />
-
+        <title>Tour | Ireland.ie</title>
+        <!-- Style & Script Code -->
+        <?php
+            require 'styles.php';
+            require 'scripts.php';
+        ?> 
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
     <!-- JavaScipt code To Check All Boxes(Master): -->
@@ -97,9 +87,99 @@ if (!isset($_SESSION['username'])) {
                     </ul>
                 </div>
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                    <h1 class="page-header">Dashboard</h1>
-
-                    <div class="row placeholders">
+                    <br>
+                    <h2 class="page-header">Dashboard</h2>
+                    <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-comments fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">26</div>
+                                    <div>New Comments!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-green">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-tasks fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">12</div>
+                                    <div>New Tasks!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-yellow">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-shopping-cart fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">124</div>
+                                    <div>New Orders!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="panel panel-red">
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <i class="fa fa-support fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9 text-right">
+                                    <div class="huge">13</div>
+                                    <div>Support Tickets!</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">
+                            <div class="panel-footer">
+                                <span class="pull-left">View Details</span>
+                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                <div class="clearfix"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                    <!--<div class="row placeholders">
                         <div class="col-xs-6 col-sm-3 placeholder">
                             <img src="img/add.svg" class="img-responsive dashboardIcons" alt="Create">
                             <h4 class="dashboardOptionsTxt text-center">Create</h4>
@@ -120,12 +200,12 @@ if (!isset($_SESSION['username'])) {
                             <h4 class="dashboardOptionsTxt text-center">Delete</h4>
                             <p class="text-center">Remove a row in the </p>
                         </div>
-                    </div>
-
-                    <h2 class="sub-header">Section title</h2>
+                    </div>-->
+                    <h2 class="sub-header">Bus Table</h2>
+                    <hr>
                     <form id="homePageForm" method="POST" action="deleteSelectedBuses.php">
                         <div class="table-responsive">
-                            <table class="table flatTable">
+                            <table class="table table-striped table-hover">
                                 <thead>
                                     <tr>
                                         <th><input type="checkbox" onclick="checkAll(this)"></th>
@@ -194,12 +274,7 @@ if (!isset($_SESSION['username'])) {
             </div>
         </div>
         
-         <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/javascript.js"></script>
+     
              
 
     </body>

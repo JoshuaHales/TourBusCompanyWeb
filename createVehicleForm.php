@@ -2,12 +2,25 @@
 <!-- All the CSS and HTML Code -->
 <html>
     <head>
-	<link rel="stylesheet" type="text/css" href=Css/style.css>
-	<!-- this is our style sheet for styling the site-->
-        <meta charset="UTF-8">
-        <link rel="shortcut icon" href="http://faviconist.com/icons/6f414caa507cee1b06793df28be99582/favicon.ico" />
-        <title>Irish Tour Bus Company</title>
-        <meta charset="UTF-8">
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Title -->
+        <title>Tour | Ireland.ie</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="Css/half-slider.css" rel="stylesheet">
+        <link href="Css/css.css" rel="stylesheet">
+        <link href="Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="Css/font-awesome.css" rel="stylesheet" type="text/css">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="http://faviconist.com/icons/65eb3c9ab4a8bb171257df39a8b9c1cc/favicon.ico" />
+        <!-- Javascript -->
+        <script src="js/respond.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
     <?php
@@ -19,11 +32,14 @@
         $garageGateway = new GarageTableGateway($conn);
         
         $garages = $garageGateway->getGarages();
+        //echo '<pre>';
+        //print_r($garages->rowCount());
+        //echo '</pre>';
     ?>
     
-    <body> 
-        <!-- Main Container -->
-        <img src="images/mainLogo.png" alt="Main Logo">
+    <body>
+        <?php require 'navBar.php' ?>
+        <!-- Main Container -->        
         <div id="container7">
             <!-- form with a action event on createVehicle.php with a submit to validate on the js form createVehicleForm.js -->
             <form id="createBusForm" action="createVehicle.php" method="POST">
@@ -164,11 +180,15 @@
                             <select name="garage_id">
                                 <option value="-1">No Garage</option>
                                 <?php
-                                    $g = $garages->fetch(PHO::FETCH_ASSOC);
+                                    $g = $garages->fetch(PDO::FETCH_ASSOC);
                                     while ($g)
                                     {
+                                        //echo '<pre>';
+                                        //print_r($g);
+                                        //echo '</pre>';
+
                                         echo '<option value="' . $g['garageID'] . '">' . $g['garageName'] . '</option>';
-                                        $g = $garages->fetch(PHO::FETCH_ASSOC);
+                                        $g = $garages->fetch(PDO::FETCH_ASSOC);
                                     }
                                 ?>
                             </select>

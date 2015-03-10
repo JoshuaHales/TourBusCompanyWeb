@@ -12,7 +12,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
         <link href="Css/half-slider.css" rel="stylesheet">
-        <link href="Css/css.css" rel="stylesheet">
+        <link href="Css/CSS.css" rel="stylesheet">
         <link href="Css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="Css/font-awesome.css" rel="stylesheet" type="text/css">
         <!-- Favicon -->
@@ -65,14 +65,14 @@
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle loginBtn"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Account <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="index.html"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Bookings</a></li>
-                                <li><a href="index.html"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Shopping Basket</a></li>
+                                <li><a href="home.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Account</a></li>
                                 <li><a href="index.html"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
                                 <li class="divider"></li>
                                  <li><?php
                                 $username = $_SESSION['username'];
                                 echo '<a class="userW">' . $username . '</a>';
                                 ?></li>
-                                <li><a href="index.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Login</a></li>
+                                <li><a href="index.php"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Login</a></li>
                                 <li><a href="register.php"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Register</a></li>
                             </ul>
                         </li>
