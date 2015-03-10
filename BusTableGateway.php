@@ -9,7 +9,9 @@ class BusTableGateway {
     }
     public function getBuses() {
         // Execute A Query To Get All Buses:
-        $sqlQuery = "SELECT * FROM buses";
+        $sqlQuery = "SELECT b.*, g.garageName FROM buses b
+                     LEFT JOIN garages g ON g.garageID = b.garageID
+                     WHERE 1";
         
         $statement = $this->connection->prepare($sqlQuery);
         $status = $statement->execute();

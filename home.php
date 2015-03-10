@@ -80,7 +80,7 @@ if (!isset($_SESSION['username'])) {
                         ?>
                         <?php require 'toolbar.php' ?>
                         <li class="active"><a href="#">Buses table<span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Garages table</a></li>
+                        <li><a href="viewGarage.php">Garages table</a></li>
                         <li><a href="#">Drivers table</a></li>
                         <li><a href="#">Assignments table</a></li>
                         <li><a href="#">Service History table</a></li>
@@ -235,7 +235,7 @@ if (!isset($_SESSION['username'])) {
                                         echo '<td>' . $row['busEngineSize'] . '</td>';
                                         echo '<td>' . $row['purchaseDate'] . '</td>';
                                         echo '<td>' . $row['dueServiceDate'] . '</td>';
-                                        echo '<td>' . $row['garageID'] . '</td>';
+                                        echo '<td>' . $row['garageName'] . '</td>';
                                         echo '<td>'
                                         . '<a href="viewBus.php?id=' . $row['busID'] . '">View</a> '
                                         . '<a href="editBusForm.php?id=' . $row['busID'] . '">Edit</a> '
