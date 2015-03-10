@@ -27,6 +27,10 @@ $dueServiceDate = filter_input(INPUT_POST, 'dueServiceDate', FILTER_SANITIZE_STR
 $garageID = filter_input(INPUT_POST, 'garageID', FILTER_SANITIZE_STRING);
 
 /* empty ErrorMessage array that if elements are met or not runs, either runs the error messege( Reloads creatsVehicleForm.php ) or continues to home.php */
+if ($garageID == -1)
+{
+    $garageID = NULL;
+}
 $errorMessage = array();
 if ($registrationNo === FALSE || $registrationNo === '') {
     $errorMessage['registrationNo'] = '-Registration must not be blank<br/>';

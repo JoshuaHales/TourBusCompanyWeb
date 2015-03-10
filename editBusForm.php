@@ -3,6 +3,7 @@
 require_once 'Vehicle.php';
 require_once 'Connection.php';
 require_once 'BusTableGateway.php';
+require_once 'GarageTableGateway.php';
 
 $id = session_id();
 if ($id == "") {
@@ -19,7 +20,11 @@ $busID = $_GET['id'];
 
 $connection = Connection::getInstance();
 $gateway = new BusTableGateway($connection);
-
+$conn = Connection::getInstance();
+        $garageGateway = new GarageTableGateway($conn);
+        
+        $garages = $garageGateway->getGarages();
+        
 $statement = $gateway->getbusesById($busID);
 if ($statement->rowCount() !== 1) {
     die("Illegal request");
@@ -39,7 +44,6 @@ $row = $statement->fetch(PDO::FETCH_ASSOC);
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
     <body>
-        <img src="images/mainLogo.png" alt="Main Logo"><br>
         <div id="container7">
             <div id="table">
                 <form id="editBusForm" name="editBusForm" action="editBus.php" method="POST">
@@ -186,25 +190,27 @@ $row = $statement->fetch(PDO::FETCH_ASSOC);
                                 </span>
                             </td>
                         </tr>
-                        <tr>
-                            <td>Garage ID</td>
-                            <td>
-                                <input type="text" name="garageID" value="<?php
-                                if (isset($_POST) && isset($_POST['garageID'])) {
-                                    echo $_POST['garageID'];
-                                } else {
-                                    echo $row['garageID'];
-                                }
-                                ?>" />
-                                <span id="dueServiceDateError" class="error">
-                                    <?php
-                                    if (isset($errorMessage) && isset($errorMessage['garageID'])) {
-                                        echo $errorMessage['garageID'];
+                         <tr>
+                        <td>Garage Name</td>
+                        <td>
+                            <select name="garageID">
+                                <option value="-1">No Garage</option>
+                                <?php
+                                    $g = $garages->fetch(PDO::FETCH_ASSOC);
+                                    while ($g)
+                                    {
+                                        $selected = "";
+                                        if ($g['garageID'] == $buses['garageID'])
+                                        {
+                                            $selected = "selected";
+                                        }
+                                        echo '<option value="' . $g['garageID'] . '" ' . $selected . '>' . $g['garageName'] . '</option>';
+                                        $g = $garages->fetch(PDO::FETCH_ASSOC);
                                     }
-                                    ?>
-                                </span>
-                            </td>
-                        </tr>
+                                ?>
+                            </select>
+                        </td>
+                    </tr>
                         <tr>
                             <td></td>
                             <td>

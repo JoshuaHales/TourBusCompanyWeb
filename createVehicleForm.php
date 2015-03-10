@@ -175,9 +175,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>garage ID</td>
+                        <td>Garage Name</td>
                         <td>
-                            <select name="garage_id">
+                            <select name="garageID">
                                 <option value="-1">No Garage</option>
                                 <?php
                                     $g = $garages->fetch(PDO::FETCH_ASSOC);
