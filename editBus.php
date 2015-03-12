@@ -65,7 +65,7 @@ if (empty($errorMessage)) {
 
 
     $gateway->updateBus($busID, $registrationNo, $busMake, $busModel, $busSeats, $busEngineSize, $purchaseDate, $dueServiceDate, $garageID);
-    header('Location: home.php');
+    //header('Location: home.php');
 }
 /* when the array if/ else statements are not met */ 
 else {

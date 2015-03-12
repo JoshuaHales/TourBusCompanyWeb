@@ -1,15 +1,8 @@
 <?php
 //requiring Event.php as some of its elements are needed in this page
-require_once 'garage.php';
+require_once 'Vehicle.php';
 require_once 'Connection.php';
 require_once 'GarageTableGateway.php';
-
-require 'ensureUserLoggedIn.php';
-
-$connection = Connection::getInstance();
-$gateway = new GarageTableGateway($connection);
-
-$statement = $gateway->getGarages();
 
 /* Starts a new session if session is == to nothing */
 $id = session_id();
@@ -17,53 +10,50 @@ if ($id == "") {
     session_start();
 }
 
+require 'ensureUserLoggedIn.php';
+
 //if events session is set add it to the array
-if (!isset($_SESSION['garages'])) {
-    $garages = array();
-    //hard coding variables into the array through parameters in another page
-
-    $_SESSION['garages'] = $garages;
-} else {
-    //making this session events
-    $garages = $_SESSION['garages'];
+if (!isset($_GET) || !isset($_GET['id'])) {
+    die('Invalid request');
 }
+$id = $_GET['id'];
 
-/* Check if user is logged in */
-if (!isset($_SESSION['username'])) {
-    header("Location: checkLogin.php");
-}
+$connection = Connection::getInstance();
+$gateway = new GarageTableGateway($connection);
+
+$statement = $gateway->getgaragesById($id);
 ?>
 
-<!DOCTYPE html>
 <!-- All the CSS and HTML Code -->
+<!DOCTYPE html>
 <html>
-    <head>
+    
+     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
         <!-- Title -->
-        <title>Tour | Ireland.ie</title>
-        <!-- Style & Script Code -->
-        <?php
-            require 'styles.php';
-            require 'scripts.php';
-        ?> 
+        <title>Tour | Ireland</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="Css/half-slider.css" rel="stylesheet">
+        <link href="Css/css.css" rel="stylesheet">
+        <link href="Css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="Css/font-awesome.css" rel="stylesheet" type="text/css">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="http://faviconist.com/icons/65eb3c9ab4a8bb171257df39a8b9c1cc/favicon.ico" />
+        <!-- Javascript -->
+        <script src="js/respond.js"></script>
+        <link rel="stylesheet" type="text/css" href=Css/style.css>
+        <script type="text/javascript" src="js/bus.js"></script>
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
-    <!-- JavaScipt code To Check All Boxes(Master): -->
-    <script language="javascript">
-        function checkAll(master) {
-            var checked = master.checked;
-            var col = document.getElementsByClassName("deleteGarages");
-            for (var i = 0; i < col.length; i++) {
-                col[i].checked = checked;
-            }
-        }
-    </script>
     <body>
         <?php require 'navBar.php' ?>
+        <?php require 'toolbar.php' ?>
         <?php
         if (isset($message)) {
             echo '<p>' . $message . '</p>';
@@ -78,15 +68,14 @@ if (!isset($_SESSION['username'])) {
                         $username = $_SESSION['username'];
                         echo '<h1 class="userW">Welcome: ' . $username . '</h1>';
                         ?>
-                        <?php require 'toolbar.php' ?>
-                        <li class="active"><a href="viewGarage.php">Garages table<span class="sr-only">(current)</span></a></li>
-                        <li><a href="home.php">Buses table</a></li>
+                        <li class="active"><a href="#">Buses table<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Garages table</a></li>
                         <li><a href="#">Drivers table</a></li>
                         <li><a href="#">Assignments table</a></li>
                         <li><a href="#">Service History table</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+               <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <br>
                     <h2 class="page-header">Dashboard</h2>
                     <div class="row">
@@ -179,73 +168,45 @@ if (!isset($_SESSION['username'])) {
                     </div>
                 </div>
                 
-                    <!--<div class="row placeholders">
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/add.svg" class="img-responsive dashboardIcons" alt="Create">
-                            <h4 class="dashboardOptionsTxt text-center">Create</h4>
-                            <p class="text-center">Add a new row to a table</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/edit.svg" class="img-responsive dashboardIcons" alt="Edit">
-                            <h4 class="dashboardOptionsTxt text-center">Update</h4>
-                            <p class="text-center">Edit any row in the table</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/view.svg" class="img-responsive dashboardIcons" alt="View">
-                            <h4 class="dashboardOptionsTxt text-center">View</h4>
-                            <p class="text-center">View a single row in the table</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/delete.svg" class="img-responsive dashboardIcons" alt="Delete">
-                            <h4 class="dashboardOptionsTxt text-center">Delete</h4>
-                            <p class="text-center">Remove a row in the </p>
-                        </div>
-                    </div>-->
-                    <h2 class="sub-header">Garage Table</h2>
+                <h2 class="sub-header">Garage Table</h2>
                     <hr>
                     <form id="homePageForm" method="POST" action="deleteSelectedGarages.php">
                         <div class="table-responsive">
                             <table class="table table-striped table-hover">
                                 <thead>
-                                    <tr>
-                                        <th><input type="checkbox" onclick="checkAll(this)"></th>
+                                    <tr>                                        
                                         <th>Garage ID</th>
                                         <th>Garage Name</th>
                                         <th>Garage Address</th>
                                         <th>Garage Phone Number</th>
                                         <th>Manager Name</th>
-                                        <th>Options</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
                                     $row = $statement->fetch(PDO::FETCH_ASSOC);
-                                    while ($row) {
-
-                                        echo '<td><input class="deleteGarages" type="checkbox" value="' . $row['garageID'] . '" name="garages[]" /></td>';
+                                
                                         echo '<td>' . $row['garageID'] . '</td>';
                                         echo '<td>' . $row['garageName'] . '</td>';
                                         echo '<td>' . $row['garageAddress'] . '</td>';
                                         echo '<td>' . $row['garagePhoneNo'] . '</td>';
                                         echo '<td>' . $row['managerName'] . '</td>';
                                         echo '<td>'
-                                        . '<a href="viewGarage2.php?id=' . $row['garageID'] . '">View</a> '
-                                        . '<a href="editGarageForm.php?id=' . $row['garageID'] . '">Edit</a> '
-                                        . '<a class="deleteGarage" <a href="deleteGarage.php?id=' . $row['garageID'] . '">Delete</a> '
-                                        . '</td>';
-                                        echo '</tr>';
-
-                                        $row = $statement->fetch(PDO::FETCH_ASSOC);
-                                    }
                                     ?>
                                 </tbody>
                             </table>
                         </div>
                         <br/>
-                        <input type="submit" name="deleteSelected" value ="Delete Selected Garages" />
-                        <input type="button" value="Register Garage" name="forgot" onclick="document.location.href = 'createGarageForm.php'" />
+                        <p>
+                            <!--<a href="editGarageForm.php?id=<?php echo $row['garageID']; ?>">
+                            Edit Garage</a>
+                            <a class="deleteGarages" href="deleteGarage.php?id=<?php echo $row['garageID']; ?>">Delete Garage</a>
+                            -->
+                            <input id="editGarageBtn"   type="button" value="Edit Garage"   name="Edit"   data-garage-id="<?php echo $row['garageID']; ?>" />
+                            <input id="deleteGarageBtn" type="button" value="Delete Garage" name="Delete" data-garage-id="<?php echo $row['garageID']; ?>" />
+                        </p>
                     </form>
-                </div>
+              
             </div>
         </div>
         <!-- start Lower Footer -->
@@ -265,9 +226,5 @@ if (!isset($_SESSION['username'])) {
                 </div>
             </div>
         </div>
-        
-     
-             
-
     </body>
 </html>

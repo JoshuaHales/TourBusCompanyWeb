@@ -200,7 +200,7 @@ $row = $statement->fetch(PDO::FETCH_ASSOC);
                                     while ($g)
                                     {
                                         $selected = "";
-                                        if ($g['garageID'] == $buses['garageID'])
+                                        if ($g['garageID'] == $row['garageID'])
                                         {
                                             $selected = "selected";
                                         }
