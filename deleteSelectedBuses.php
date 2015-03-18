@@ -29,4 +29,3 @@ foreach ($buses as $busId) {
 
 header("Location: home.php");
 ?>
-

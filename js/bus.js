@@ -20,9 +20,21 @@ window.onload = function() {
     if (deleteBusBtn !== null) {
         deleteBusBtn.addEventListener('click', deleteBusBtnPressed);
     }
+    
+    var deleteGarageBtn = document.getElementById('deleteGarageBtn');
+    if (deleteGarageBtn !== null) {
+        deleteGarageBtn.addEventListener('click', deleteGarageBtnPressed);
+    }
 
     // define an event listener for any '.deleteBus' links
     var deleteLinks = document.getElementsByClassName('deleteBus');
+    for (var i = 0; i !== deleteLinks.length; i++) {
+        var link = deleteLinks[i];
+        link.addEventListener("click", deleteLink);
+    }
+    
+    // define an event listener for any '.deleteGarage' links
+    var deleteLinks = document.getElementsByClassName('deleteGarage');
     for (var i = 0; i !== deleteLinks.length; i++) {
         var link = deleteLinks[i];
         link.addEventListener("click", deleteLink);
@@ -31,6 +43,11 @@ window.onload = function() {
     var homePageForm = document.getElementById('homePageForm');
     if (homePageForm !== null) {
         homePageForm.addEventListener('submit', deleteSelectedBuses);
+    }
+    
+    var homePageForm = document.getElementById('homePageForm');
+    if (homePageForm !== null) {
+        homePageForm.addEventListener('submit', deleteSelectedGarages);
     }
 
     function displayEditBusForm(event) {
@@ -45,6 +62,15 @@ window.onload = function() {
 
         if (confirm("* Are you sure you want to delete this Bus?")) {
             document.location.href = "deleteBus.php?id=" + button.dataset.busId;
+        }
+    }
+    
+    //Code To Prompt User With Delete Message:
+    function deleteGarageBtnPressed(garage) {
+        var button = garage.target;
+
+        if (confirm("* Are you sure you want to delete this Garage?")) {
+            document.location.href = "deleteGarage.php?id=" + button.dataset.garageID;
         }
     }
 
@@ -83,7 +109,7 @@ window.onload = function() {
         if (busEngineSize === "") {
             errors["busEngineSize"] = "* Engine Size cannot be empty\n";
         }
-         if (garageID === "") {
+        if (garageID === "") {
             errors["garageID"] = "* Garage ID cannot be empty\n";
         }
 
@@ -121,6 +147,13 @@ window.onload = function() {
             event.preventDefault();
         }
     }
+    
+    //Code To Validate Delete Link:
+    function deleteLink(garage) {
+        if (!confirm("* Are you sure you want to delete this Garage?")) {
+            garage.preventDefault();
+        }
+    }
 
     //Code To Validate Delete Selected Link:
     function deleteSelectedBuses(event) {
@@ -137,4 +170,20 @@ window.onload = function() {
             event.preventDefault();
         }
     }
+    
+    //Code To Validate Delete Selected Link:
+    function deleteSelectedGarages(garage) {
+        var selected = false;
+        var deleteCheckBoxes = document.getElementsByClassName("deleteGarages");
+        for (var i = 0; i !== deleteCheckBoxes.length; i++) {
+            var cb = deleteCheckBoxes[i];
+            if (cb.checked) {
+                selected = true;
+
+            }
+        }
+        if (!selected || !confirm("* Are you sure you want to delete this Garage/Garagse?")) {
+            garage.preventDefault();
+        }
+    } 
 };

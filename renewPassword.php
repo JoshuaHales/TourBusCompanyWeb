@@ -20,6 +20,12 @@
         <!-- Javascript -->
         <script src="js/respond.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+        <?php 
+            $id = session_id();
+            if ($id == "") {
+                session_start();
+            }
+        ?>
     </head>
 
     <body class="indexBody">
@@ -41,8 +47,8 @@
                         <p>* Please check your e-mail and click the attached confirmation link to view your renewed/resent password.</p>
                         <div class="form-group last">
                             <div class="col-sm-offset-3 col-sm-9">
-                                <button  href="index.php" class="btn btn-success btn-sm">
-                                    Return</button>
+                                <a href="Tour_Ireland.php"><button class="btn btn-success btn-sm">
+                                        Return</button></a>
                             </div>
                         </div>
                     </form>

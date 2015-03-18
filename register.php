@@ -13,6 +13,11 @@
         <?php
             require 'styles.php';
             require 'scripts.php';
+            
+            $id = session_id();
+            if ($id == "") {
+                session_start();
+            }
         ?> 
     </head>
     <body class="indexBody">

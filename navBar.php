@@ -39,20 +39,20 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+                            <a href="Tour_Ireland.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
                         </li>
                         <li>
-                            <a href="index.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a>
+                            <a href="Tour_Ireland.php"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a>
                         </li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Tours <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="index.html">Day Tours</a></li>
-                                <li><a href="index.html"><i class="fa fa-university"></i> Extended Tours</a></li>
-                                <li><a href="index.html"><img src="img/familyI.png" alt="Family Icon">Family Tours</a></li>
-                                <li><a href="index.html"><i class="fa fa-users"></i> Group Bookings</a></li>
+                                <li><a href="Tour_Ireland.php"><i class="fa fa-street-view"></i> Day Tours</a></li>
+                                <li><a href="Tour_Ireland.php"><i class="fa fa-university"></i> Extended Tours</a></li>
+                                <li><a href="Tour_Ireland.php"><i class="fa fa-users"></i> Family Tours</a></li>
+                                <li><a href="Tour_Ireland.php"><i class="fa fa-user-plus"></i> Group Bookings</a></li>
                                 <li class="divider"></li>
-                                <li><a href="index.html">Coach hire</a></li>
+                                <li><a href="Tour_Ireland.php"><i class="fa fa-calendar"></i> Coach hire</a></li>
                             </ul>
                         </li>
                         <li>
@@ -64,16 +64,11 @@
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle loginBtn"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Account <b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="index.html"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Bookings</a></li>
+                                <li><a href="home.php"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Bookings</a></li>
                                 <li><a href="home.php"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Account</a></li>
-                                <li><a href="index.html"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
+                                <li><a href="home.php"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Settings</a></li>
                                 <li class="divider"></li>
-                                 <li><?php
-                                $username = $_SESSION['username'];
-                                echo '<a class="userW">' . $username . '</a>';
-                                ?></li>
-                                <li><a href="index.php"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Login</a></li>
-                                <li><a href="register.php"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span> Register</a></li>
+                                <?php require 'toolbar.php' ?>                               
                             </ul>
                         </li>
                         <!-- Search Box -->

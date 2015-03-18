@@ -47,21 +47,11 @@ if (!isset($_SESSION['username'])) {
         <title>Tour | Ireland.ie</title>
         <!-- Style & Script Code -->
         <?php
-            require 'styles.php';
-            require 'scripts.php';
+        require 'styles.php';
+        require 'scripts.php';
         ?> 
         <script type="text/javascript" src="js/bus.js"></script>
     </head>
-    <!-- JavaScipt code To Check All Boxes(Master): -->
-    <script language="javascript">
-        function checkAll(master) {
-            var checked = master.checked;
-            var col = document.getElementsByClassName("deleteGarages");
-            for (var i = 0; i < col.length; i++) {
-                col[i].checked = checked;
-            }
-        }
-    </script>
     <body>
         <?php require 'navBar.php' ?>
         <?php
@@ -89,135 +79,85 @@ if (!isset($_SESSION['username'])) {
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <br>
                     <h2 class="page-header">Dashboard</h2>
-                    <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
+                    <div id="page-wrapper" >
+                        <div id="page-inner">             
+                            <!-- /. ROW  -->
                             <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-comments fa-5x"></i>
+                                <a href="home.php"><div class="col-md-3 col-sm-6 col-xs-6">           
+                                        <div class="panel panel-back noti-box" border="1">
+                                            <span class="icon-box bg-color-red set-icon">
+                                                <i class="fa fa-bus"></i>
+                                            </span>
+                                            <div class="text-box" >
+                                                <p class="main-text">Bus Table</p>
+                                                <p class="text-muted">Messages</p>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                <a href="viewGarage.php"><div class="col-md-3 col-sm-6 col-xs-6">           
+                                        <div class="panel panel-backA noti-box">
+                                            <span class="icon-box bg-color-green set-icon">
+                                                <i class="fa fa-building-o"></i>
+                                            </span>
+                                            <div class="text-box" >
+                                                <p class="main-text">Garage Table</p>
+                                                <p class="text-muted">Remaining</p>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                <a href="home.php"><div class="col-md-3 col-sm-6 col-xs-6">           
+                                        <div class="panel panel-back noti-box">
+                                            <span class="icon-box bg-color-blue set-icon">
+                                                <i class="fa fa-tachometer"></i>
+                                            </span>
+                                            <div class="text-box" >
+                                                <p class="main-text">Service Table</p>
+                                                <p class="text-muted">Notifications</p>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                <div class="col-md-3 col-sm-6 col-xs-6">           
+                                    <div class="panel panel-back noti-box">
+                                        <span class="icon-box bg-color-brown set-icon">
+                                            <i class="fa fa-male"></i>
+                                        </span>
+                                        <div class="text-box" >
+                                            <p class="main-text">Driver Table</p>
+                                            <p class="text-muted">Pending</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">26</div>
-                                    <div>New Comments!</div>
-                                </div>
-                            </div>
+                            </div>    
+
                         </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">12</div>
-                                    <div>New Tasks!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">124</div>
-                                    <div>New Orders!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-red">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-support fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-                    <!--<div class="row placeholders">
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/add.svg" class="img-responsive dashboardIcons" alt="Create">
-                            <h4 class="dashboardOptionsTxt text-center">Create</h4>
-                            <p class="text-center">Add a new row to a table</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/edit.svg" class="img-responsive dashboardIcons" alt="Edit">
-                            <h4 class="dashboardOptionsTxt text-center">Update</h4>
-                            <p class="text-center">Edit any row in the table</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/view.svg" class="img-responsive dashboardIcons" alt="View">
-                            <h4 class="dashboardOptionsTxt text-center">View</h4>
-                            <p class="text-center">View a single row in the table</p>
-                        </div>
-                        <div class="col-xs-6 col-sm-3 placeholder">
-                            <img src="img/delete.svg" class="img-responsive dashboardIcons" alt="Delete">
-                            <h4 class="dashboardOptionsTxt text-center">Delete</h4>
-                            <p class="text-center">Remove a row in the </p>
-                        </div>
-                    </div>-->
-                    <h2 class="sub-header">Garage Table</h2>
-                    <hr>
-                    <form id="homePageForm" method="POST" action="deleteSelectedGarages.php">
-                        <div class="table-responsive">
-                            <table class="table table-striped table-hover">
-                                <thead>
-                                    <tr>
-                                        <th><input type="checkbox" onclick="checkAll(this)"></th>
-                                        <th>Garage ID</th>
-                                        <th>Garage Name</th>
-                                        <th>Garage Address</th>
-                                        <th>Garage Phone Number</th>
-                                        <th>Manager Name</th>
-                                        <th>Options</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+
+                        <h2 class="sub-header">Garage Table</h2>
+                        <hr>
+                        <form id="homePageForm" method="POST" action="deleteSelectedGarages.php">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox" onclick="checkAll(this)"></th>
+                                            <th>Garage ID</th>
+                                            <th>Garage Name</th>
+                                            <th>Garage Address</th>
+                                            <th>Garage Phone Number</th>
+                                            <th>Manager Name</th>
+                                            <th>Options</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- JavaScipt code To Check All Boxes(Master): -->
+                                    <script language="javascript">
+                                        function checkAll(master) {
+                                            var checked = master.checked;
+                                            var col = document.getElementsByClassName("deleteGarages");
+                                            for (var i = 0; i < col.length; i++) {
+                                                col[i].checked = checked;
+                                            }
+                                        }
+                                    </script>
                                     <?php
                                     $row = $statement->fetch(PDO::FETCH_ASSOC);
                                     while ($row) {
@@ -238,36 +178,36 @@ if (!isset($_SESSION['username'])) {
                                         $row = $statement->fetch(PDO::FETCH_ASSOC);
                                     }
                                     ?>
-                                </tbody>
-                            </table>
-                        </div>
-                        <br/>
-                        <input type="submit" name="deleteSelected" value ="Delete Selected Garages" />
-                        <input type="button" value="Register Garage" name="forgot" onclick="document.location.href = 'createGarageForm.php'" />
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- start Lower Footer -->
-        <div class="footer1_bg navbar-fixed-bottom"><!-- start footer1 -->
-            <div class="container">
-                <div class="footer1">
-                    <div class="copy pull-left">
-                        <p class="link"><span>&#169; All rights reserved <a href="index.html"><strong>Tour |</strong> Ireland&nbsp;</a> 2015</p>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br/>
+                            <input type="submit" name="deleteSelected" value ="Delete Selected Garages" />
+                            <input type="button" value="Register Garage" name="forgot" onclick="document.location.href = 'createGarageForm.php'" />
+                        </form>
                     </div>
-                    <ul class="list-unstyled  pull-right list-inline">
-                        <li><a href="https://www.facebook.com/"><i id="social" class="fa fa-facebook fa-3x social-fb"></i></a></li>
-                        <li><a href="https://twitter.com/"><i id="social" class="fa fa-twitter fa-3x social-tw"></i></a></li>
-                        <li><a href="https://plus.google.com/dashboard"><i id="social" class="fa fa-google-plus fa-3x social-gp"></i></a></li>
-                        <li><a href="mailto:JoshuaHales994@yahoo.ie"><i id="social" class="fa fa-envelope fa-3x social-em"></i></a></li>
-                    </ul>
-                    <div class="clearfix"></div>
                 </div>
             </div>
-        </div>
-        
-     
-             
+            <!-- start Lower Footer -->
+            <div class="footer1_bg navbar-fixed-bottom"><!-- start footer1 -->
+                <div class="container">
+                    <div class="footer1">
+                        <div class="copy pull-left">
+                            <p class="link"><span>&#169; All rights reserved <a href="index.html"><strong>Tour |</strong> Ireland&nbsp;</a> 2015</p>
+                        </div>
+                        <ul class="list-unstyled  pull-right list-inline">
+                            <li><a href="https://www.facebook.com/"><i id="social" class="fa fa-facebook fa-3x social-fb"></i></a></li>
+                            <li><a href="https://twitter.com/"><i id="social" class="fa fa-twitter fa-3x social-tw"></i></a></li>
+                            <li><a href="https://plus.google.com/dashboard"><i id="social" class="fa fa-google-plus fa-3x social-gp"></i></a></li>
+                            <li><a href="mailto:JoshuaHales994@yahoo.ie"><i id="social" class="fa fa-envelope fa-3x social-em"></i></a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+
+
 
     </body>
 </html>

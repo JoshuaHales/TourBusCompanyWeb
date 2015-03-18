@@ -23,7 +23,7 @@ foreach ($garages as $garageID) {
     echo '<pre>';
     print_r($garageID);
     echo '</pre>';
-    $gateway->deleteGarages($garageID);
+    $gateway->deleteGarage($garageID);
 }
 
 

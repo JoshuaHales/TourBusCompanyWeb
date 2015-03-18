@@ -198,12 +198,12 @@ $statement = $gateway->getgaragesById($id);
                         </div>
                         <br/>
                         <p>
-                            <!--<a href="editGarageForm.php?id=<?php echo $row['garageID']; ?>">
+                            <a href="editGarageForm.php?id=<?php echo $row['garageID']; ?>">
                             Edit Garage</a>
                             <a class="deleteGarages" href="deleteGarage.php?id=<?php echo $row['garageID']; ?>">Delete Garage</a>
-                            -->
-                            <input id="editGarageBtn"   type="button" value="Edit Garage"   name="Edit"   data-garage-id="<?php echo $row['garageID']; ?>" />
-                            <input id="deleteGarageBtn" type="button" value="Delete Garage" name="Delete" data-garage-id="<?php echo $row['garageID']; ?>" />
+                            
+                            <!--<input id="editGarageBtn"   type="button" value="Edit Garage"   name="Edit"   data-garage-id="<?php echo $row['garageID']; ?>" />
+                            <input id="deleteGarageBtn" type="button" value="Delete Garage" name="Delete" data-garage-id="<?php echo $row['garageID']; ?>" />-->
                         </p>
                     </form>
               
