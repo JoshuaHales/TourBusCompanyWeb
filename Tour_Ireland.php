@@ -466,7 +466,7 @@
                 <hr class="colorgraph">
                 <div class="row">
                         <!--<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>-->
-                    <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Book now</a></div>
+                    <div class="col-xs-12 col-md-6"><a href="#" class="btn5 btn-success btn-block btn-lg">Book now</a></div>
                 </div>
             </form>
         </div>

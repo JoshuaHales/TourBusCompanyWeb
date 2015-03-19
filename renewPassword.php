@@ -47,7 +47,7 @@
                         <p>* Please check your e-mail and click the attached confirmation link to view your renewed/resent password.</p>
                         <div class="form-group last">
                             <div class="col-sm-offset-3 col-sm-9">
-                                <a href="Tour_Ireland.php"><button class="btn btn-success btn-sm">
+                                <a href="Tour_Ireland.php"><button class="btn5 btn-success btn-sm">
                                         Return</button></a>
                             </div>
                         </div>

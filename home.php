@@ -177,9 +177,9 @@ if (!isset($_SESSION['username'])) {
                                             echo '<td>' . $row['dueServiceDate'] . '</td>';
                                             echo '<td>' . $row['garageName'] . '</td>';
                                             echo '<td>'
-                                            . '<a href="viewBus.php?id=' . $row['busID'] . '">View</a> '
-                                            . '<a href="editBusForm.php?id=' . $row['busID'] . '">Edit</a> '
-                                            . '<a class="deleteBus" <a href="deleteBus.php?id=' . $row['busID'] . '">Delete</a> '
+                                            . '<a href="viewBus.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-eye-open btn btn-view"></span></a> '
+                                            . '<a href="editBusForm.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-cog btn btn-edit"></span></a> '
+                                            . '<a class="deleteBus" <a href="deleteBus.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-trash btn btn-delete"></span></a> '
                                             . '</td>';
                                             echo '</tr>';
 

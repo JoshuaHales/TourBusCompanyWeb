@@ -234,7 +234,7 @@ ul.nav a:focus
 }
 
 /* Button Style */
-.btn
+.btn5
 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 14px;
@@ -260,9 +260,11 @@ ul.nav a:focus
 	-o-box-shadow: inset 0px -4px 0px #e2534b;
 	margin-top: 0px;
 	margin-bottom: 10px;
+        text-align: center;
+        font-size: 16px;
 }
 
-.btn:hover
+.btn5:hover
 {
 	background: #e2534b;
 }
@@ -1182,4 +1184,65 @@ line-height: 75px;
 vertical-align: middle;
 text-align: center;
 font-size: 40px;
+}
+
+th {
+    background-color: #31bc86;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.btn-view
+{
+	color: white;
+	background-color: #e8645a;
+	font-weight: normal;
+}
+
+.btn-view:hover,
+.btn-view:focus,
+.btn-view:active,
+.btn-view.active,
+.open .dropdown-toggle.btn-edit {
+  /*background-color: ;*/
+  color: #20BF9F;
+  background-color: white;
+  font-weight: normal;
+}
+
+.btn-edit
+{
+	color: white;
+	background-color: #20BF9F;
+	font-weight: normal;
+}
+
+.btn-edit:hover,
+.btn-edit:focus,
+.btn-edit:active,
+.btn-edit.active,
+.open .dropdown-toggle.btn-edit {
+  /*background-color: ;*/
+  color: #20BF9F;
+  background-color: white;
+  font-weight: normal;
+}
+
+.btn-delete
+{
+	color: white;
+	background-color: #EE3B3B;
+	font-weight: normal;
+}
+
+.btn-delete:hover,
+.btn-delete:focus,
+.btn-delete:active,
+.btn-delete.active,
+.open .dropdown-toggle.btn-delete {
+  /*background-color: ;*/
+  color: white;
+  background-color: white;
+  font-weight: normal;
 }

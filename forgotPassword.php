@@ -54,7 +54,7 @@
                         
                         <div class="form-group last">
                             <div class="col-sm-offset-3 col-sm-9">
-                                <button type="submit" value="Send a new password via email" class="btn btn-success btn-sm">
+                                <button type="submit" value="Send a new password via email" class="btn5 btn-success btn-sm">
                                     Send A New Password Via Email</button>
                             </div>
                         </div>
