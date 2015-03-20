@@ -11,15 +11,15 @@
         <title>Tour | Ireland.ie</title>
         <!-- Style & Script Code -->
         <?php
-            require 'styles.php';
-            require 'scripts.php';
-            
-            $id = session_id();
-            if ($id == "") {
-                session_start();
-            }
+        require 'styles.php';
+        require 'scripts.php';
+
+        $id = session_id();
+        if ($id == "") {
+            session_start();
+        }
         ?>
-        
+
     </head>
 
     <body>
@@ -38,6 +38,14 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <!-- Set the first background image using inline CSS below. -->
+                    <div class="carouselimg fill"><img  class="img-responsive" src="img/img5.jpg" alt="Mountain View"></div>
+                    <div class="carousel-caption">
+                        <h2 class="col-lg-4 col-lg-push-4 col-sm-7 col-sm-push-3 col-xs-7 col-xs-push-3"><strong>Tour |</strong> Ireland</h2><br><br><br>
+                        <h3 class="col-lg-6  col-sm-7 col-sm-push-3 col-xs-7 col-xs-push-3">FAMOUS TOURS OF IRELAND<br> AWARD WINNING DAY TOURS FROM DUBLIN, CORK & BELFAST</h3>
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- Set the first background image using inline CSS below. -->
                     <div class="carouselimg fill"><img  class="img-responsive" src="img/img4.jpg" alt="Mountain View"></div>
                     <div class="carousel-caption">
                         <h2 class="col-lg-4 col-lg-push-4 col-sm-7 col-sm-push-3 col-xs-7 col-xs-push-3"><strong>Tour |</strong> Ireland</h2><br><br><br>
@@ -46,17 +54,10 @@
                 </div>
                 <div class="item">
                     <!-- Set the first background image using inline CSS below. -->
-                    <div class="carouselimg fill"><img  class="img-responsive" src="img/trinity.jpg" alt="Mountain View"></div>
+                    <div class="carouselimg fill"><img  class="img-responsive" src="img/img6.jpg" alt="Mountain View"></div>
                     <div class="carousel-caption">
                         <h2 class="col-lg-4 col-lg-push-4 col-sm-7 col-sm-push-3 col-xs-7 col-xs-push-3"><strong>Tour |</strong> Ireland</h2><br><br><br>
                         <h3 class="col-lg-6  col-sm-7 col-sm-push-3 col-xs-7 col-xs-push-3">FAMOUS TOURS OF IRELAND<br> AWARD WINNING DAY TOURS FROM DUBLIN, CORK & BELFAST</h3>
-                    </div>
-                </div>
-                <div class="item">
-                    <!-- Set the third background image using inline CSS below. -->
-                    <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-                    <div class="carousel-caption col-lg-4 col-lg-push-4 col-sm-7 col-sm-push-3 col-xs-7 col-xs-push-3">
-                        <h2><strong>Tour |</strong> Ireland</h2>
                     </div>
                 </div>
             </div>
@@ -77,16 +78,16 @@
 
         <!-- Page Content -->
         <div class="container">
-            <p class="visible-lg">LARGE</p>
+            <!--<p class="visible-lg">LARGE</p>
             <p class="visible-md">MEDIUM</p>
             <p class="visible-sm">SMALL</p>
-            <p class="visible-xs">X-SMALL</p>
+            <p class="visible-xs">X-SMALL</p>-->
             <br>
             <p class="tourtxt">Latest tours</p>
             <hr>
             <!-- Tours Boxs Start -->
             <div class="row text-center">
-                <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="col-md-3 col-sm-6">
                     <div class="thumbnail tourB boxt">
                         <img  class="img-responsive" src="img/Tours/dublin.jpg" alt="Dublin City">
                         <div class="caption">
@@ -112,7 +113,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="col-md-3 col-sm-6">
                     <div class="thumbnail tourB boxt">
                         <img  class="img-responsive" src="img/Tours/BlarneyCastle.jpg" alt="Blarney Castle">
                         <div class="caption">
@@ -138,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="col-md-3 col-sm-6">
                     <div class="thumbnail tourB boxt">
                         <img  class="img-responsive" src="img/Tours/cork.jpg" alt="Cork City">
                         <div class="caption">
@@ -164,7 +165,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="col-md-3 col-sm-6">
                     <div class="thumbnail tourB boxt">
                         <img  class="img-responsive" src="img/Tours/giantsCausway.jpg" alt="Giants Causway">
                         <div class="caption">
@@ -190,11 +191,11 @@
                     </div>
                 </div>
             </div>
-            <a href="Tour_Ireland.php" class="btn pull-right">View More</a>
+            <a href="Tour_Ireland.php" class="btn5 pull-right">View More</a>
             <p class="tourtxt tourtxt2">Most Popular</p>
             <hr>
             <div class="row text-center">
-                <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="col-md-3 col-sm-6">
                     <div class="thumbnail tourB boxt">
                         <img  class="img-responsive" src="img/Tours/Dingle.jpg" alt="Dublin City">
                         <div class="caption">
@@ -220,7 +221,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="col-md-3 col-sm-6">
                     <div class="thumbnail tourB boxt">
                         <img  class="img-responsive" src="img/Tours/CliffOfMohar.jpg" alt="Blarney Castle">
                         <div class="caption">
@@ -246,7 +247,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="col-md-3 col-sm-6">
                     <div class="thumbnail tourB boxt">
                         <img  class="img-responsive" src="img/Tours/RingOfKerry.jpg" alt="Cork City">
                         <div class="caption">
@@ -272,7 +273,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="col-md-3 col-sm-6">
                     <div class="thumbnail tourB boxt">
                         <img  class="img-responsive" src="img/Tours/CorkNight.jpg" alt="Giants Causway">
                         <div class="caption">
@@ -298,228 +299,225 @@
                     </div>
                 </div>
             </div>
-            <a href="Tour_Ireland.php" class="btn pull-right">View More</a>
+            <a href="Tour_Ireland.php" class="btn5 pull-right">View More</a>
             <!-- Tours Boxs End -->
-    </div>
-    <!-- ==== SECTION DIVIDER1 -->
-    <section class="section-divider textdivider divider1">
-        <div class="container tourB1">
-            <h1>PLAN YOUR JOURNEY WITH TOUR | IRELAND.IE</h1>
-            <hr>
-            <p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
-        </div><!-- container -->
-    </section><!-- section -->
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <p class="tourtxt">Journey Planer</p>
-        <hr>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 tourtxt">
-            <form role="form">
-                <h2>Plan your journey <small>Buy online and save</small></h2>
-                <hr class="colorgraph">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <select type="text" name="from" id="from" class="selectpicker form-control input-lg" tabindex="1">
-                                <option value="none">Travelling from</option>
-                                <option value="volvo">Antrim</option>
-                                <option value="saab">Armagh</option>
-                                <option value="opel">Carlow</option>
-                                <option value="audi">Cavan</option>
-                                <option value="volvo">Clare</option>
-                                <option value="saab">Cork</option>
-                                <option value="opel">Donegal</option>
-                                <option value="audi">Down</option>
-                                <option value="volvo">Dublin</option>
-                                <option value="saab">Fermanagh</option>
-                                <option value="opel">Galway</option>
-                                <option value="audi">Kerry</option>
-                                <option value="volvo">Kildare</option>
-                                <option value="saab">Kilkenny</option>
-                                <option value="opel">Laois</option>
-                                <option value="audi">Leitrim</option>
-                                <option value="none">Limerick</option>
-                                <option value="volvo">Londonderry</option>
-                                <option value="saab">Longford</option>
-                                <option value="opel">Louth</option>
-                                <option value="audi">Mayo</option>
-                                <option value="volvo">Meath</option>
-                                <option value="saab">Monaghan</option>
-                                <option value="opel">Offaly</option>
-                                <option value="audi">Roscommon</option>
-                                <option value="volvo">Sligo</option>
-                                <option value="saab">Tipperary</option>
-                                <option value="opel">Tyrone</option>
-                                <option value="audi">Waterford</option>
-                                <option value="volvo">Westmeath</option>
-                                <option value="saab">Wexford</option>
-                                <option value="opel">Wicklow</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <select type="text" name="to" id="to" class="selectpicker form-control input-lg" tabindex="2">
-                                <option value="none">Travelling to</option>
-                                <option value="volvo">Antrim</option>
-                                <option value="saab">Armagh</option>
-                                <option value="opel">Carlow</option>
-                                <option value="audi">Cavan</option>
-                                <option value="volvo">Clare</option>
-                                <option value="saab">Cork</option>
-                                <option value="opel">Donegal</option>
-                                <option value="audi">Down</option>
-                                <option value="volvo">Dublin</option>
-                                <option value="saab">Fermanagh</option>
-                                <option value="opel">Galway</option>
-                                <option value="audi">Kerry</option>
-                                <option value="volvo">Kildare</option>
-                                <option value="saab">Kilkenny</option>
-                                <option value="opel">Laois</option>
-                                <option value="audi">Leitrim</option>
-                                <option value="none">Limerick</option>
-                                <option value="volvo">Londonderry</option>
-                                <option value="saab">Longford</option>
-                                <option value="opel">Louth</option>
-                                <option value="audi">Mayo</option>
-                                <option value="volvo">Meath</option>
-                                <option value="saab">Monaghan</option>
-                                <option value="opel">Offaly</option>
-                                <option value="audi">Roscommon</option>
-                                <option value="volvo">Sligo</option>
-                                <option value="saab">Tipperary</option>
-                                <option value="opel">Tyrone</option>
-                                <option value="audi">Waterford</option>
-                                <option value="volvo">Westmeath</option>
-                                <option value="saab">Wexford</option>
-                                <option value="opel">Wicklow</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class='input-group date' id='datetimepicker1'>
-                        <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Date" tabindex="3">
-                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                        </span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <select type="text" name="adult" id="adult" class="selectpicker form-control input-lg" tabindex="4">
-                                <option value="none">Adult</option> 
-                                <option value="1">1 Adult</option>
-                                <option value="2">2 Adults</option>
-                                <option value="3">3 Adults</option>
-                                <option value="4">4 Adults</option>
-                                <option value="5">5 Adults</option>
-                                <option value="6-10">6-10 Adults</option>
-                                <option value="10+">10+ Adults</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <select type="text" name="children" id="children" class="selectpicker form-control input-lg" tabindex="5">
-                                <option value="none">Child</option>
-                                <option value="1">1 Child</option>
-                                <option value="2">2 Children</option>
-                                <option value="3">3 Children</option>
-                                <option value="4">4 Children</option>
-                                <option value="5">5 Children</option>
-                                <option value="6-10">6-10 Children</option>
-                                <option value="10+">10+ Children</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <select type="text" name="student" id="student" class="selectpicker form-control input-lg" tabindex="6">
-                                <option value="none">Student</option>
-                                <option value="1">1 Student</option>
-                                <option value="2">2 Students</option>
-                                <option value="3">3 Students</option>
-                                <option value="4">4 Students</option>
-                                <option value="5">5 Students</option>
-                                <option value="6-10">6-10 Students</option>
-                                <option value="10+">10+ Students</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6">
-                        <div class="form-group">
-                            <select type="text" name="Ooptions" id="options" class="selectpicker form-control input-lg" tabindex="7">
-                                <option value="none">Options</option>
-                                <option value="0">Family Tours</option>
-                                <option value="1">School Tours</option>
-                                <option value="2">Historic Tours</option>
-                                <option value="3">Walking Tours</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <hr class="colorgraph">
-                <div class="row">
-                        <!--<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>-->
-                    <div class="col-xs-12 col-md-6"><a href="#" class="btn5 btn-success btn-block btn-lg">Book now</a></div>
-                </div>
-            </form>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-            <!-- visible-xs -->
-            <div class="visible-xl hidden-xs hidden-md hidden-sm">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="550" height="430" frameborder="0" style="border:0"></iframe>
-            </div>
-            <div class="visible-md hidden-xs hidden-xl hidden-sm">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="500" height="430" frameborder="0" style="border:0"></iframe>
-            </div>
-            <div class="visible-sm hidden-xs hidden-xl hidden-md">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="350" height="430" frameborder="0" style="border:0"></iframe>
-            </div>
-            <div class="visible-xs hidden-sm hidden-xl hidden-md">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="690" height="430" frameborder="0" style="border:0"></iframe>
-            </div>
-        </div>
-    </div>  
-        <!-- Services Section -->
-    <section id="services">
+        <!-- ==== SECTION DIVIDER1 -->
+        <section class="section-divider textdivider divider1">
+            <div class="container tourB1">
+                <h1>PLAN YOUR JOURNEY WITH TOUR | IRELAND.IE</h1>
+                <hr>
+                <p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
+            </div><!-- container -->
+        </section><!-- section -->
         <div class="container">
-            <p class="tourtxt3">Our Services</p>
+            <p class="tourtxt">Journey Planer</p>
             <hr>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading"><b>E-Commerce</b></h4>
-                    <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 tourtxt">
+                <form role="form">
+                    <h2>Plan your journey <small>Buy online and save</small></h2>
+                    <hr class="colorgraph">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <select type="text" name="from" id="from" class="selectpicker form-control input-lg" tabindex="1">
+                                    <option value="none">Travelling from</option>
+                                    <option value="volvo">Antrim</option>
+                                    <option value="saab">Armagh</option>
+                                    <option value="opel">Carlow</option>
+                                    <option value="audi">Cavan</option>
+                                    <option value="volvo">Clare</option>
+                                    <option value="saab">Cork</option>
+                                    <option value="opel">Donegal</option>
+                                    <option value="audi">Down</option>
+                                    <option value="volvo">Dublin</option>
+                                    <option value="saab">Fermanagh</option>
+                                    <option value="opel">Galway</option>
+                                    <option value="audi">Kerry</option>
+                                    <option value="volvo">Kildare</option>
+                                    <option value="saab">Kilkenny</option>
+                                    <option value="opel">Laois</option>
+                                    <option value="audi">Leitrim</option>
+                                    <option value="none">Limerick</option>
+                                    <option value="volvo">Londonderry</option>
+                                    <option value="saab">Longford</option>
+                                    <option value="opel">Louth</option>
+                                    <option value="audi">Mayo</option>
+                                    <option value="volvo">Meath</option>
+                                    <option value="saab">Monaghan</option>
+                                    <option value="opel">Offaly</option>
+                                    <option value="audi">Roscommon</option>
+                                    <option value="volvo">Sligo</option>
+                                    <option value="saab">Tipperary</option>
+                                    <option value="opel">Tyrone</option>
+                                    <option value="audi">Waterford</option>
+                                    <option value="volvo">Westmeath</option>
+                                    <option value="saab">Wexford</option>
+                                    <option value="opel">Wicklow</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <select type="text" name="to" id="to" class="selectpicker form-control input-lg" tabindex="2">
+                                    <option value="none">Travelling to</option>
+                                    <option value="volvo">Antrim</option>
+                                    <option value="saab">Armagh</option>
+                                    <option value="opel">Carlow</option>
+                                    <option value="audi">Cavan</option>
+                                    <option value="volvo">Clare</option>
+                                    <option value="saab">Cork</option>
+                                    <option value="opel">Donegal</option>
+                                    <option value="audi">Down</option>
+                                    <option value="volvo">Dublin</option>
+                                    <option value="saab">Fermanagh</option>
+                                    <option value="opel">Galway</option>
+                                    <option value="audi">Kerry</option>
+                                    <option value="volvo">Kildare</option>
+                                    <option value="saab">Kilkenny</option>
+                                    <option value="opel">Laois</option>
+                                    <option value="audi">Leitrim</option>
+                                    <option value="none">Limerick</option>
+                                    <option value="volvo">Londonderry</option>
+                                    <option value="saab">Longford</option>
+                                    <option value="opel">Louth</option>
+                                    <option value="audi">Mayo</option>
+                                    <option value="volvo">Meath</option>
+                                    <option value="saab">Monaghan</option>
+                                    <option value="opel">Offaly</option>
+                                    <option value="audi">Roscommon</option>
+                                    <option value="volvo">Sligo</option>
+                                    <option value="saab">Tipperary</option>
+                                    <option value="opel">Tyrone</option>
+                                    <option value="audi">Waterford</option>
+                                    <option value="volvo">Westmeath</option>
+                                    <option value="saab">Wexford</option>
+                                    <option value="opel">Wicklow</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Date" tabindex="3">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <select type="text" name="adult" id="adult" class="selectpicker form-control input-lg" tabindex="4">
+                                    <option value="none">Adult</option> 
+                                    <option value="1">1 Adult</option>
+                                    <option value="2">2 Adults</option>
+                                    <option value="3">3 Adults</option>
+                                    <option value="4">4 Adults</option>
+                                    <option value="5">5 Adults</option>
+                                    <option value="6-10">6-10 Adults</option>
+                                    <option value="10+">10+ Adults</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <select type="text" name="children" id="children" class="selectpicker form-control input-lg" tabindex="5">
+                                    <option value="none">Child</option>
+                                    <option value="1">1 Child</option>
+                                    <option value="2">2 Children</option>
+                                    <option value="3">3 Children</option>
+                                    <option value="4">4 Children</option>
+                                    <option value="5">5 Children</option>
+                                    <option value="6-10">6-10 Children</option>
+                                    <option value="10+">10+ Children</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <select type="text" name="student" id="student" class="selectpicker form-control input-lg" tabindex="6">
+                                    <option value="none">Student</option>
+                                    <option value="1">1 Student</option>
+                                    <option value="2">2 Students</option>
+                                    <option value="3">3 Students</option>
+                                    <option value="4">4 Students</option>
+                                    <option value="5">5 Students</option>
+                                    <option value="6-10">6-10 Students</option>
+                                    <option value="10+">10+ Students</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <select type="text" name="Ooptions" id="options" class="selectpicker form-control input-lg" tabindex="7">
+                                    <option value="none">Options</option>
+                                    <option value="0">Family Tours</option>
+                                    <option value="1">School Tours</option>
+                                    <option value="2">Historic Tours</option>
+                                    <option value="3">Walking Tours</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="colorgraph">
+                    <div class="row">
+                            <!--<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>-->
+                        <div class="col-xs-12 col-md-6"><a href="#" class="btn5 btn-success btn-block btn-lg">Book now</a></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <!-- visible-xs -->
+                <div class="visible-xl hidden-xs hidden-md hidden-sm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="550" height="430" frameborder="0" style="border:0"></iframe>
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading"><b>Online Booking</b></h4>
-                    <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
+                <div class="visible-md hidden-xs hidden-xl hidden-sm">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="500" height="430" frameborder="0" style="border:0"></iframe>
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading"><b>Online Security</b></h4>
-                    <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
+                <div class="visible-sm hidden-xs hidden-xl hidden-md">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="350" height="430" frameborder="0" style="border:0"></iframe>
+                </div>
+                <div class="visible-xs hidden-sm hidden-xl hidden-md">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="690" height="430" frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
-        </div>
-    </section>
-   
+        </div>  
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <p class="tourtxt3">Our Services</p>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading"><b>E-Commerce</b></h4>
+                        <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading"><b>Online Booking</b></h4>
+                        <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading"><b>Online Security</b></h4>
+                        <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
     <!-- ==== SECTION DIVIDER2 -->
     <section class="section-divider textdivider divider2">
@@ -679,36 +677,36 @@
                     <div class="f_logo">
                         <a href="index.html"><strong>Tour | </strong>Ireland</a>
                     </div>		
-                    <p class="f_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
-                    <p>Phone:&nbsp;<span>(00) 222 666 444</span></p>
-                    <span class="">Email:&nbsp;<a href="mailto:info@mycompany.com">info(at)mycompany.com</a></span>
+                    <p class="f_para">Tour | Ireland.ie is a leading provider of bespoke Irish bus tours and trips. Since 2009 we've worked with many of Ireland's top companies to create custom tours to suite the users needs. Our expertise in building world-class tours that provides better tours for you: professional delivery our services to the costumer.</p>
+                    <p>Phone:&nbsp;<span>(01) 845 666 444</span></p>
+                    <span class="">Email:&nbsp;<a href="https://ie.yahoo.com/">info&#64TourIreland.ie</a></span>
                 </div>
 
                 <!-- Section Two -->
                 <div class="col-md-2 footer1_of_3">
                     <h4>company</h4>
                     <ul class="list-unstyled f_list">
-                        <li><a href="#">Lorem ipsum dolor sit</a></li>
-                        <li><a href="#">Nullam nec sapien eget</a></li>
-                        <li><a href="#">Curabitur pellentesque</a></li>
-                        <li><a href="#">Mauris dictum neque</a></li>
-                        <li><a href="#">Lorem ipsum dolor sit</a></li>
-                        <li><a href="#">Nullam nec sapien</a></li>
-                        <li><a href="#">Curabitur mauris tempor </a></li>
+                        <li><a href="#">What is Tour | Ireland.ie?</a></li>
+                        <li><a href="#">Year in Tour | Ireland.ie 2015</a></li>
+                        <li><a href="#">Who we are</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Stats</a></li>
+                        <li><a href="#">Tours we love</a></li>
                     </ul>
                 </div>
 
                 <!-- Section Three -->
                 <div class="col-md-2 footer1_of_3">
-                    <h4>community</h4>
+                    <h4>Help</h4>
                     <ul class="list-unstyled f_list">
-                        <li><a href="#">Lorem ipsum dolor sit</a></li>
-                        <li><a href="#">Nullam nec sapien eget</a></li>
-                        <li><a href="#">Curabitur pellentesque</a></li>
-                        <li><a href="#">Mauris dictum neque</a></li>
-                        <li><a href="#">Lorem ipsum dolor sit</a></li>
-                        <li><a href="#">Nullam nec sapien</a></li>
-                        <li><a href="#">Curabitur mauris tempor </a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Our Rules</a></li>
+                        <li><a href="#">Traveler Handbook</a></li>
+                        <li><a href="#">Trust & Safety</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Terms of User</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
 
@@ -720,8 +718,8 @@
                             <a href="blog.html"><img src="img/blog_pic1.jpg" alt="" class="img-responsive"/></a>	
                         </div>
                         <div class="col-md-9 f_text">
-                            <a href="blog.html"><p>Lorem Ipsum is simply dummy text of the this printing and typesetting industry.</p></a>
-                            <span>26, may 2014</span>
+                            <a href="blog.html"><p>"Dingle beach, enjoying the great weather and the warm sand."</p></a>
+                            <span>20, march 2015</span>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -730,7 +728,7 @@
                             <a href="blog.html"><img src="img/blog_pic2.jpg" alt="" class="img-responsive"/></a>
                         </div>
                         <div class="col-md-9 f_text">
-                            <a href="blog.html"><p>Lorem Ipsum is simply dummy text of the this printing and typesetting industry.</p></a>
+                            <a href="blog.html"><p>"Malahide park, great morning for a nice walk, weather is great, however feet."</p></a>
                             <span>17, June 2014</span>
                         </div>
                         <div class="clearfix"></div>
@@ -747,7 +745,7 @@
         <div class="container">
             <div class="footer1">
                 <div class="copy pull-left">
-                    <p class="link"><span>&#169; All rights reserved <a href="index.html"><strong>Tour |</strong> Ireland&nbsp;</a> 2015</p>
+                    <p class="link"><span>&#169; All rights reserved <a href="Tour_Ireland.php"><strong>Tour |</strong> Ireland.ie&nbsp;</a> 2015</p>
                 </div>
                 <ul class="list-unstyled  pull-right list-inline">
                     <li><a href="https://www.facebook.com/"><i id="social" class="fa fa-facebook fa-3x social-fb"></i></a></li>
@@ -759,7 +757,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Model Box One -->
     <div id="pop1" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
@@ -770,8 +768,8 @@
             <div class="modal-body">
                 <img src="img/Tours/dublin.jpg" class="img-responsive pull-left" width="300" height="300">
                 <small>Connemara is truly the wilderness of Ireland, ravaged during the great potato famine of 1847-1851. this landscape was left barren however its true beauty intact. 
-                       With fabulous lakes, romantic castles, stone walls, and deserted valleys Connemara features in many blockbuster movies ie The Quiet Man with John Wayne and Maureen O'Hara, and the Guard with Brendan Gleeson. 
-                       On this tour we introduce you to this amazing part of Ireland, but also take you to Galway city for a 2 hrs stop with a FREE walking tour of the highlights of this traditional, colorful and beautiful tribal city.
+                    With fabulous lakes, romantic castles, stone walls, and deserted valleys Connemara features in many blockbuster movies ie The Quiet Man with John Wayne and Maureen O'Hara, and the Guard with Brendan Gleeson. 
+                    On this tour we introduce you to this amazing part of Ireland, but also take you to Galway city for a 2 hrs stop with a FREE walking tour of the highlights of this traditional, colorful and beautiful tribal city.
                 </small>
                 <div class="ratings">
                     <p class="pull-left">
@@ -800,8 +798,8 @@
             <div class="modal-body">
                 <img src="img/Tours/BlarneyCastle.jpg" class="img-responsive pull-left" width="300" height="300">
                 <small>Visit the most famous castle in all of Ireland - Blarney Castle. Lay back and kiss the magical Blarney Stone and receive the gift of eloquent speech for 7 years. Also visit Cobh, the last departure port for RMS Titanic in April 1912. 
-                       Enjoy a stroll in Cobh and visit St Coleman's Cathedral, overlooking Cork Harbour. We will also take a panoramic drive through Cork City, and make a stop for one hour to see the highlights of the Southern Capital including the English Markets which were recently visited by Queen Elizabeth.
-                       This tour allows you to see the best of County Cork on this 1 day adventure from Dublin.
+                    Enjoy a stroll in Cobh and visit St Coleman's Cathedral, overlooking Cork Harbour. We will also take a panoramic drive through Cork City, and make a stop for one hour to see the highlights of the Southern Capital including the English Markets which were recently visited by Queen Elizabeth.
+                    This tour allows you to see the best of County Cork on this 1 day adventure from Dublin.
                 </small>
                 <div class="ratings">
                     <p class="pull-left">
@@ -820,7 +818,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Model Box Three -->
     <div id="pop3" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
@@ -831,7 +829,7 @@
             <div class="modal-body">
                 <img src="img/Tours/cork.jpg" class="img-responsive pull-left" width="300" height="300">
                 <small>The Rock of Cashel is situated in county Tipperary. On top of the rock you can enjoy fine views of the Tipperary countryside. You will explore one of the finest religious sites in Ireland, and marvel at the fine architecture. 
-                       Onwards to Kilkenny. You will enjoy 2 hours of free time in Ireland's medieval capital. Condider an optional visit to the Castle or St Canice's Cathedral. Enjoy a walk in the Castle Gardens, with pleasant views of the River Nore or a pint of Kilkenny beer in a haunted pub! A great day tour from Cork!
+                    Onwards to Kilkenny. You will enjoy 2 hours of free time in Ireland's medieval capital. Condider an optional visit to the Castle or St Canice's Cathedral. Enjoy a walk in the Castle Gardens, with pleasant views of the River Nore or a pint of Kilkenny beer in a haunted pub! A great day tour from Cork!
                 </small>
                 <div class="ratings">
                     <p class="pull-left">
@@ -850,7 +848,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Model Box Four -->
     <div id="pop4" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
@@ -861,10 +859,10 @@
             <div class="modal-body">
                 <img src="img/Tours/giantsCausway.jpg" class="img-responsive pull-left" width="300" height="300">
                 <small>You cannot truly visit Ireland without a visit to the legendary Giant's Causeway! Volcanic activity helped Finn McCool forge this wonder of the world some 60 million years ago. The 6km of sheer cliffs rising to over 90m and forming a series of bays are spectacular. We include the all-new innovative and imaginative Giant's Causeway Visitors' Center. You will be provided with free audio guides! 
-                       We visit the Dark Hedges and Ballintoy, famed by the hit TV series Game of Thrones!
-                       From the Giant's Causeway to Belfast, and the magnificent rope bridge this tour has it all! Definitely the most comprehensive tour of Northern Ireland!
-                       Our office is open 24hrs a day, 365 days a the year and our online booking engine allows bookings to be made right up until the last minute.
-                       For the most memorable day out jump aboard the Paddywagon and let our world famous guides inspire you with songs and stories, making this a wonderful trip with memories to last a lifetime! 
+                    We visit the Dark Hedges and Ballintoy, famed by the hit TV series Game of Thrones!
+                    From the Giant's Causeway to Belfast, and the magnificent rope bridge this tour has it all! Definitely the most comprehensive tour of Northern Ireland!
+                    Our office is open 24hrs a day, 365 days a the year and our online booking engine allows bookings to be made right up until the last minute.
+                    For the most memorable day out jump aboard the Paddywagon and let our world famous guides inspire you with songs and stories, making this a wonderful trip with memories to last a lifetime! 
                 </small>
                 <div class="ratings">
                     <p class="pull-left">
@@ -883,7 +881,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Model Box Five -->
     <div id="pop5" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
@@ -894,8 +892,8 @@
             <div class="modal-body">
                 <img src="img/Tours/Dingle.jpg" class="img-responsive pull-left" width="300" height="300">
                 <small>The Dingle Peninsula has amazing mountain scenery and unusual antiquities to see as you travel around this spectacular peninsula. You will stop at the famed Inch beach, one of the most famous beaches in Ireland, which is a site of outstanding natural beauty. 
-                       Then to the most westerly drive in Europe known as the Slea Head drive. Marvel at the Atlantic Coast as you travel on this spectacular road which hugs the western shoreline. Enjoy great views of the Blasket Islands and maybe even see the "Sleeping Giant Island." 
-                       You will also stop in Dingle town. This is one of the most picturesque fishing towns in Ireland, and is also famed for Fungi the dolphin who has been a local for almost 30 years. Dingle town is the heart and soul of the Peninsula. Today is attracts visitors, including artists and musicians, from all over the world.
+                    Then to the most westerly drive in Europe known as the Slea Head drive. Marvel at the Atlantic Coast as you travel on this spectacular road which hugs the western shoreline. Enjoy great views of the Blasket Islands and maybe even see the "Sleeping Giant Island." 
+                    You will also stop in Dingle town. This is one of the most picturesque fishing towns in Ireland, and is also famed for Fungi the dolphin who has been a local for almost 30 years. Dingle town is the heart and soul of the Peninsula. Today is attracts visitors, including artists and musicians, from all over the world.
                 </small>
                 <div class="ratings">
                     <p class="pull-left">
@@ -914,7 +912,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Model Box Six -->
     <div id="pop6" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
@@ -925,7 +923,7 @@
             <div class="modal-body">
                 <img src="img/Tours/CliffOfMohar.jpg" class="img-responsive pull-left" width="300" height="300">
                 <small>Your journey on this Cliff of Moher tour will take you from the banks of Dublin’s river Liffey to Ireland’s Wild Atlantic Way. You’ll see the biggest visitor attraction in all of Ireland and experience the nature, geology, history, culture and music of the region as we travel together.
-                       The Cliffs of Moher are 66% as tall as New York's Empire State and stretch for almost 10km. Forming part of the edge of Western Europe, this landscape really is a "must see" on a visit to Ireland. You'll enjoy 1.5 hours at the Cliffs of Moher, which is just the right amount of time according to the 90,000 passengers who travel with us annually!
+                    The Cliffs of Moher are 66% as tall as New York's Empire State and stretch for almost 10km. Forming part of the edge of Western Europe, this landscape really is a "must see" on a visit to Ireland. You'll enjoy 1.5 hours at the Cliffs of Moher, which is just the right amount of time according to the 90,000 passengers who travel with us annually!
                 </small>
                 <div class="ratings">
                     <p class="pull-left">
@@ -944,7 +942,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Model Box Seven -->
     <div id="pop7" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
@@ -955,7 +953,7 @@
             <div class="modal-body">
                 <img src="img/Tours/RingOfKerry.jpg" class="img-responsive pull-left" width="300" height="300">
                 <small>The Ring of Kerry is considered one of the finest drives in the world. From rugged cliffs to golden beaches, small villages and pastures green to peat bogs and picturesque mountain ranges. This peninsula illustrates all that is beautiful, wonderful and wild in our beloved motherland. 
-                       The variety of attractions makes this one of the most diverse and interesting day tours that one is likely to experience in their travel adventures. From ancient stone forts to landscapes carved out of rock by the Ice Age, from sparkling lakes to winding mountain passes our day trip shall be a highlight and shall ensure lasting memories of the beautiful Kingdom of Kerry.
+                    The variety of attractions makes this one of the most diverse and interesting day tours that one is likely to experience in their travel adventures. From ancient stone forts to landscapes carved out of rock by the Ice Age, from sparkling lakes to winding mountain passes our day trip shall be a highlight and shall ensure lasting memories of the beautiful Kingdom of Kerry.
                 </small>
                 <div class="ratings">
                     <p class="pull-left">
@@ -974,7 +972,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Model Box Eight -->
     <div id="pop8" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
@@ -985,10 +983,10 @@
             <div class="modal-body">
                 <img src="img/Tours/CorkNight.jpg" class="img-responsive pull-left" width="300" height="300">
                 <small>Experience Cork’s main attractions in one day with Paddywagon’s Hopper Tour!
-                       With the Cork Hopper passengers can hop-on board any time of day and use their ticket over 24 or 48 hours to take in the ‘must see’ attractions in County Cork. 
-                       Visit the iconic Blarney Castle, Jameson Experience Midleton, Titanic Experience in Cobh or explore Fota Wildlife Park, or Fota House and Gardens.
-                       Blarney Castle: 
-                       Nearly six centuries old and synonymous around the world with Ireland. We stop here five times throughout the day making it the perfect first or last stop!
+                    With the Cork Hopper passengers can hop-on board any time of day and use their ticket over 24 or 48 hours to take in the ‘must see’ attractions in County Cork. 
+                    Visit the iconic Blarney Castle, Jameson Experience Midleton, Titanic Experience in Cobh or explore Fota Wildlife Park, or Fota House and Gardens.
+                    Blarney Castle: 
+                    Nearly six centuries old and synonymous around the world with Ireland. We stop here five times throughout the day making it the perfect first or last stop!
                 </small>
                 <div class="ratings">
                     <p class="pull-left">
@@ -1011,14 +1009,14 @@
 
     <!-- /.container -->
 
-   
+
 
     <!-- Script to Activate the Carousel -->
-    <!--<script>
+    <script>
     $('.carousel').carousel({
             interval: 50000 //changes the speed
-    })
-    </script>-->
+    });
+    </script>
     <ul class="hidden-xs nav pull-right scroll-top">
         <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
     </ul>

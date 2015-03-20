@@ -132,7 +132,7 @@
 
                                      <div class="form-group last">
                                              <div class="col-sm-offset-3 col-sm-9">
-                                                     <button type="submit" value="Register" name="register" class="btn btn-success btn-sm">
+                                                     <button type="submit" value="Register" name="register" class="btn5 btn-success btn-sm">
                                                              Register</button>
                                              </div>
                                      </div>

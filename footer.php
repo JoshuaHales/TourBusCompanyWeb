@@ -98,7 +98,7 @@
             <div class="container">
                 <div class="footer1">
                     <div class="copy pull-left">
-                        <p class="link"><span>&#169; All rights reserved <a href="index.html"><strong>Tour |</strong> Ireland&nbsp;</a> 2015</p>
+                        <p class="link"><span>&#169; All rights reserved <a href="#"><strong>Tour |</strong> Ireland.ie&nbsp;</a> 2015</p>
                     </div>
                     <ul class="list-unstyled  pull-right list-inline">
                         <li><a href="https://www.facebook.com/"><i id="social" class="fa fa-facebook fa-3x social-fb"></i></a></li>

@@ -100,31 +100,31 @@ if (!isset($_SESSION['username'])) {
                                             </span>
                                             <div class="text-box" >
                                                 <p class="main-text">Bus Table</p>
-                                                <p class="text-muted">Messages</p>
+                                                <p class="text-muted">Rows: 5</p>
                                             </div>
                                         </div>
                                     </div></a>
                                 <a href="viewGarage.php"><div class="col-md-3 col-sm-6 col-xs-6">           
-                                    <div class="panel panel-back noti-box">
-                                        <span class="icon-box bg-color-green set-icon">
-                                            <i class="fa fa-building-o"></i>
-                                        </span>
-                                        <div class="text-box" >
-                                            <p class="main-text">Garage Table</p>
-                                            <p class="text-muted">Remaining</p>
+                                        <div class="panel panel-back noti-box">
+                                            <span class="icon-box bg-color-green set-icon">
+                                                <i class="fa fa-building-o"></i>
+                                            </span>
+                                            <div class="text-box" >
+                                                <p class="main-text">Garage Table</p>
+                                                <p class="text-muted">Rows: 3</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div></a>
+                                    </div></a>
                                 <a href="home.php"><div class="col-md-3 col-sm-6 col-xs-6">           
-                                    <div class="panel panel-back noti-box">
-                                        <span class="icon-box bg-color-blue set-icon">
-                                            <i class="fa fa-tachometer"></i>
-                                        </span>
-                                        <div class="text-box" >
-                                            <p class="main-text">Service Table</p>
-                                            <p class="text-muted">Notifications</p>
+                                        <div class="panel panel-back noti-box">
+                                            <span class="icon-box bg-color-blue set-icon">
+                                                <i class="fa fa-tachometer"></i>
+                                            </span>
+                                            <div class="text-box" >
+                                                <p class="main-text">Service Table</p>
+                                                <p class="text-muted">Rows: 4</p>
+                                            </div>
                                         </div>
-                                    </div>
                                     </div></a>
                                 <div class="col-md-3 col-sm-6 col-xs-6">           
                                     <div class="panel panel-back noti-box">
@@ -133,7 +133,7 @@ if (!isset($_SESSION['username'])) {
                                         </span>
                                         <div class="text-box" >
                                             <p class="main-text">Driver Table</p>
-                                            <p class="text-muted">Pending</p>
+                                            <p class="text-muted">Rows: 3</p>
                                         </div>
                                     </div>
                                 </div>
@@ -190,32 +190,14 @@ if (!isset($_SESSION['username'])) {
                                 </table>
                             </div>
                             <br/>
-                            <input type="submit" name="deleteSelected" value ="Delete Selected Buses" />
-                            <input type="button" value="Register Bus" name="forgot" onclick="document.location.href = 'createVehicleForm.php'" />
+                            <input class="btn5 btnC" type="submit" name="deleteSelected" value ="Delete Selected Buses" />
+                            <input class="btn5" type="button" value="Register Bus" name="forgot" onclick="document.location.href = 'createVehicleForm.php'" />
                         </form>
                     </div>
                 </div>
             </div>
             <!-- start Lower Footer -->
-            <div class="footer1_bg navbar-fixed-bottom"><!-- start footer1 -->
-                <div class="container">
-                    <div class="footer1">
-                        <div class="copy pull-left">
-                            <p class="link"><span>&#169; All rights reserved <a href="index.html"><strong>Tour |</strong> Ireland&nbsp;</a> 2015</p>
-                        </div>
-                        <ul class="list-unstyled  pull-right list-inline">
-                            <li><a href="https://www.facebook.com/"><i id="social" class="fa fa-facebook fa-3x social-fb"></i></a></li>
-                            <li><a href="https://twitter.com/"><i id="social" class="fa fa-twitter fa-3x social-tw"></i></a></li>
-                            <li><a href="https://plus.google.com/dashboard"><i id="social" class="fa fa-google-plus fa-3x social-gp"></i></a></li>
-                            <li><a href="mailto:JoshuaHales994@yahoo.ie"><i id="social" class="fa fa-envelope fa-3x social-em"></i></a></li>
-                        </ul>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
+        </div>
+        <?php require 'footer.php' ?>
     </body>
 </html>
