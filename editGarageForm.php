@@ -5,6 +5,7 @@ require_once 'Connection.php';
 require 'ensureUserLoggedIn.php';
 require_once 'GarageTableGateway.php';
 
+/* Code to start session */
 $id = session_id();
 if ($id == "") {
     session_start();
