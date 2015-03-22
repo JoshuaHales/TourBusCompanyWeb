@@ -30,36 +30,36 @@
                         <div class="f_logo">
                             <a href="index.html"><strong>Tour | </strong>Ireland</a>
                         </div>		
-                        <p class="f_para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
-                        <p>Phone:&nbsp;<span>(00) 222 666 444</span></p>
-                        <span class="">Email:&nbsp;<a href="mailto:info@mycompany.com">info(at)mycompany.com</a></span>
+                        <p class="f_para">Tour | Ireland.ie is a leading provider of bespoke Irish bus tours and trips. Since 2009 we've worked with many of Ireland's top companies to create custom tours to suite the users needs. Our expertise in building world-class tours that provides better tours for you: professional delivery our services to the costumer.</p>
+                        <p>Phone:&nbsp;<span>(01) 845 666 444</span></p>
+                        <span class="">Email:&nbsp;<a href="https://ie.yahoo.com/">info&#64TourIreland.ie</a></span>
                     </div>
 
                     <!-- Section Two -->
                     <div class="col-md-2 footer1_of_3">
                         <h4>company</h4>
                         <ul class="list-unstyled f_list">
-                            <li><a href="#">Lorem ipsum dolor sit</a></li>
-                            <li><a href="#">Nullam nec sapien eget</a></li>
-                            <li><a href="#">Curabitur pellentesque</a></li>
-                            <li><a href="#">Mauris dictum neque</a></li>
-                            <li><a href="#">Lorem ipsum dolor sit</a></li>
-                            <li><a href="#">Nullam nec sapien</a></li>
-                            <li><a href="#">Curabitur mauris tempor </a></li>
+                            <li><a href="#">What is Tour | Ireland.ie?</a></li>
+                            <li><a href="#">Year in Tour | Ireland.ie 2015</a></li>
+                            <li><a href="#">Who we are</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Stats</a></li>
+                            <li><a href="#">Tours we love</a></li>
                         </ul>
                     </div>
 
                     <!-- Section Three -->
                     <div class="col-md-2 footer1_of_3">
-                        <h4>community</h4>
+                        <h4>Help</h4>
                         <ul class="list-unstyled f_list">
-                            <li><a href="#">Lorem ipsum dolor sit</a></li>
-                            <li><a href="#">Nullam nec sapien eget</a></li>
-                            <li><a href="#">Curabitur pellentesque</a></li>
-                            <li><a href="#">Mauris dictum neque</a></li>
-                            <li><a href="#">Lorem ipsum dolor sit</a></li>
-                            <li><a href="#">Nullam nec sapien</a></li>
-                            <li><a href="#">Curabitur mauris tempor </a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Our Rules</a></li>
+                            <li><a href="#">Traveler Handbook</a></li>
+                            <li><a href="#">Trust & Safety</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Terms of User</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
                         </ul>
                     </div>
 
@@ -71,8 +71,8 @@
                                 <a href="blog.html"><img src="img/blog_pic1.jpg" alt="" class="img-responsive"/></a>	
                             </div>
                             <div class="col-md-9 f_text">
-                                <a href="blog.html"><p>Lorem Ipsum is simply dummy text of the this printing and typesetting industry.</p></a>
-                                <span>26, may 2014</span>
+                                <a href="blog.html"><p>"Dingle beach, enjoying the great weather and the warm sand."</p></a>
+                                <span>20, march 2015</span>
                             </div>
                             <div class="clearfix"></div>
                         </div>
@@ -81,7 +81,7 @@
                                 <a href="blog.html"><img src="img/blog_pic2.jpg" alt="" class="img-responsive"/></a>
                             </div>
                             <div class="col-md-9 f_text">
-                                <a href="blog.html"><p>Lorem Ipsum is simply dummy text of the this printing and typesetting industry.</p></a>
+                                <a href="blog.html"><p>"Malahide park, great morning for a nice walk, weather is great, however feet."</p></a>
                                 <span>17, June 2014</span>
                             </div>
                             <div class="clearfix"></div>
@@ -98,7 +98,7 @@
             <div class="container">
                 <div class="footer1">
                     <div class="copy pull-left">
-                        <p class="link"><span>&#169; All rights reserved <a href="#"><strong>Tour |</strong> Ireland.ie&nbsp;</a> 2015</p>
+                        <p class="link"><span>&#169; All rights reserved <a href="Tour_Ireland.php"><strong>Tour | Ireland.ie</strong>&nbsp;</a> 2015</p>
                     </div>
                     <ul class="list-unstyled  pull-right list-inline">
                         <li><a href="https://www.facebook.com/"><i id="social" class="fa fa-facebook fa-3x social-fb"></i></a></li>

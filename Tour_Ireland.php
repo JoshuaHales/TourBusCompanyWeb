@@ -548,7 +548,7 @@
                     <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
                     <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
                     <a href="#"><i class="fa fa-envelope social-em2"></i></a>
-                    <p>Mike combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
+                    <p>Jeremiah combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
                 </div><!-- col-lg-3 -->
             </center>
             <center>
@@ -560,7 +560,7 @@
                     <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
                     <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
                     <a href="#"><i class="fa fa-envelope social-em2"></i></a>
-                    <p>Tim is an experienced Carissa practitioner and manages projects from inception to delivery. She understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
+                    <p>Carissa is an experienced practitioner and manages projects from inception to delivery. She understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
                 </div><!-- col-lg-3 -->
             </center>
             <center>
@@ -572,7 +572,7 @@
                     <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
                     <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
                     <a href="#"><i class="fa fa-envelope social-em2"></i></a>
-                    <p>Be a creative director is a hard task, but Cheddar loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
+                    <p>Be a creative director is a hard task, but Cheddar loves what she does. He combination of knowledge and expertise is an important pillar in our agency.</p>
                 </div><!-- col-lg-3 -->
             </center>
             <center>
@@ -584,7 +584,7 @@
                     <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
                     <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
                     <a href="#"><i class="fa fa-envelope social-em2"></i></a>
-                    <p>Jaye began making websites when animated logos and scrolling text were cool, but has since found a love for simplicity, creating websites that are a pleasure to browse. Monkey Island Fan.</p>
+                    <p>juliana began making tour trips around 10 years ago, but has since found a love for simplicity, creating tours that are a pleasure to browse. Monkey Island Fan.</p>
                 </div><!-- col-lg-3 -->
             </center>
         </div><!-- row -->
@@ -668,96 +668,7 @@
             </div>
         </div>
     </section>
-    <!-- Footer Start -->
-    <div class="footer_bg visible-xl hidden-xs hidden-md hidden-sm">
-        <div class="container">
-            <div class="footer">
-                <!-- Section One -->
-                <div class="col-md-4 footer1_of_3">
-                    <div class="f_logo">
-                        <a href="index.html"><strong>Tour | </strong>Ireland</a>
-                    </div>		
-                    <p class="f_para">Tour | Ireland.ie is a leading provider of bespoke Irish bus tours and trips. Since 2009 we've worked with many of Ireland's top companies to create custom tours to suite the users needs. Our expertise in building world-class tours that provides better tours for you: professional delivery our services to the costumer.</p>
-                    <p>Phone:&nbsp;<span>(01) 845 666 444</span></p>
-                    <span class="">Email:&nbsp;<a href="https://ie.yahoo.com/">info&#64TourIreland.ie</a></span>
-                </div>
-
-                <!-- Section Two -->
-                <div class="col-md-2 footer1_of_3">
-                    <h4>company</h4>
-                    <ul class="list-unstyled f_list">
-                        <li><a href="#">What is Tour | Ireland.ie?</a></li>
-                        <li><a href="#">Year in Tour | Ireland.ie 2015</a></li>
-                        <li><a href="#">Who we are</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Stats</a></li>
-                        <li><a href="#">Tours we love</a></li>
-                    </ul>
-                </div>
-
-                <!-- Section Three -->
-                <div class="col-md-2 footer1_of_3">
-                    <h4>Help</h4>
-                    <ul class="list-unstyled f_list">
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Our Rules</a></li>
-                        <li><a href="#">Traveler Handbook</a></li>
-                        <li><a href="#">Trust & Safety</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Terms of User</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-
-                <!-- Section Four -->
-                <div class="col-md-4 footer_of_3">
-                    <h4>from the <span>blog</span></h4>
-                    <div class="blog_list">
-                        <div class="col-md-3 f_pic">
-                            <a href="blog.html"><img src="img/blog_pic1.jpg" alt="" class="img-responsive"/></a>	
-                        </div>
-                        <div class="col-md-9 f_text">
-                            <a href="blog.html"><p>"Dingle beach, enjoying the great weather and the warm sand."</p></a>
-                            <span>20, march 2015</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="blog_list">
-                        <div class="col-md-3 f_pic">
-                            <a href="blog.html"><img src="img/blog_pic2.jpg" alt="" class="img-responsive"/></a>
-                        </div>
-                        <div class="col-md-9 f_text">
-                            <a href="blog.html"><p>"Malahide park, great morning for a nice walk, weather is great, however feet."</p></a>
-                            <span>17, June 2014</span>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <!-- start Lower Footer -->
-    <div class="footer1_bg"><!-- start footer1 -->
-        <div class="container">
-            <div class="footer1">
-                <div class="copy pull-left">
-                    <p class="link"><span>&#169; All rights reserved <a href="Tour_Ireland.php"><strong>Tour |</strong> Ireland.ie&nbsp;</a> 2015</p>
-                </div>
-                <ul class="list-unstyled  pull-right list-inline">
-                    <li><a href="https://www.facebook.com/"><i id="social" class="fa fa-facebook fa-3x social-fb"></i></a></li>
-                    <li><a href="https://twitter.com/"><i id="social" class="fa fa-twitter fa-3x social-tw"></i></a></li>
-                    <li><a href="https://plus.google.com/dashboard"><i id="social" class="fa fa-google-plus fa-3x social-gp"></i></a></li>
-                    <li><a href="mailto:JoshuaHales994@yahoo.ie"><i id="social" class="fa fa-envelope fa-3x social-em"></i></a></li>
-                </ul>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-
+   <?php require 'footer.php' ?>
     <!-- Model Box One -->
     <div id="pop1" class="modal fade" tabindex="-1">
         <div class="modal-dialog">

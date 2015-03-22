@@ -269,6 +269,40 @@ ul.nav a:focus
     background: #e2534b;
 }
 
+.btn6
+{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FFFFFF !important;
+    padding: 12px 30px;
+    background: #e8645a;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    box-shadow: inset 0px -4px 0px #e2534b;
+    -webkit-box-shadow: inset 0px -4px 0px #e2534b;
+    -moz-box-shadow: inset 0px -4px 0px #e2534b;
+    -o-box-shadow: inset 0px -4px 0px #e2534b;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.btn6:hover
+{
+    background: #e2534b;
+}
+
 .btn1
 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -647,8 +681,66 @@ ul.nav a:focus
 
 .sidebar{
     margin-top: 20px;
-    background-color: #e2534b;
+    background-color: #3C5A5A;
     position:fixed;
+}
+
+.active1{
+    background-color: #e2534b;
+}
+
+.active1 a{
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.active1 a:hover{
+    color: #34495e;
+    background-color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.sidebar a {
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.sidebar a:hover {
+    color: #34495e;
+    background-color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.userW {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.userL
+{
+    margin-top: 60px;
+}
+
+.Sdivider {
+    border-top: 1px solid #fff !important;
+}
+
+.collapse a{
+    color: #34495e;
+}
+.list-group-submenu {
+  margin-left:20px;
+}
+
+.task1{
+    color: #d9534f;
+}
+
+.task2{
+    color: #f0ad4e;
+}
+
+.task3{
+    color: #5cb85c;
 }
 
 .dashboardIcons 
@@ -1091,11 +1183,6 @@ section h3.section-subheading {
     background-image: url(../img/indexB.jpg);
 }
 
-.userL
-{
-    margin-top: 50px;
-}
-
 h1
 {
     font-size: 18px;
@@ -1175,19 +1262,19 @@ h1
 
 }
 .bg-color-green {
-    background-color: #00CE6F;
+    background-color: #27ae60;
     color: #fff;
 }
 .bg-color-blue {
-    background-color: #A95DF0;
+    background-color: #9b59b6;
     color: #fff;
 }
 .bg-color-red {
-    background-color: #DB0630;
+    background-color: #e2534b;
     color: #fff;
 }
 .bg-color-brown {
-    background-color: #B94A00;
+    background-color: #34495e;
     color: #fff;
 }
 
@@ -1224,7 +1311,7 @@ th {
 .btn-view.active,
 .open .dropdown-toggle.btn-edit {
     /*background-color: ;*/
-    color: #20BF9F;
+    color: #ffcc33;
     background-color: white;
     font-weight: normal;
 }
@@ -1232,7 +1319,7 @@ th {
 .btn-edit
 {
     color: white;
-    background-color: #20BF9F;
+    background-color: #27ae60;
     font-weight: normal;
 }
 
@@ -1242,7 +1329,7 @@ th {
 .btn-edit.active,
 .open .dropdown-toggle.btn-edit {
     /*background-color: ;*/
-    color: #20BF9F;
+    color: #27ae60;
     background-color: white;
     font-weight: normal;
 }
@@ -1260,13 +1347,13 @@ th {
 .btn-delete.active,
 .open .dropdown-toggle.btn-delete {
     /*background-color: ;*/
-    color: white;
+    color: #e8645a;
     background-color: white;
     font-weight: normal;
 }
 
 .btnC{
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 /* Designs Dropdown */
@@ -1278,7 +1365,6 @@ th {
 
 .dropdown-menu > li > a
 {
-	font-family: 'Josefin Sans', sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	color: black !important;
@@ -1289,10 +1375,97 @@ th {
 .dropdown-menu > li > a:active,
 .dropdown-menu > li > a:focus
 {
-	font-family: 'Josefin Sans', sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	color: white !important;
 	background: #e2534b !important;
         font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+
+.page-header, .main-text, .Rtxt{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.main-text{
+    color: black;
+}
+
+.sub-header{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.table{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+.thead{
+    background-color: #239c56;
+}
+
+/*CHAT PANEL*/
+ .chat-panel .panel-body {
+height: 218px;
+overflow-y: scroll;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+ .chat-box {
+margin: 0;
+padding: 0;
+list-style: none;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+ .chat-box li {
+margin-bottom: 15px;
+padding-bottom: 5px;
+border-bottom: 1px dotted #808080;
+}
+ .chat-box li.left .chat-body {
+margin-left: 90px;
+}
+ .chat-box li .chat-body p {
+margin: 0;
+color: #8d8888;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.chat-img>img {
+    margin-left:20px;
+    margin-right:20px;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.chat li{
+    margin-left: -30px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#btn-chat{
+    background-color: #e2534b;
+}
+
+.primary-font{
+    color: #e2534b;
+}
+
+.primary-font1{
+    color: #ffcc33;
+}
+
+.panel-body{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-bottom: -10px;
+}
+
+.hrs{
+    margin-bottom: -10px;
+}
+
+.br{
+    margin-bottom: 20px;
+}
+
+

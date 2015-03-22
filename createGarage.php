@@ -25,19 +25,19 @@ $managerName = filter_input(INPUT_POST, 'managerName', FILTER_SANITIZE_STRING); 
 /* empty ErrorMessage array that if elements are met or not runs, either runs the error messege( Reloads creatsVehicleForm.php ) or continues to home.php */
 $errorMessage = array();
 if ($garageName === FALSE || $garageName === '') {
-    $errorMessage['garageName'] = '-Garage Name must not be blank<br/>';
+    $errorMessage['garageName'] = '* Garage Name must not be blank<br/>';
 }
 
 if ($garageAddress === FALSE || $garageAddress === '') {
-    $errorMessage['garageAddress'] = '-Garage Address must not be blank<br/>';
+    $errorMessage['garageAddress'] = '* Garage Address must not be blank<br/>';
 }
 
 if ($garagePhoneNo === FALSE || $garagePhoneNo === '') {
-    $errorMessage['garagePhoneNo'] = '-Garage Phone Number must not be blank<br/>';
+    $errorMessage['garagePhoneNo'] = '* Garage Phone Number must not be blank<br/>';
 }
 
 if ($managerName === FALSE || $managerName === '') {
-    $errorMessage['managerName'] = '-Manager Name must not be blank<br/>';
+    $errorMessage['managerName'] = '* Manager Name must not be blank<br/>';
 }
 
 /* Runs when the error messege is empty or when all requests are met */
