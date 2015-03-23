@@ -30,15 +30,7 @@
 
     <body class="indexBody">
         <?php require 'navBar.php' ?>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="col-lg-push-4 col-lg-4 centered">
+        <div class="panel2 col-lg-push-4 col-lg-4 centered">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <span class="glyphicon glyphicon-lock"></span> Password Sent</div>

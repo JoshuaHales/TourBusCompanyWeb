@@ -1,3 +1,4 @@
+<!-- Toolbar Code -->
 <?php
 $sessionid = session_id();
 if ($sessionid == "") {

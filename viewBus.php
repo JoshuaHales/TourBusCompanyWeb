@@ -48,9 +48,10 @@ $statement = $gateway->getbusesById($id);
         if (isset($message)) {
             echo '<p>' . $message . '</p>';
         }
-        ?>
+        ?>     
         <div class="container-fluid">
             <div class="row">
+                <!-- Start Sidebar Code -->
                 <div class="hidden-xs col-sm-3 col-md-2 sidebar">
                     <ul class="nav nav-sidebar">
                         <img class="img userL img-circle" src="img/userL.jpg" height="130px" width="130px" alt="">
@@ -76,8 +77,11 @@ $statement = $gateway->getbusesById($id);
                         <?php require 'toolbar.php' ?>
                     </ul>
                 </div>
+                <!-- End Sidebar Code -->
+                
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <br>
+                    <!-- Start Table Options -->
                     <h2 class="page-header">Tables</h2>
                     <div id="page-wrapper" >
                         <div id="page-inner">             
@@ -128,9 +132,10 @@ $statement = $gateway->getbusesById($id);
                                     </div>
                                 </div>
                             </div>    
-
                         </div>
-
+                        <!-- End Table Options -->
+                        
+                        <!-- Start Bus Table -->
                         <h2 class="sub-header">Bus Table</h2>
                         <hr>
                         <form id="homePageForm" method="POST" action="deleteSelectedBuses.php">
@@ -172,9 +177,12 @@ $statement = $gateway->getbusesById($id);
                                 <a href="home.php" class="btn6">Return</a>
                             </p>
                         </form>
+                        <!-- End Bus Table -->
                     </div>
+                    <!-- Start Dashboard -->
                     <h2 class="sub-header">Dashboard</h2>
                     <hr class="hrs">
+                     <!-- Start Notifications Panel -->
                     <div class="col-lg-4">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -210,6 +218,9 @@ $statement = $gateway->getbusesById($id);
                             <!-- /.panel-body -->
                         </div>
                     </div>
+                    <!-- End Notifications Panel -->
+                    
+                    <!-- Start Chat Panel -->
                     <div class="col-lg-4">
                         <div class="chat-panel panel panel-default">
                             <div class="panel-heading">
@@ -344,6 +355,9 @@ $statement = $gateway->getbusesById($id);
                             <!-- /.panel-footer -->
                         </div>
                     </div>
+                    <!-- End Chat Panel -->
+                    
+                    <!-- Start System Panel -->
                     <div class="col-lg-4">
                         <div class="panel panel-default">
                             <div class="panel-heading">
@@ -379,12 +393,15 @@ $statement = $gateway->getbusesById($id);
                             <!-- /.panel-body -->
                         </div>
                     </div>
+                    <!-- End System Panel -->
+                    
                 </div>               
             </div>
         </div>
         <div class="br"></div>
+        
         <!-- start Lower Footer -->
-        <div class="footer1_bg"><!-- start footer1 -->
+        <div class="footer1_bg">
             <div class="container">
                 <div class="footer1">
                     <div class="copy pull-left">
@@ -400,11 +417,15 @@ $statement = $gateway->getbusesById($id);
                 </div>
             </div>
         </div>
+        <!-- start Lower Footer -->
+        
+        <!-- start Scroll To Top -->
         <ul class="hidden-xs nav pull-right scroll-top">
             <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
         </ul>
         <ul class="visible-xs nav pull-right scroll-top1">
             <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
         </ul>
+        <!-- start Scroll To Top -->
     </body>
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Head Tag: -->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -110,5 +111,6 @@
                 </div>
             </div>
         </div>
+        <!-- Lower Footer End -->
     </body>
 </html>

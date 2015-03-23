@@ -23,21 +23,13 @@
     <body class="indexBody">
         <!-- Navigation -->
         <?php require 'navBar.php' ?>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <?php
         if (!isset($username)) {
             $username = '';
         }
         ?>
-      
-        <div class="col-lg-push-4 col-lg-4 centered">
+        <!-- Start Login Panel -->
+        <div class="panel2 col-lg-push-4 col-lg-4 centered">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <span class="glyphicon glyphicon-lock"></span> Login</div>
@@ -93,8 +85,10 @@
                     Not Registred? <a class="registerP" href="register.php">Register here</a> Forgotten Password? <a href="forgotPassword.php">Click Here</a></div>
             </div>
         </div>
+        <!-- End Login Panel -->
+        
         <!-- start Lower Footer -->
-        <div class="footer1_bg navbar-fixed-bottom"><!-- start footer1 -->
+        <div class="footer1_bg navbar-fixed-bottom">
             <div class="container">
                 <div class="footer1">
                     <div class="copy pull-left">
@@ -110,5 +104,6 @@
                 </div>
             </div>
         </div>
+        <!-- End Lower Footer -->
     </body>
 </html>

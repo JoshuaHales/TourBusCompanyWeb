@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Meta Data -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +23,7 @@
     </head>
 
     <body>
-        <!-- Navigation -->
+        <!-- Start Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -58,9 +59,6 @@
                         <li>
                             <a href="#"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Contact Us</a>
                         </li>
-                        <!--<li>
-                                <a class="loginBtn" href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Login</a>
-                        </li>-->
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle loginBtn"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Account <b class="caret"></b></a>
                             <ul class="dropdown-menu">
@@ -71,17 +69,6 @@
                                 <?php require 'toolbar.php' ?>                               
                             </ul>
                         </li>
-                        <!-- Search Box -->
-                        <!--<li>
-                                <form class="navbar-form" role="search">
-                                        <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Search" name="q">
-                                                <div class="input-group-btn">
-                                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                                </div>
-                                        </div>
-                                </form>      
-                        </li>-->
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->

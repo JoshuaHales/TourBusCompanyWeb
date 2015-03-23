@@ -7,7 +7,7 @@ class UserTableGateway {
         $this->connection = $c;
     }
     
-    //Function To SELECT User By busID:
+    //Function To SELECT User By userID:
     public function getUserByUsername($username) {
         // execute a query to see if username is in the database
         $sqlQuery = 'SELECT * FROM usersforca WHERE username = "' . $username .'"';

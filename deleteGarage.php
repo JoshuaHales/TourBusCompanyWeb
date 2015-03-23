@@ -1,4 +1,4 @@
-<!-- PHP Code To Delete A Bus -->
+<!-- PHP Code To Delete A Garage -->
 <?php
 //requiring Event.php as some of its elements are needed in this page
 require_once 'Garage.php';

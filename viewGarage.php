@@ -71,6 +71,7 @@ if (!isset($_SESSION['username'])) {
         ?>
         <div class="container-fluid">
             <div class="row">
+                <!-- start Sidebar -->
                 <div class="hidden-xs col-sm-3 col-md-2 sidebar">
                     <ul class="nav nav-sidebar">
                         <img class="img userL img-circle" src="img/userL.jpg" height="130px" width="130px" alt="">
@@ -96,8 +97,11 @@ if (!isset($_SESSION['username'])) {
                         <?php require 'toolbar.php' ?>
                     </ul>
                 </div>
+                <!-- End Sidebar -->
+                
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                     <br>
+                    <!-- start Table Options -->
                     <h2 class="page-header">Tables</h2>
                     <div id="page-wrapper" >
                         <div id="page-inner">             

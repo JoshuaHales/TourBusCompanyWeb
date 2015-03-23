@@ -1,5 +1,4 @@
 <?php
-
 /* Reloads Vehicle.php file only once to the code */
 require_once 'Vehicle.php';
 require_once 'Connection.php';
@@ -22,7 +21,7 @@ $garageAddress = filter_input(INPUT_POST, 'garageAddress', FILTER_SANITIZE_STRIN
 $garagePhoneNo = filter_input(INPUT_POST, 'garagePhoneNo', FILTER_SANITIZE_STRING);
 $managerName = filter_input(INPUT_POST, 'managerName', FILTER_SANITIZE_STRING); #
 
-/* empty ErrorMessage array that if elements are met or not runs, either runs the error messege( Reloads creatsVehicleForm.php ) or continues to home.php */
+/* empty ErrorMessage array that if elements are met or not runs, either runs the error messege( Reloads creatsVehicleForm.php ) or continues to viewGarage.php */
 $errorMessage = array();
 if ($garageName === FALSE || $garageName === '') {
     $errorMessage['garageName'] = '* Garage Name must not be blank<br/>';

@@ -20,17 +20,11 @@
             }
         ?> 
     </head>
+    
     <body class="indexBody">
         <?php require 'navBar.php' ?>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="col-lg-push-4 col-lg-4 centered">
+        <!-- Main Panel Start -->
+        <div class="panel2 col-lg-push-4 col-lg-4 centered">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <span class="glyphicon glyphicon-lock"></span> Having trouble signing in?</div>
@@ -61,11 +55,13 @@
                     </form>
                 </div>
                 <div class="panel-footer">
-                    Return <a class="index" href="index.php">Click here</a>
+                    Return <a class="index" href="index.php">Click Here</a>
             </div>
             <script type="text/javascript" src="js/email.js"></script>
         </div>
-        <!-- start Lower Footer -->
+        <!-- Main Panel End -->
+        
+        <!-- Start Lower Footer -->
         <div class="footer1_bg navbar-fixed-bottom"><!-- start footer1 -->
             <div class="container">
                 <div class="footer1">
@@ -82,5 +78,6 @@
                 </div>
             </div>
         </div>
+        <!-- End Lower Footer -->
     </body>
 </html>

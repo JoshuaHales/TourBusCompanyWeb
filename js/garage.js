@@ -1,11 +1,11 @@
 window.onload = function() {
-    // define an event listener for the '#createBusForm'
+    // define an event listener for the '#createGarageForm'
     var createGarageForm = document.getElementById('createGarageForm');
     if (createGarageForm !== null) {
         createGarageForm.addEventListener('submit', validateGarageForm);
     }
 
-    // define an event listener for the '#editBusForm'
+    // define an event listener for the '#editGarageForm'
     var editGarageForm = document.getElementById('editGarageForm');
     if (editGarageForm !== null) {
         editGarageForm.addEventListener('submit', validateGarageForm);
@@ -21,7 +21,7 @@ window.onload = function() {
         deleteGarageBtn.addEventListener('click', deleteGarageBtnPressed);
     }
 
-    // define an event listener for any '.deleteBus' links
+    // define an event listener for any '.deleteGarage' links
     var deleteLinks = document.getElementsByClassName('deleteGarage');
     for (var i = 0; i !== deleteLinks.length; i++) {
         var link = deleteLinks[i];

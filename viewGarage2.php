@@ -208,10 +208,10 @@ $buses = $busGateway->getBusesByGarageID($id);
                                     }
                                     ?>
                                 </tbody>
-                            </table>
-                                <?php } else { ?>
+                                 <?php } else { ?>
                                     <p class="errorp">* There are no buses assigned to this garage.</p>
                                 <?php } ?>
+                            </table>               
                     </div>
                     <h2 class="sub-header">Dashboard</h2>
                     <hr class="hrs">
