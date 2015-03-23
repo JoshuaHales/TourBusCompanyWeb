@@ -187,9 +187,9 @@ if (!isset($_SESSION['username'])) {
                                             echo '<td>' . $row['dueServiceDate'] . '</td>';
                                             echo '<td>' . $row['garageName'] . '</td>';
                                             echo '<td>'
-                                            . '<a href="viewBus.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-eye-open btn btn-view"></span></a> '
-                                            . '<a href="editBusForm.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-cog btn btn-edit"></span></a> '
-                                            . '<a class="deleteBus" <a href="deleteBus.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-trash btn btn-delete"></span></a> '
+                                            . '<a data-tooltip="View Bus" href="viewBus.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-eye-open btn btn-view"></span></a> '
+                                            . '<a data-tooltip1="Edit Bus" href="editBusForm.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-cog btn btn-edit"></span></a> '
+                                            . '<a data-tooltip2="Delete Bus" class="deleteBus" <a href="deleteBus.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-trash btn btn-delete"></span></a> '
                                             . '</td>';
                                             echo '</tr>';
 
@@ -415,7 +415,7 @@ if (!isset($_SESSION['username'])) {
         </div>
         <div class="br"></div>
         <!-- start Lower Footer -->
-        <div class="footer1_bg"><!-- start footer1 -->
+        <div class="footer1_bg ">
             <div class="container">
                 <div class="footer1">
                     <div class="copy pull-left">

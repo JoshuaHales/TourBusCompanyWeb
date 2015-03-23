@@ -311,7 +311,7 @@ if (!isset($_SESSION['username'])) {
         </div>
         <div class="br"></div>
         <!-- start Lower Footer -->
-        <div class="footer1_bg"><!-- start footer1 -->
+        <div class="footer1_bg navbar-fixed-bottom">
             <div class="container">
                 <div class="footer1">
                     <div class="copy pull-left">
@@ -327,11 +327,5 @@ if (!isset($_SESSION['username'])) {
                 </div>
             </div>
         </div>
-        <ul class="hidden-xs nav pull-right scroll-top">
-            <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
-        </ul>
-        <ul class="visible-xs nav pull-right scroll-top1">
-            <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
-        </ul>
     </body>
 </html>

@@ -2,9 +2,8 @@ body {
     //background-image: url("img/dublin.jpg");
 }
 
-/* Navbar Start */
-/* Josephin */
-.navbar{
+/* ------NAVBAR START STYLE------ */
+.navbar {
     background-color: #239c56;
     border: none;
     min-height: 62px;
@@ -55,60 +54,26 @@ body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-/*a:hover { color:red; background:yellow; }*/
-
 /* Menu Focus */
-ul.nav a:focus
-{ 
+ul.nav a:focus { 
     color: white !important; 
     background: #e2534b !important;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 /* Login Button */
-.loginBtn{
+.loginBtn {
     /*color: #f39c12; */
     background-color: #e2534b;
     /*border-bottom-left-radius: 20px;*/
 }
 
 /* Navbar Collapse Style */
-.navbar-collapse{
+.navbar-collapse {
     background-color: #239c56;
     padding-bottom: 10px;
     margin-bottom: 0px;
 }
-/* Navbar End */
-
-/* Carousel Style Start */
-.carousel-caption h2{
-    background-color: #e2534b;
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: -10px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-.carousel-caption h3{
-    padding-bottom: 20px;
-    background-color:rgba(39,147,96,0.7);
-    border-radius: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 18px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-.carousel
-{
-    height:700px;
-}
-
-.carousel-caption {
-    min-height: 500px;
-}
-/* Carousel Style End */
 
 /* Arrow On Drop Down */
 .dropdown-menu:before {
@@ -136,21 +101,19 @@ ul.nav a:focus
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.navbar-inverse .navbar-toggle
-{
+.navbar-inverse .navbar-toggle {
     background-color: rgba(243,156,18,0.9);
     border: none;
     box-shadow: 2px 2px 5px #2C2C2C;
 }
 
-.navbar-inverse .navbar-toggle:hover
-{
+.navbar-inverse .navbar-toggle:hover {
     background-color: #e2534b;
     border: none;
     box-shadow: 2px 2px 2px #2C2C2C;
 }
 
-.mapLine img{
+.mapLine img {
     padding-top: 0px;
     margin-top: 0px;
     max-height: 9px;
@@ -160,7 +123,7 @@ ul.nav a:focus
     width: 1950px;
 }
 
-.mapLine2 img{
+.mapLine2 img {
     padding-top: 0px;
     margin-top: 2px;
     max-height: 9px;
@@ -168,6 +131,38 @@ ul.nav a:focus
     padding-bottom: 0px;
     position: fixed;
     width: 1950px;
+}
+/* ------NAVBAR END STYLE------ */
+
+
+
+/* ------CAROUSEL START STYLE------ */
+.carousel-caption h2 {
+    background-color: #e2534b;
+    border-radius: 5px;
+    padding-top: 5px;
+    font-size: 36px;
+    padding-bottom: 5px;
+    margin-bottom: -10px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.carousel-caption h3 {
+    padding-bottom: 20px;
+    background-color:rgba(39,147,96,0.7);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 22px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.carousel {
+    height:700px;
+}
+
+.carousel-caption {
+    min-height: 500px;
 }
 
 .hero-spacer {
@@ -191,15 +186,15 @@ ul.nav a:focus
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.carouselImg1{
+.carouselImg1 {
     margin-left: 60px;
 }
 
-.carouselImg2{
+.carouselImg2 {
     margin-left: 45px;
 }
 
-.arrowBox1{
+.arrowBox1 {
     background-color: #e2534b;
     width: 35px;
     height: 35px;
@@ -214,7 +209,7 @@ ul.nav a:focus
     border-radius:5px;
 }
 
-.arrowBox2{
+.arrowBox2 {
     background-color: #e2534b;
     width: 35px;
     height: 35px;
@@ -229,13 +224,16 @@ ul.nav a:focus
     border-radius:5px;
 }
 
-.icon-prev ,.icon-next{
+.icon-prev ,.icon-next {
     color: white;
 }
+/* ------CAROUSEL END STYLE------ */
 
-/* Button Style */
-.btn5
-{
+
+
+
+/* ------BUTTONS START STYLE------ */
+.btn5 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 14px;
     color: #FFFFFF !important;
@@ -264,13 +262,11 @@ ul.nav a:focus
     font-size: 16px;
 }
 
-.btn5:hover
-{
+.btn5:hover {
     background: #e2534b;
 }
 
-.btn6
-{
+.btn6 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #FFFFFF !important;
     padding: 12px 30px;
@@ -297,14 +293,10 @@ ul.nav a:focus
     text-align: center;
     font-size: 17px;
 }
-
-.btn6:hover
-{
+.btn6:hover {
     background: #e2534b;
 }
-
-.btn1
-{
+.btn1 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
     color: #FFFFFF !important;
@@ -329,14 +321,12 @@ ul.nav a:focus
     -o-box-shadow: inset 0px -4px 0px #f39c12;
 }
 
-.btn1:hover
-{
+.btn1:hover {
     background: #f39c12;
     text-decoration: none
 }
 
-.btn2
-{
+.btn2 {
     font-family: 'roboto_condensedregular';
     font-size: 22px;
     color: #FFFFFF !important;
@@ -362,21 +352,16 @@ ul.nav a:focus
     margin-bottom: 5px;
 }
 
-.btn2:hover
-{
+.btn2:hover {
     background: #f39c12;
     text-decoration: none
 }
+/* ------BUTTONS STYLE END------ */
 
 
-/* Ratings Style */
-.ratings {
-    padding-right: 10px;
-    padding-left: 10px;
-    color: #d17581;
-}
 
-/* Scroll To Top Style Start */
+
+/* ------SCROLL TO TOP STYLE START------ */
 .scroll-top {
     position:fixed;
     bottom:0;
@@ -387,6 +372,7 @@ ul.nav a:focus
     border-top-left-radius:3px;
     border-top-right-radius:3px;
 }
+
 .scroll-top a:link,.scroll-top a:visited {
     color:#222;
 }
@@ -401,55 +387,64 @@ ul.nav a:focus
     border-top-left-radius:3px;
     border-top-right-radius:3px;
 }
+
 .scroll-top1 a:link,.scroll-top1 a:visited {
     color:#222;
 }
+/* ------SCROLL TO TOP STYLE END------ */
 
-/* Scroll To Top Style End */
 
-/*-- start footer --*/
-.footer_bg{
+
+
+/* ------TOP FOOTER STYLE START------ */
+.footer_bg {
     background: #27ae60;
 }
-.footer{
+
+.footer {
     padding: 4% 0;
 }
-.footer1_of_3{
+
+.footer1_of_3 {
     padding-left: 0px;
 }
-.footer_of_3{
+
+.footer_of_3 { 
     padding-right: 0px;
 }
+
 .f_logo {
     margin-bottom: 20px;
 }
 
-.f_logo a{
+.f_logo a { 
     color: white;
     font-size: 22px;
 }
-
 .f_logo a:hover {
     text-decoration: none;
 }
 
-.footer1_of_3 p{
+.footer1_of_3 p {
     font-size: 14px;
     color: #ffffff;
     line-height: 1.5em;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.footer1_of_3 p span{
+
+.footer1_of_3 p span {
     font-size: 18px;
     font-style: italic;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.footer1_of_3 span{
+
+.footer1_of_3 span {
     font-size: 14px;
     color: #ffffff;
     line-height: 1.5em;
 }
-.footer1_of_3 span a{
+
+.footer1_of_3 span a {
     font-size: 18px;
     font-style: italic;
     color: #ffffff;
@@ -459,9 +454,10 @@ ul.nav a:focus
     transition: all 0.3s ease-in-out;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.footer1_of_3 span a:hover{
+.footer1_of_3 span a:hover {
 
 }
+
 .footer1_of_3 h4 {
     font-size: 24px;
     color: #3C5A5A;
@@ -469,22 +465,26 @@ ul.nav a:focus
     margin: 0px 0px 15px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.footer_of_3 h4{
+
+.footer_of_3 h4 {
     font-style: italic;
     font-size: 24px;
     color: #ffffff;
     margin: 0px 0px 15px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.f_para{
+
+.f_para {
     width: 90%;
 }
-.f_list li a:before{
+
+.f_list li a:before {
     content: url('../img/right_arrow.png');
     vertical-align: baseline;
     margin-right: 10px;
 }
-.f_list li a{
+
+.f_list li a {
     display:block;
     font-size: 14px;
     color: #ffffff;
@@ -495,35 +495,44 @@ ul.nav a:focus
     transition: all 0.3s ease-in-out;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.f_list li a:hover{
+
+.f_list li a:hover {
     text-decoration:none;
     color: #3C5A5A;
 }
-.footer_of_3 h4 span{
+
+.footer_of_3 h4 span {
     font-style: normal;
     padding-left: 10px;
     text-transform: capitalize;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.blog_list{
+
+/* Blog style */
+.blog_list {
     margin-top: 20px;
 }
-.blog_list:first-child{
+
+.blog_list:first-child {
     margin-top: 0;
 }
-.f_pic{
+
+.f_pic {
     padding: 0px;
 }
-.f_pic img{
+
+.f_pic img {
     margin-top:5px;
 }
-.f_text{
+.f_text {
     padding-right: 0px;
 }
-.f_text a{
+
+.f_text a {
     text-decoration:none;
 }
-.f_text p{
+
+.f_text p {
     font-size: 14px;
     color: #ffffff;
     line-height: 1.5em;
@@ -534,11 +543,12 @@ ul.nav a:focus
     transition: all 0.3s ease-in-out;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.f_text p:hover{
 
+.f_text p:hover {
     color: #3C5A5A;
 }
-.f_text span{
+
+.f_text span {
     font-size: 14px;
     color: #3C5A5A;
     text-transform: capitalize;
@@ -547,21 +557,35 @@ ul.nav a:focus
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-/* Bottom footer Start */
-.footer1_bg{
+/* Ratings Style */
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+/* ------TOP FOOTER STYLE END------ */
+
+
+
+
+/* ------BOTTOM FOOTER STYLE START------ */
+.footer1_bg {
     background: #239c56;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.footer1{
+
+.footer1 {
     padding: 2% 0;
 }
-.copy p{
+
+.copy p {
     color: #ffffff;
     font-size: 14px;
     line-height: 1.8em;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.copy p a{
+
+.copy p a {
     color:#E2534B; 
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -569,23 +593,21 @@ ul.nav a:focus
     transition: all 0.3s ease-in-out;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-.copy p a:hover{
+
+.copy p a:hover {
     color: #ffffff;
     text-decoration: none;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-/* Bottom footer End */
 
 /* Social Icons Start */
-#social:hover 
-{
+#social:hover {
     -webkit-transform:scale(1.1); 
     -moz-transform:scale(1.1); 
     -o-transform:scale(1.1); 
 }
 
-#social
-{
+#social {
     -webkit-transform:scale(0.8);
     /* Browser Variations: */
     -moz-transform:scale(0.8);
@@ -596,37 +618,34 @@ ul.nav a:focus
 }    
 
 /* Only Needed in Multi-Coloured Variation */
-.social-fb
-{
-    color: white;
-}
-.social-tw
-{
-    color: white;
-}
-.social-gp
-{
-    color: white;
-}
-.social-em
-{
+.social-fb {
     color: white;
 }
 
-.social-fb:hover 
-{
+.social-tw {
+    color: white;
+}
+
+.social-gp {
+    color: white;
+}
+
+.social-em {
+    color: white;
+}
+
+.social-fb:hover {
     color: #3B5998;
 }
-.social-tw:hover 
-{
+
+.social-tw:hover {
     color: #4099FF;
 }
-.social-gp:hover
-{
+
+.social-gp:hover {
     color: #d34836;
 }
-.social-em:hover 
-{
+.social-em:hover {
     color: #f39c12;
 }
 
@@ -635,27 +654,26 @@ ul.nav a:focus
     margin-top:30px;
 }
 
-.social-fb2
-{
+.social-fb2 {
     color: #3B5998;
 }
-.social-tw2
-{
+.social-tw2 {
     color: #4099FF;
 }
-.social-gp2
-{
+.social-gp2 {
     color: #d34836;
 }
-.social-em2
-{
+.social-em2 {
     color: #f39c12;
 }
+/* ------BOTTOM FOOTER STYLE END------ */
 
 
+
+
+/* ------CREATE TOUR STYLE START------ */
 .form-group.last { margin-bottom:0px; }
 
-/* Other Panel */
 /* Credit to bootsnipp.com for the css for the color graph */
 .colorgraph {
     height: 5px;
@@ -668,33 +686,36 @@ ul.nav a:focus
     background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
 }
 
-.map
-{
+/* Map Style */
+.map {
     margin-top: 25px;
 }
 
-
-.form-group select
-{
+.form-group select {
     color: grey;
 }
+/* ------CREATE TOUR STYLE END------ */
 
-.sidebar{
+
+
+
+/* ------SIDEBAR STYLE START------ */
+.sidebar {
     margin-top: 20px;
     background-color: #3C5A5A;
     position:fixed;
 }
 
-.active1{
+.active1 {
     background-color: #e2534b;
 }
 
-.active1 a{
+.active1 a {
     color: white;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.active1 a:hover{
+.active1 a:hover {
     color: #34495e;
     background-color: white;
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -715,8 +736,7 @@ ul.nav a:focus
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.userL
-{
+.userL {
     margin-top: 60px;
 }
 
@@ -724,45 +744,45 @@ ul.nav a:focus
     border-top: 1px solid #fff !important;
 }
 
-.collapse a{
+.collapse a {
     color: #34495e;
 }
+
 .list-group-submenu {
   margin-left:20px;
 }
 
-.task1{
+/* Tasks */
+.task1 {
     color: #d9534f;
 }
 
-.task2{
+.task2 {
     color: #f0ad4e;
 }
 
-.task3{
+.task3 {
     color: #5cb85c;
 }
+/* ------SIDEBAR STYLE END------ */
 
-.dashboardIcons 
-{
+
+
+
+/* ------DASHBOARD STYLE START------ */
+.dashboardIcons {
     width: 100px;
     height: 100px;
     margin: 0 auto;
 }
 
-.dashboardOptionsTxt
-{
+.dashboardOptionsTxt {
     color: #239c56;
 
 }
 
-.main
-{
+.main {
     margin-top: 20px;
-}
-
-.divider1 {
-    background-image: url('../img/bg/divider1.jpg')
 }
 
 .white h1 {
@@ -772,8 +792,12 @@ ul.nav a:focus
 .white p {
     padding-top: 25px;
 }
+/* ------DASHBOARD END STYLE------ */
 
-/* Section Dividers */
+
+
+
+/* ------SECTION DEVIDERS STYLE START------ */
 .section-divider {
     z-index: 999;
     width: 100%;
@@ -788,30 +812,28 @@ ul.nav a:focus
     padding-top: 30px;
     padding-bottom: 70px;
     margin-top: 45px;
-
-
     background-position: center center;
-
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
     background-attachment: relative;
-
     text-align: center;
 }
 
 .textdivider h1 {
     padding-top: 70px;
-    color: #ffcc33;
+    color: #27ae60;
     font-size: 40px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.divider1 {
+    background-image: url('../img/bg/divider1.jpg')
 }
 
 .textdivider p {
@@ -826,89 +848,92 @@ ul.nav a:focus
 .divider2 {
     background-image: url('../img/divider3.jpg')
 }
+/* ------SECTION DEVIDERS STYLE END------ */
 
-.modal-dialog{
+
+
+
+/* ------MODAL STYLE START------ */
+.modal-dialog {
     background-color: white;
     border-radius: 5px;
 }
 
-.modal-body .pull-left
-{
+.modal-body .pull-left {
     margin-right: 1em;
 }
 
-.modal-body .pull-right
-{
+.modal-body .pull-right {
     margin-left: 1em;
 }
 
-.cutprice{
+.cutprice {
     text-decoration: line-through;
 }
 
-.tourtxt
-{
+.tourtxt {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
     margin-top: 35px;
 }
 
-.tourtxt3
-{
+.tourtxt3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
     margin-top: -100px;
 }
 
-.tourtxt2
-{
+.tourtxt2 {
     margin-top: 60px;
 }
 
-.cheddar
-{
+.cheddar {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
     margin-top: 20px;
 }
 
-.cheddar1
-{
+.cheddar1 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
     margin-top: -90px;
 }
+/* ------MODAL STYLE START------ */
 
-.tourB p
-{
+
+
+
+/* ------TOUR BOX STYLE START------ */
+.tourB p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
 }
 
-.tourB h1
-{
+.tourB h1 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 18px;
 }
 
-.tourB1 p
-{
+.tourB1 p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 24px;
 }
 
-.tourB1 h1
-{
+.tourB1 h1 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 30px;
 }
 
-.tourtxt h2
-{
+.tourtxt h2 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 36px;
 }
+/* ------TOUR BOX STYLE END------ */
 
+
+
+
+/* ------TEAM STYLE START------ */
 .teamtxt h1
 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -930,7 +955,12 @@ ul.nav a:focus
 .boxt{
     background-color: #fafafa;
 }
+/* ------TEAM STYLE END------ */
 
+
+
+
+/* ------SERVICE STYLE START------ */
 section {
     padding: 100px 0;
 }
@@ -963,6 +993,17 @@ section h3.section-subheading {
     font-size: 20px;
 }
 
+#services {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 18px;
+    margin-bottom: -90px;
+}
+/* ------SERVICE STYLE END------ */
+
+
+
+
+/* ------TIMELINE STYLE START------ */
 .timeline {
     position: relative;
     padding: 0;
@@ -1080,6 +1121,7 @@ section h3.section-subheading {
     font-size: 18px;
 }
 
+/* Media 768px */
 @media(min-width:768px) {
     .timeline:before {
         left: 50%;
@@ -1117,6 +1159,7 @@ section h3.section-subheading {
     }
 }
 
+/* Media 992px */
 @media(min-width:992px) {
     .timeline>li {
         min-height: 150px;
@@ -1143,6 +1186,7 @@ section h3.section-subheading {
     }
 }
 
+/* Media 1200px */
 @media(min-width:1200px) {
     .timeline>li {
         min-height: 170px;
@@ -1166,48 +1210,17 @@ section h3.section-subheading {
         padding: 0 100px 20px 20px;
     }
 }
+/* ------TIMELINE STYLE END------ */
 
+
+
+
+/* ------PANEL STYLE START------ */
 .panel-default {
     opacity: 0.9;
     margin-top:30px;
 }
 .form-group.last { margin-bottom:0px; }
-
-.registerP
-{
-    margin-right: 180px;
-}
-
-.indexBody
-{
-    background-image: url(../img/indexB.jpg);
-}
-
-h1
-{
-    font-size: 18px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: white;
-}
-
-
-.ratingM
-{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 18px;
-    margin-top: -5px;
-}
-
-#services
-{
-    margin-bottom: -90px;
-}
-
-#services
-{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 18px;
-}
 
 .panel-back {
     background-color:#F8F8F8;
@@ -1230,8 +1243,62 @@ h1
     border-color: lightgrey;
 }
 
+.primary-font {
+    color: #e2534b;
+}
+
+.primary-font1 {
+    color: #ffcc33;
+}
+
+.panel-body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-bottom: -10px;
+}
+
+.hrs {
+    margin-bottom: -10px;
+}
+
+.br {
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.panel2 {
+    margin-top: 200px;
+}
+/* ------PANEL END------ */
 
 
+
+
+/* ------LOGIN&REGISTER STYLE START------ */
+.indexBody
+{
+    background-image: url(../img/indexB.jpg);
+}
+
+.registerP
+{
+    margin-right: 180px;
+}
+
+h1
+{
+    font-size: 18px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+}
+/* ------LOGIN&REGISTER STYLE END------ */
+
+
+
+
+/* ------TABLE OPTIONS STYLE START------ */
 .noti-box {
     min-height: 100px;
     padding: 20px;
@@ -1248,36 +1315,41 @@ h1
     text-align: center;
     font-size: 40px;
 }
-.text-box p{
+.text-box p {
     margin: 0 0 3px;
 }
+
 .main-text {
     font-size: 25px;
     font-weight:600;
 }
+
 .set-icon {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
 
 }
+
 .bg-color-green {
     background-color: #27ae60;
     color: #fff;
 }
+
 .bg-color-blue {
     background-color: #9b59b6;
     color: #fff;
 }
+
 .bg-color-red {
     background-color: #e2534b;
     color: #fff;
 }
+
 .bg-color-brown {
     background-color: #34495e;
     color: #fff;
 }
-
 
 .icon-box-right {
     display: block;
@@ -1290,7 +1362,10 @@ h1
     text-align: center;
     font-size: 40px;
 }
+/* ------TABLE OPTIONS STYLE END------ */
 
+
+/* ------TABLE STYLE STYLE START------ */
 th {
     background-color: #31bc86;
     font-weight: bold;
@@ -1298,8 +1373,7 @@ th {
     white-space: nowrap;
 }
 
-.btn-view
-{
+.btn-view {
     color: white;
     background-color: #ffcc33;
     font-weight: normal;
@@ -1316,8 +1390,7 @@ th {
     font-weight: normal;
 }
 
-.btn-edit
-{
+.btn-edit {
     color: white;
     background-color: #27ae60;
     font-weight: normal;
@@ -1334,8 +1407,7 @@ th {
     font-weight: normal;
 }
 
-.btn-delete
-{
+.btn-delete {
     color: white;
     background-color: #e8645a;
     font-weight: normal;
@@ -1352,19 +1424,30 @@ th {
     font-weight: normal;
 }
 
-.btnC{
+.btnC {
     margin-bottom: 0px;
 }
 
-/* Designs Dropdown */
-.dropdown-menu
-{
+.table {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+.thead {
+    background-color: #239c56;
+}
+/* ------TABLE STYLE STYLE END------ */
+
+
+
+
+/* ------DROP DOWN MENU STYLE START------ */
+.dropdown-menu {
 	background-color : white;
         font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.dropdown-menu > li > a
-{
+.dropdown-menu > li > a {
 	font-size: 15px;
 	font-weight: normal;
 	color: black !important;
@@ -1373,8 +1456,7 @@ th {
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:active,
-.dropdown-menu > li > a:focus
-{
+.dropdown-menu > li > a:focus {
 	font-size: 15px;
 	font-weight: normal;
 	color: white !important;
@@ -1382,96 +1464,268 @@ th {
         font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.page-header, .main-text, .Rtxt{
+.page-header, .main-text, .Rtxt {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-.main-text{
+.main-text {
     color: black;
 }
 
-.sub-header{
+.sub-header {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-
-.table{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-}
+/* ------DROP DOWN MENU STYLE END------ */
 
 
-.thead{
-    background-color: #239c56;
-}
-
-/*CHAT PANEL*/
+/* ------CHAT PANEL STYLE START------ */
  .chat-panel .panel-body {
-height: 218px;
-overflow-y: scroll;
-font-family: 'Yanone Kaffeesatz', sans-serif;
+    height: 218px;
+    overflow-y: scroll;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+
  .chat-box {
-margin: 0;
-padding: 0;
-list-style: none;
-font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
- .chat-box li {
-margin-bottom: 15px;
-padding-bottom: 5px;
-border-bottom: 1px dotted #808080;
+
+.chat-box li {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #808080;
 }
- .chat-box li.left .chat-body {
-margin-left: 90px;
+
+.chat-box li.left .chat-body {
+    margin-left: 90px;
 }
- .chat-box li .chat-body p {
-margin: 0;
-color: #8d8888;
-font-family: 'Yanone Kaffeesatz', sans-serif;
+
+.chat-box li .chat-body p {
+    margin: 0;
+    color: #8d8888;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
+
 .chat-img>img {
     margin-left:20px;
     margin-right:20px;
 }
 
-ul
-{
+ul {
     list-style-type: none;
 }
 
-.chat li{
+.chat li {
     margin-left: -30px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-#btn-chat{
+#btn-chat {
     background-color: #e2534b;
 }
+/* ------CHAT PANEL STYLE END------ */
 
-.primary-font{
-    color: #e2534b;
-}
 
-.primary-font1{
-    color: #ffcc33;
-}
 
-.panel-body{
+
+/* ------OTHERS STYLE START------ */
+.ratingM
+{
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    margin-bottom: -10px;
+    font-size: 18px;
+    margin-top: -5px;
 }
 
-.hrs{
-    margin-bottom: -10px;
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+    position: relative;
+    cursor: pointer;
 }
 
-.br{
-    margin-bottom: 20px;
+/* View */
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    pointer-events: none;
 }
 
-p{
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+/* Position tooltip above the element */
+[data-tooltip]:before {
+    position: absolute;
+    bottom: 150%;
+    left: 25%;
+    margin-bottom: 5px;
+    margin-left: -18px;
+    padding: 7px;
+    width: 55px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:    3px;
+    border-radius:         3px;
+    background-color: #ffcc33;
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    z-index: 1100;
 }
 
-.panel2 {
-    margin-top: 200px;
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
 }
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+
+/*Edit */
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip1] {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip1]:before,
+[data-tooltip1]:after {
+  visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip1]:before {
+    position: absolute;
+    bottom: 150%;
+    left: 25%;
+    margin-bottom: 5px;
+    margin-left: -18px;
+    padding: 7px;
+    width: 55px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:    3px;
+    border-radius:         3px;
+    background-color: #27ae60;
+    color: #fff;
+    content: attr(data-tooltip1);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    z-index: 1100;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip1]:after {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip1]:hover:before,
+[data-tooltip1]:hover:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+
+/* Delete */
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip2] {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip2]:before,
+[data-tooltip2]:after {
+  visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip2]:before {
+    position: absolute;
+    bottom: 150%;
+    left: 25%;
+    margin-bottom: 5px;
+    margin-left: -20px;
+    padding: 7px;
+    width: 60px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:    3px;
+    border-radius:         3px;
+    background-color: #e8645a;
+    color: #fff;
+    content: attr(data-tooltip2);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    z-index: 1100;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip2]:after {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip2]:hover:before,
+[data-tooltip2]:hover:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+/* ------OTHERS STYLE END------ */

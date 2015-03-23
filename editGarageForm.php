@@ -259,7 +259,7 @@ if (!isset($_SESSION['username'])) {
         </div>
         <div class="br"></div>
         <!-- start Lower Footer -->
-        <div class="footer1_bg"><!-- start footer1 -->
+        <div class="footer1_bg navbar-fixed-bottom"><!-- start footer1 -->
             <div class="container">
                 <div class="footer1">
                     <div class="copy pull-left">

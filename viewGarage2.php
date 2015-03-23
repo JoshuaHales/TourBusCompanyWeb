@@ -198,9 +198,9 @@ $buses = $busGateway->getBusesByGarageID($id);
                                         echo '<td>' . $row['purchaseDate'] . '</td>';
                                         echo '<td>' . $row['dueServiceDate'] . '</td>';
                                         echo '<td>'
-                                        . '<a href="viewBus.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-eye-open btn btn-view"></span></a> '
-                                        . '<a href="editBusForm.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-cog btn btn-edit"></span></a> '
-                                        . '<a class="deleteBus" <a href="deleteBus.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-trash btn btn-delete"></span></a> '
+                                        . '<a data-tooltip="View Bus" href="viewBus.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-eye-open btn btn-view"></span></a> '
+                                        . '<a data-tooltip1="Edit Bus" href="editBusForm.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-cog btn btn-edit"></span></a> '
+                                        . '<a data-tooltip2="Delete Bus" class="deleteBus" <a href="deleteBus.php?id=' . $row['busID'] . '"><span class = "glyphicon glyphicon-trash btn btn-delete"></span></a> '
                                         . '</td>';
                                         echo '</tr>';
 

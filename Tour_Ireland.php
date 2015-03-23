@@ -495,16 +495,16 @@
                             <i class="fa fa-circle fa-stack-2x text-primary"></i>
                             <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="service-heading"><b>E-Commerce</b></h4>
-                        <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
+                        <h4 class="service-heading"><b>Online Booking</b></h4> 
+                        <p2><b>Tour|Ireland.ie</b> has design a simply way for you and your friends/ family to book the perfect getaway tour bus trip across Ireland throughout the year.</p2>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fa fa-circle fa-stack-2x text-primary"></i>
                             <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="service-heading"><b>Online Booking</b></h4>
-                        <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
+                        <h4 class="service-heading"><b>Help Support</b></h4>
+                        <p2>Ever need help? If so <b>Tour|Ireland.ie</b> has you covered in helping you all the way through your bookings Experience.</p2>
                     </div>
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
@@ -512,7 +512,9 @@
                             <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="service-heading"><b>Online Security</b></h4>
-                        <p2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p2>
+                        <p2>Internet security is a taken seriously at <b>Tour|Ireland.ie</b>, thats why we have key measures to ensure your online bookings are secure.</p2>
+                        <br><br><br>
+                        <a href="Tour_Ireland.php" class="btn5 pull-right">Read More</a>
                     </div>
                 </div>
             </div>
@@ -668,7 +670,7 @@
             </div>
         </div>
     </section>
-   <?php require 'footer.php' ?>
+    <?php require 'footer.php' ?>
     <!-- Model Box One -->
     <div id="pop1" class="modal fade" tabindex="-1">
         <div class="modal-dialog">
@@ -695,7 +697,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €16.99</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+                <p class="pull-left"><strong>Price: €16.99</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
             </div>
         </div>
     </div>
@@ -725,7 +727,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €19.99</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+                <p class="pull-left"><strong>Price: €19.99</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
             </div>
         </div>
     </div>
@@ -755,7 +757,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €35</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+                <p class="pull-left"><strong>Price: €35</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
             </div>
         </div>
     </div>
@@ -788,7 +790,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €60</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+                <p class="pull-left"><strong>Price: €60</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
             </div>
         </div>
     </div>
@@ -819,7 +821,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €25</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+                <p class="pull-left"><strong>Price: €25</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
             </div>
         </div>
     </div>
@@ -849,7 +851,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €40</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+                <p class="pull-left"><strong>Price: €40</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
             </div>
         </div>
     </div>
@@ -879,7 +881,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €45</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+                <p class="pull-left"><strong>Price: €45</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
             </div>
         </div>
     </div>
@@ -912,7 +914,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €20</strong></p><button class="btn btn-primary" data-dismiss="modal">BACK</button>
+                <p class="pull-left"><strong>Price: €20</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
             </div>
         </div>
     </div>
@@ -924,9 +926,9 @@
 
     <!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
+        $('.carousel').carousel({
             interval: 50000 //changes the speed
-    });
+        });
     </script>
     <ul class="hidden-xs nav pull-right scroll-top">
         <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
