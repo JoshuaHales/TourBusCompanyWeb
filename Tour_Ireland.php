@@ -587,6 +587,8 @@
                     <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
                     <a href="#"><i class="fa fa-envelope social-em2"></i></a>
                     <p>juliana began making tour trips around 10 years ago, but has since found a love for simplicity, creating tours that are a pleasure to browse. Monkey Island Fan.</p>
+                    <br><br><br>
+                    <a href="Tour_Ireland.php" class="btn5 pull-right">Read More</a>
                 </div><!-- col-lg-3 -->
             </center>
         </div><!-- row -->
