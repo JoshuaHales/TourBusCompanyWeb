@@ -157,7 +157,7 @@ if (!isset($_SESSION['username'])) {
                         <div class="col-lg-push-4 col-lg-4 centered">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <span class="glyphicon glyphicon-lock"></span> Update Bus</div>
+                                    <span class="glyphicon glyphicon-cog"></span> Update Bus</div>
                                 <div class="panel-body">
                                     <form class="form-horizontal" name="editBusForm" role="form" id="editBusForm" action="editBus.php" method="POST">
                                         <input type="hidden" name="busID" value="<?php echo $busID; ?>" />

@@ -23,6 +23,25 @@ class BusTableGateway {
         return $statement;
     }
     
+    public function getBusesByGarageID($garageID) {
+        // Execute A Query To Get All Buses:
+        $sqlQuery = "SELECT b.*, g.garageName FROM buses b
+                     LEFT JOIN garages g ON g.garageID = b.garageID
+                     WHERE b.garageID = :garageID";
+        
+        $params = array(
+            'garageID' => $garageID
+        );
+        $statement = $this->connection->prepare($sqlQuery);
+        $status = $statement->execute($params);
+        
+        if (!$status) {
+            die("Could not retrieve Buses");
+        }
+        
+        return $statement;
+    }
+    
     public function getbusesById($busID) {
         // Execute A Query To Get The User With The Specified busID:
         $sqlQuery = "SELECT * FROM buses WHERE busID = :busID";

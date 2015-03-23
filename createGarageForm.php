@@ -139,7 +139,7 @@ if (!isset($_SESSION['username'])) {
                         <div class="col-lg-push-4 col-lg-4 centered">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <span class="glyphicon glyphicon-lock"></span> Create Garage</div>
+                                    <span class="glyphicon glyphicon-pencil"></span> Create Garage</div>
                                 <div class="panel-body">
                                     <form class="form-horizontal" role="form" id="createGarageForm" action="createGarage.php" method="POST">
                                         <div class="form-group">
