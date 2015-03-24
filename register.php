@@ -23,16 +23,8 @@
     <body class="indexBody">
         <?php require 'navBar.php' ?>
         <script type="text/javascript" src="js/register.js"></script>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <!-- Main Container -->
-        <div class="col-lg-push-4 col-lg-4 centered">
+        <div class="panel2 col-lg-push-4 col-lg-4 centered">
              <div class="panel panel-default">
                      <div class="panel-heading">
                              <span class="glyphicon glyphicon-copy"></span> Register</div>

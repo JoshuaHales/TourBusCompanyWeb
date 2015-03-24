@@ -10,7 +10,7 @@ class Connection {
             $database = 'N00133834'; 
             $username = 'N00133834'; 
             $password = 'N00133834';
-            //College Connection:
+            //Home Connection:
             //$host = 'localhost'; 
             //$database = 'n00133834'; 
             //$username = 'root'; 

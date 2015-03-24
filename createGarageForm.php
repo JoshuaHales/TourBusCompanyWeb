@@ -51,6 +51,8 @@ if (!isset($_SESSION['username'])) {
             echo '<p>' . $message . '</p>';
         }
         ?>
+        
+        <!-- Create Garage Form -->
         <div class="container-fluid">
             <div class="row">
                 <div class="hidden-xs col-sm-3 col-md-2 sidebar">
@@ -234,6 +236,7 @@ if (!isset($_SESSION['username'])) {
             </div>
         </div>
         <div class="br"></div>
+        
         <!-- start Lower Footer -->
         <div class="footer1_bg navbar-fixed-bottom">
             <div class="container">
@@ -251,6 +254,8 @@ if (!isset($_SESSION['username'])) {
                 </div>
             </div>
         </div>
+        
+        <!-- Scroll To Top -->
         <ul class="hidden-xs nav pull-right scroll-top">
             <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
         </ul>

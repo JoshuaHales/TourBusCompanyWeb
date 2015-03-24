@@ -1,12 +1,11 @@
 <?php
-
 class BusTableGateway {
-    
     private $connection;
-    
     public function __construct($c) {
         $this->connection = $c;
     }
+    
+    // Get Buses Code:
     public function getBuses($sortOrder) {
         // Execute A Query To Get All Buses:
         $sqlQuery = "SELECT b.*, g.garageName FROM buses b
@@ -27,6 +26,7 @@ class BusTableGateway {
         return $statement;
     }
     
+    // Get BusesbyGarageID:
     public function getBusesByGarageID($garageID) {
         // Execute A Query To Get All Buses:
         $sqlQuery = "SELECT b.*, g.garageName FROM buses b
@@ -46,6 +46,7 @@ class BusTableGateway {
         return $statement;
     }
     
+    // Get BusesById:
     public function getbusesById($busID) {
         // Execute A Query To Get The User With The Specified busID:
         $sqlQuery = "SELECT * FROM buses WHERE busID = :busID";
@@ -137,13 +138,6 @@ class BusTableGateway {
             "dueServiceDate" => $dsd,
             "garageID" => $gid
         );
-        
-        //Code to help debug the code
-        /*echo '<pre>';
-        print_r($_POST);
-        print_r($params);
-        print_r($sqlQuery);
-        echo '</pre>';*/
         
         $status = $statement->execute($params);
         

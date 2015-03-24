@@ -9,6 +9,7 @@
         <meta name="author" content="">
         <!-- Title -->
         <title>Tour | Ireland.ie</title>
+
         <!-- Style & Script Code -->
         <?php
         require 'styles.php';
@@ -19,12 +20,11 @@
             session_start();
         }
         ?>
-
     </head>
 
+    <!-- Body -->
     <body>
         <?php require 'navBar.php' ?>
-
         <!-- Half Page Image Background Carousel Header -->
         <header id="myCarousel" class="carousel slide">
             <!-- Indicators -->
@@ -78,13 +78,10 @@
 
         <!-- Page Content -->
         <div class="container">
-            <!--<p class="visible-lg">LARGE</p>
-            <p class="visible-md">MEDIUM</p>
-            <p class="visible-sm">SMALL</p>
-            <p class="visible-xs">X-SMALL</p>-->
             <br>
             <p class="tourtxt">Latest tours</p>
             <hr>
+
             <!-- Tours Boxs Start -->
             <div class="row text-center">
                 <div class="col-md-3 col-sm-6">
@@ -192,6 +189,8 @@
                 </div>
             </div>
             <a href="Tour_Ireland.php" class="btn5 pull-right">View More</a>
+
+            <!-- Tours Boxs2 Start -->
             <p class="tourtxt tourtxt2">Most Popular</p>
             <hr>
             <div class="row text-center">
@@ -468,7 +467,8 @@
                     </div>
                 </form>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">             
+                <!-- Map -->
                 <!-- visible-xs -->
                 <div class="visible-xl hidden-xs hidden-md hidden-sm">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152515.69312067638!2d-6.2516950000000024!3d53.324320099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin!5e0!3m2!1sen!2sie!4v1424644044232" width="550" height="430" frameborder="0" style="border:0"></iframe>
@@ -484,6 +484,7 @@
                 </div>
             </div>
         </div>  
+        
         <!-- Services Section -->
         <section id="services">
             <div class="container">
@@ -519,425 +520,416 @@
                 </div>
             </div>
         </section>
+        <!-- ==== SECTION DIVIDER2 -->
+        <section class="section-divider textdivider divider2">
+            <div class="container tourB1">
+                <h1>THE TEAM OF TOUR | IRELAND.IE</h1>
+                <hr>
+                <p>To develop a deeper and more meaningful connection with consumers, we believe that is a must to invite them to take part in the conversation.</p>
+            </div><!-- container -->
+        </section><!-- section -->
 
-    </div>
-    <!-- ==== SECTION DIVIDER2 -->
-    <section class="section-divider textdivider divider2">
-        <div class="container tourB1">
-            <h1>THE TEAM OF TOUR | IRELAND.IE</h1>
-            <hr>
-            <p>To develop a deeper and more meaningful connection with consumers, we believe that is a must to invite them to take part in the conversation.</p>
-        </div><!-- container -->
-    </section><!-- section -->
-
-    <!-- TEAM MEMBERS -->
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <h4 class="cheddar">Our Team</h4>
-        <hr>
-    </div>
-    <div class="container teamtxt" id="team" name="team">
+        <!-- TEAM MEMBERS -->
         <br>
-        <div class="row white centered">
-            <center>
-                <div class="col-lg-3 col-md-6 col-sm-6 centered">
-                    <img class="img img-circle" src="img/Team/team4.jpg" height="120px" width="120px" alt="">
-                    <br>
-                    <h4><b>Jeremiah Fraites</b></h4>
-                    <a href="#"><i class="fa fa-twitter social-tw2"></i></a>
-                    <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
-                    <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
-                    <a href="#"><i class="fa fa-envelope social-em2"></i></a>
-                    <p>Jeremiah combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
-                </div><!-- col-lg-3 -->
-            </center>
-            <center>
-                <div class="col-lg-3 col-md-6 col-sm-6 centered">
-                    <img class="img img-circle" src="img/Team/team3.jpg" height="120px" width="120px" alt="">
-                    <br>
-                    <h4><b>Carissa rae</b></h4>
-                    <a href="#"><i class="fa fa-twitter social-tw2"></i></a>
-                    <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
-                    <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
-                    <a href="#"><i class="fa fa-envelope social-em2"></i></a>
-                    <p>Carissa is an experienced practitioner and manages projects from inception to delivery. She understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
-                </div><!-- col-lg-3 -->
-            </center>
-            <center>
-                <div class="col-lg-3 col-md-6 col-sm-6 centered">
-                    <img class="img img-circle" src="img/cheddar.jpg" height="120px" width="120px" alt="">
-                    <br>
-                    <h4><b>Cheddar Forwin</b></h4>
-                    <a href="#"><i class="fa fa-twitter social-tw2"></i></a>
-                    <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
-                    <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
-                    <a href="#"><i class="fa fa-envelope social-em2"></i></a>
-                    <p>Be a creative director is a hard task, but Cheddar loves what she does. He combination of knowledge and expertise is an important pillar in our agency.</p>
-                </div><!-- col-lg-3 -->
-            </center>
-            <center>
-                <div class="col-lg-3 col-md-6 col-sm-6 centered">
-                    <img class="img img-circle" src="img/Team/team2.jpg" height="120px" width="120px" alt="">
-                    <br>
-                    <h4><b>juliana daily</b></h4>
-                    <a href="#"><i class="fa fa-twitter social-tw2"></i></a>
-                    <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
-                    <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
-                    <a href="#"><i class="fa fa-envelope social-em2"></i></a>
-                    <p>juliana began making tour trips around 10 years ago, but has since found a love for simplicity, creating tours that are a pleasure to browse. Monkey Island Fan.</p>
-                    <br><br><br>
-                    <a href="Tour_Ireland.php" class="btn5 pull-right">Read More</a>
-                </div><!-- col-lg-3 -->
-            </center>
-        </div><!-- row -->
-    </div><!-- container -->
-    <br>
-    <br>
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">  
-            <h4 class="cheddar1">About Us</h4>
+        <br>
+        <br>
+        <div class="container">
+            <h4 class="cheddar">Our Team</h4>
             <hr>
+        </div>
+        <div class="container teamtxt" id="team" name="team">
             <br>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/irishMountain.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading"><b>How We Started</b></h4>
+            <div class="row white centered">
+                <center>
+                    <div class="col-lg-3 col-md-6 col-sm-6 centered">
+                        <img class="img img-circle" src="img/Team/team4.jpg" height="120px" width="120px" alt="">
+                        <br>
+                        <h4><b>Jeremiah Fraites</b></h4>
+                        <a href="#"><i class="fa fa-twitter social-tw2"></i></a>
+                        <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
+                        <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
+                        <a href="#"><i class="fa fa-envelope social-em2"></i></a>
+                        <p>Jeremiah combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
+                    </div><!-- col-lg-3 -->
+                </center>
+                <center>
+                    <div class="col-lg-3 col-md-6 col-sm-6 centered">
+                        <img class="img img-circle" src="img/Team/team3.jpg" height="120px" width="120px" alt="">
+                        <br>
+                        <h4><b>Carissa rae</b></h4>
+                        <a href="#"><i class="fa fa-twitter social-tw2"></i></a>
+                        <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
+                        <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
+                        <a href="#"><i class="fa fa-envelope social-em2"></i></a>
+                        <p>Carissa is an experienced practitioner and manages projects from inception to delivery. She understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
+                    </div><!-- col-lg-3 -->
+                </center>
+                <center>
+                    <div class="col-lg-3 col-md-6 col-sm-6 centered">
+                        <img class="img img-circle" src="img/cheddar.jpg" height="120px" width="120px" alt="">
+                        <br>
+                        <h4><b>Cheddar Forwin</b></h4>
+                        <a href="#"><i class="fa fa-twitter social-tw2"></i></a>
+                        <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
+                        <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
+                        <a href="#"><i class="fa fa-envelope social-em2"></i></a>
+                        <p>Be a creative director is a hard task, but Cheddar loves what she does. He combination of knowledge and expertise is an important pillar in our agency. Firefly Fan and Doctor Who Fan ect.</p>
+                    </div><!-- col-lg-3 -->
+                </center>
+                <center>
+                    <div class="col-lg-3 col-md-6 col-sm-6 centered">
+                        <img class="img img-circle" src="img/Team/team2.jpg" height="120px" width="120px" alt="">
+                        <br>
+                        <h4><b>juliana daily</b></h4>
+                        <a href="#"><i class="fa fa-twitter social-tw2"></i></a>
+                        <a href="#""><i class="fa fa-facebook social-fb2"></i></a>
+                        <a href="#"><i class="fa fa-google-plus social-gp2"></i></a>
+                        <a href="#"><i class="fa fa-envelope social-em2"></i></a>
+                        <p>juliana began making tour trips around 10 years ago, but has since found a love for simplicity, creating tours that are a pleasure to browse. Monkey Island Fan and Doctor Who Fan ect.</p>
+                        <br><br><br>
+                        <a href="Tour_Ireland.php" class="btn5 pull-right">Read More</a>
+                    </div><!-- col-lg-3 -->
+                </center>
+            </div><!-- row -->
+        </div><!-- container -->
+        <br>
+        <br>
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">  
+                <h4 class="cheddar1">About Us</h4>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/irishMountain.jpg" alt="">
                                 </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>2009-2011</h4>
+                                        <h4 class="subheading"><b>How We Started</b></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/tourBus.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading"><b>Beginning Of Tour | Ireland.ie</b></h4>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/tourBus.jpg" alt="">
                                 </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>March 2011</h4>
+                                        <h4 class="subheading"><b>Beginning Of Tour | Ireland.ie</b></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/team.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading"><b>Transition to Full Service</b></h4>
+                            </li>
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/team.jpg" alt="">
                                 </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>December 2012</h4>
+                                        <h4 class="subheading"><b>Transition to Full Service</b></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/busDriver.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading"><b>Phase Two Expansion</b></h4>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/busDriver.jpg" alt="">
                                 </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4>July 2014</h4>
+                                        <h4 class="subheading"><b>Phase Two Expansion</b></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4>Be Part
+                                        <br>Of Our
+                                        <br>Story!</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php require 'footer.php' ?>
+        <!-- Model Box One -->
+        <div id="pop1" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                    <h3>DAY TRIP FROM DUBLIN</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Tours/dublin.jpg" class="img-responsive pull-left" width="300" height="300">
+                    <small>Connemara is truly the wilderness of Ireland, ravaged during the great potato famine of 1847-1851. this landscape was left barren however its true beauty intact. 
+                        With fabulous lakes, romantic castles, stone walls, and deserted valleys Connemara features in many blockbuster movies ie The Quiet Man with John Wayne and Maureen O'Hara, and the Guard with Brendan Gleeson. 
+                        On this tour we introduce you to this amazing part of Ireland, but also take you to Galway city for a 2 hrs stop with a FREE walking tour of the highlights of this traditional, colorful and beautiful tribal city.
+                    </small>
+                    <div class="ratings">
+                        <p class="pull-left">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                        <p class="pull-left ratingM">15 reviews</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="pull-left"><strong>Price: €16.99</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
                 </div>
             </div>
         </div>
-    </section>
-    <?php require 'footer.php' ?>
-    <!-- Model Box One -->
-    <div id="pop1" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-                <h3>DAY TRIP FROM DUBLIN</h3>
-            </div>
-            <div class="modal-body">
-                <img src="img/Tours/dublin.jpg" class="img-responsive pull-left" width="300" height="300">
-                <small>Connemara is truly the wilderness of Ireland, ravaged during the great potato famine of 1847-1851. this landscape was left barren however its true beauty intact. 
-                    With fabulous lakes, romantic castles, stone walls, and deserted valleys Connemara features in many blockbuster movies ie The Quiet Man with John Wayne and Maureen O'Hara, and the Guard with Brendan Gleeson. 
-                    On this tour we introduce you to this amazing part of Ireland, but also take you to Galway city for a 2 hrs stop with a FREE walking tour of the highlights of this traditional, colorful and beautiful tribal city.
-                </small>
-                <div class="ratings">
-                    <p class="pull-left">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                    </p>
-                    <p class="pull-left ratingM">15 reviews</p>
-                    <br>
+        <!-- Model Box Two -->
+        <div id="pop2" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                    <h3>BLARNEY DAY TOURS</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Tours/BlarneyCastle.jpg" class="img-responsive pull-left" width="300" height="300">
+                    <small>Visit the most famous castle in all of Ireland - Blarney Castle. Lay back and kiss the magical Blarney Stone and receive the gift of eloquent speech for 7 years. Also visit Cobh, the last departure port for RMS Titanic in April 1912. 
+                        Enjoy a stroll in Cobh and visit St Coleman's Cathedral, overlooking Cork Harbour. We will also take a panoramic drive through Cork City, and make a stop for one hour to see the highlights of the Southern Capital including the English Markets which were recently visited by Queen Elizabeth.
+                        This tour allows you to see the best of County Cork on this 1 day adventure from Dublin.
+                    </small>
+                    <div class="ratings">
+                        <p class="pull-left">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                        <p class="pull-left ratingM">34 reviews</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="pull-left"><strong>Price: €19.99</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €16.99</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
-            </div>
         </div>
-    </div>
-    <!-- Model Box Two -->
-    <div id="pop2" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-                <h3>BLARNEY DAY TOURS</h3>
-            </div>
-            <div class="modal-body">
-                <img src="img/Tours/BlarneyCastle.jpg" class="img-responsive pull-left" width="300" height="300">
-                <small>Visit the most famous castle in all of Ireland - Blarney Castle. Lay back and kiss the magical Blarney Stone and receive the gift of eloquent speech for 7 years. Also visit Cobh, the last departure port for RMS Titanic in April 1912. 
-                    Enjoy a stroll in Cobh and visit St Coleman's Cathedral, overlooking Cork Harbour. We will also take a panoramic drive through Cork City, and make a stop for one hour to see the highlights of the Southern Capital including the English Markets which were recently visited by Queen Elizabeth.
-                    This tour allows you to see the best of County Cork on this 1 day adventure from Dublin.
-                </small>
-                <div class="ratings">
-                    <p class="pull-left">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
-                    <p class="pull-left ratingM">34 reviews</p>
-                    <br>
+
+        <!-- Model Box Three -->
+        <div id="pop3" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                    <h3>DAY TOURS FROM CORK</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Tours/cork.jpg" class="img-responsive pull-left" width="300" height="300">
+                    <small>The Rock of Cashel is situated in county Tipperary. On top of the rock you can enjoy fine views of the Tipperary countryside. You will explore one of the finest religious sites in Ireland, and marvel at the fine architecture. 
+                        Onwards to Kilkenny. You will enjoy 2 hours of free time in Ireland's medieval capital. Condider an optional visit to the Castle or St Canice's Cathedral. Enjoy a walk in the Castle Gardens, with pleasant views of the River Nore or a pint of Kilkenny beer in a haunted pub! A great day tour from Cork!
+                    </small>
+                    <div class="ratings">
+                        <p class="pull-left">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                        <p class="pull-left ratingM">7 reviews</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="pull-left"><strong>Price: €35</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €19.99</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
-            </div>
         </div>
-    </div>
 
-    <!-- Model Box Three -->
-    <div id="pop3" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-                <h3>DAY TOURS FROM CORK</h3>
-            </div>
-            <div class="modal-body">
-                <img src="img/Tours/cork.jpg" class="img-responsive pull-left" width="300" height="300">
-                <small>The Rock of Cashel is situated in county Tipperary. On top of the rock you can enjoy fine views of the Tipperary countryside. You will explore one of the finest religious sites in Ireland, and marvel at the fine architecture. 
-                    Onwards to Kilkenny. You will enjoy 2 hours of free time in Ireland's medieval capital. Condider an optional visit to the Castle or St Canice's Cathedral. Enjoy a walk in the Castle Gardens, with pleasant views of the River Nore or a pint of Kilkenny beer in a haunted pub! A great day tour from Cork!
-                </small>
-                <div class="ratings">
-                    <p class="pull-left">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
-                    <p class="pull-left ratingM">7 reviews</p>
-                    <br>
+        <!-- Model Box Four -->
+        <div id="pop4" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                    <h3>GIANT'S CAUSEWAY TOUR FROM DUBLIN</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Tours/giantsCausway.jpg" class="img-responsive pull-left" width="300" height="300">
+                    <small>You cannot truly visit Ireland without a visit to the legendary Giant's Causeway! Volcanic activity helped Finn McCool forge this wonder of the world some 60 million years ago. The 6km of sheer cliffs rising to over 90m and forming a series of bays are spectacular. We include the all-new innovative and imaginative Giant's Causeway Visitors' Center. You will be provided with free audio guides! 
+                        We visit the Dark Hedges and Ballintoy, famed by the hit TV series Game of Thrones!
+                        From the Giant's Causeway to Belfast, and the magnificent rope bridge this tour has it all! Definitely the most comprehensive tour of Northern Ireland!
+                        Our office is open 24hrs a day, 365 days a the year and our online booking engine allows bookings to be made right up until the last minute.
+                        For the most memorable day out jump aboard the Paddywagon and let our world famous guides inspire you with songs and stories, making this a wonderful trip with memories to last a lifetime! 
+                    </small>
+                    <div class="ratings">
+                        <p class="pull-left">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                        <p class="pull-left ratingM">56 reviews</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="pull-left"><strong>Price: €60</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €35</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
-            </div>
         </div>
-    </div>
 
-    <!-- Model Box Four -->
-    <div id="pop4" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-                <h3>GIANT'S CAUSEWAY TOUR FROM DUBLIN</h3>
-            </div>
-            <div class="modal-body">
-                <img src="img/Tours/giantsCausway.jpg" class="img-responsive pull-left" width="300" height="300">
-                <small>You cannot truly visit Ireland without a visit to the legendary Giant's Causeway! Volcanic activity helped Finn McCool forge this wonder of the world some 60 million years ago. The 6km of sheer cliffs rising to over 90m and forming a series of bays are spectacular. We include the all-new innovative and imaginative Giant's Causeway Visitors' Center. You will be provided with free audio guides! 
-                    We visit the Dark Hedges and Ballintoy, famed by the hit TV series Game of Thrones!
-                    From the Giant's Causeway to Belfast, and the magnificent rope bridge this tour has it all! Definitely the most comprehensive tour of Northern Ireland!
-                    Our office is open 24hrs a day, 365 days a the year and our online booking engine allows bookings to be made right up until the last minute.
-                    For the most memorable day out jump aboard the Paddywagon and let our world famous guides inspire you with songs and stories, making this a wonderful trip with memories to last a lifetime! 
-                </small>
-                <div class="ratings">
-                    <p class="pull-left">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
-                    <p class="pull-left ratingM">56 reviews</p>
-                    <br>
+        <!-- Model Box Five -->
+        <div id="pop5" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                    <h3>DINGLE DAY TOUR FROM KILLARNEY</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Tours/Dingle.jpg" class="img-responsive pull-left" width="300" height="300">
+                    <small>The Dingle Peninsula has amazing mountain scenery and unusual antiquities to see as you travel around this spectacular peninsula. You will stop at the famed Inch beach, one of the most famous beaches in Ireland, which is a site of outstanding natural beauty. 
+                        Then to the most westerly drive in Europe known as the Slea Head drive. Marvel at the Atlantic Coast as you travel on this spectacular road which hugs the western shoreline. Enjoy great views of the Blasket Islands and maybe even see the "Sleeping Giant Island." 
+                        You will also stop in Dingle town. This is one of the most picturesque fishing towns in Ireland, and is also famed for Fungi the dolphin who has been a local for almost 30 years. Dingle town is the heart and soul of the Peninsula. Today is attracts visitors, including artists and musicians, from all over the world.
+                    </small>
+                    <div class="ratings">
+                        <p class="pull-left">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                        <p class="pull-left ratingM">115 reviews</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="pull-left"><strong>Price: €25</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €60</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
-            </div>
         </div>
-    </div>
 
-    <!-- Model Box Five -->
-    <div id="pop5" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-                <h3>DINGLE DAY TOUR FROM KILLARNEY</h3>
-            </div>
-            <div class="modal-body">
-                <img src="img/Tours/Dingle.jpg" class="img-responsive pull-left" width="300" height="300">
-                <small>The Dingle Peninsula has amazing mountain scenery and unusual antiquities to see as you travel around this spectacular peninsula. You will stop at the famed Inch beach, one of the most famous beaches in Ireland, which is a site of outstanding natural beauty. 
-                    Then to the most westerly drive in Europe known as the Slea Head drive. Marvel at the Atlantic Coast as you travel on this spectacular road which hugs the western shoreline. Enjoy great views of the Blasket Islands and maybe even see the "Sleeping Giant Island." 
-                    You will also stop in Dingle town. This is one of the most picturesque fishing towns in Ireland, and is also famed for Fungi the dolphin who has been a local for almost 30 years. Dingle town is the heart and soul of the Peninsula. Today is attracts visitors, including artists and musicians, from all over the world.
-                </small>
-                <div class="ratings">
-                    <p class="pull-left">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
-                    <p class="pull-left ratingM">115 reviews</p>
-                    <br>
+        <!-- Model Box Six -->
+        <div id="pop6" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                    <h3>2 DAY SOUTH TOUR - CLIFFS OF MOHER</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Tours/CliffOfMohar.jpg" class="img-responsive pull-left" width="300" height="300">
+                    <small>Your journey on this Cliff of Moher tour will take you from the banks of Dublin’s river Liffey to Ireland’s Wild Atlantic Way. You’ll see the biggest visitor attraction in all of Ireland and experience the nature, geology, history, culture and music of the region as we travel together.
+                        The Cliffs of Moher are 66% as tall as New York's Empire State and stretch for almost 10km. Forming part of the edge of Western Europe, this landscape really is a "must see" on a visit to Ireland. You'll enjoy 1.5 hours at the Cliffs of Moher, which is just the right amount of time according to the 90,000 passengers who travel with us annually!
+                    </small>
+                    <div class="ratings">
+                        <p class="pull-left">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                        <p class="pull-left ratingM">413 reviews</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="pull-left"><strong>Price: €40</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €25</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
-            </div>
         </div>
-    </div>
 
-    <!-- Model Box Six -->
-    <div id="pop6" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-                <h3>2 DAY SOUTH TOUR - CLIFFS OF MOHER</h3>
-            </div>
-            <div class="modal-body">
-                <img src="img/Tours/CliffOfMohar.jpg" class="img-responsive pull-left" width="300" height="300">
-                <small>Your journey on this Cliff of Moher tour will take you from the banks of Dublin’s river Liffey to Ireland’s Wild Atlantic Way. You’ll see the biggest visitor attraction in all of Ireland and experience the nature, geology, history, culture and music of the region as we travel together.
-                    The Cliffs of Moher are 66% as tall as New York's Empire State and stretch for almost 10km. Forming part of the edge of Western Europe, this landscape really is a "must see" on a visit to Ireland. You'll enjoy 1.5 hours at the Cliffs of Moher, which is just the right amount of time according to the 90,000 passengers who travel with us annually!
-                </small>
-                <div class="ratings">
-                    <p class="pull-left">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
-                    <p class="pull-left ratingM">413 reviews</p>
-                    <br>
+        <!-- Model Box Seven -->
+        <div id="pop7" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                    <h3>RING OF KERRY DAY TOUR FROM GALWAY</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Tours/RingOfKerry.jpg" class="img-responsive pull-left" width="300" height="300">
+                    <small>The Ring of Kerry is considered one of the finest drives in the world. From rugged cliffs to golden beaches, small villages and pastures green to peat bogs and picturesque mountain ranges. This peninsula illustrates all that is beautiful, wonderful and wild in our beloved motherland. 
+                        The variety of attractions makes this one of the most diverse and interesting day tours that one is likely to experience in their travel adventures. From ancient stone forts to landscapes carved out of rock by the Ice Age, from sparkling lakes to winding mountain passes our day trip shall be a highlight and shall ensure lasting memories of the beautiful Kingdom of Kerry.
+                    </small>
+                    <div class="ratings">
+                        <p class="pull-left">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                        <p class="pull-left ratingM">41 reviews</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="pull-left"><strong>Price: €45</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €40</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
-            </div>
         </div>
-    </div>
 
-    <!-- Model Box Seven -->
-    <div id="pop7" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-                <h3>RING OF KERRY DAY TOUR FROM GALWAY</h3>
-            </div>
-            <div class="modal-body">
-                <img src="img/Tours/RingOfKerry.jpg" class="img-responsive pull-left" width="300" height="300">
-                <small>The Ring of Kerry is considered one of the finest drives in the world. From rugged cliffs to golden beaches, small villages and pastures green to peat bogs and picturesque mountain ranges. This peninsula illustrates all that is beautiful, wonderful and wild in our beloved motherland. 
-                    The variety of attractions makes this one of the most diverse and interesting day tours that one is likely to experience in their travel adventures. From ancient stone forts to landscapes carved out of rock by the Ice Age, from sparkling lakes to winding mountain passes our day trip shall be a highlight and shall ensure lasting memories of the beautiful Kingdom of Kerry.
-                </small>
-                <div class="ratings">
-                    <p class="pull-left">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </p>
-                    <p class="pull-left ratingM">41 reviews</p>
-                    <br>
+        <!-- Model Box Eight -->
+        <div id="pop8" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                    <h3>CORK CITY SIGHTSEEING (CORK HOPPER)</h3>
+                </div>
+                <div class="modal-body">
+                    <img src="img/Tours/CorkNight.jpg" class="img-responsive pull-left" width="300" height="300">
+                    <small>Experience Cork’s main attractions in one day with Paddywagon’s Hopper Tour!
+                        With the Cork Hopper passengers can hop-on board any time of day and use their ticket over 24 or 48 hours to take in the ‘must see’ attractions in County Cork. 
+                        Visit the iconic Blarney Castle, Jameson Experience Midleton, Titanic Experience in Cobh or explore Fota Wildlife Park, or Fota House and Gardens.
+                        Blarney Castle: 
+                        Nearly six centuries old and synonymous around the world with Ireland. We stop here five times throughout the day making it the perfect first or last stop!
+                    </small>
+                    <div class="ratings">
+                        <p class="pull-left">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                        <p class="pull-left ratingM">301 reviews</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="pull-left"><strong>Price: €20</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €45</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
-            </div>
         </div>
-    </div>
-
-    <!-- Model Box Eight -->
-    <div id="pop8" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-header">
-                <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
-                <h3>CORK CITY SIGHTSEEING (CORK HOPPER)</h3>
-            </div>
-            <div class="modal-body">
-                <img src="img/Tours/CorkNight.jpg" class="img-responsive pull-left" width="300" height="300">
-                <small>Experience Cork’s main attractions in one day with Paddywagon’s Hopper Tour!
-                    With the Cork Hopper passengers can hop-on board any time of day and use their ticket over 24 or 48 hours to take in the ‘must see’ attractions in County Cork. 
-                    Visit the iconic Blarney Castle, Jameson Experience Midleton, Titanic Experience in Cobh or explore Fota Wildlife Park, or Fota House and Gardens.
-                    Blarney Castle: 
-                    Nearly six centuries old and synonymous around the world with Ireland. We stop here five times throughout the day making it the perfect first or last stop!
-                </small>
-                <div class="ratings">
-                    <p class="pull-left">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                    </p>
-                    <p class="pull-left ratingM">301 reviews</p>
-                    <br>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <p class="pull-left"><strong>Price: €20</strong></p><button class="btn5 btn btn-primary" data-dismiss="modal">BACK</button>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- /.container -->
-
-
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-        $('.carousel').carousel({
-            interval: 50000 //changes the speed
-        });
-    </script>
-    <ul class="hidden-xs nav pull-right scroll-top">
-        <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
-    </ul>
-    <ul class="visible-xs nav pull-right scroll-top1">
-        <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
-    </ul>
-
-</body>
+        <!-- Script to Activate the Carousel -->
+        <script>
+            $('.carousel').carousel({
+                interval: 50000 //changes the speed
+            });
+        </script>
+        <ul class="hidden-xs nav pull-right scroll-top">
+            <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+        </ul>
+        <ul class="visible-xs nav pull-right scroll-top1">
+            <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
+        </ul>
+    </body>
 </html>

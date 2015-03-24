@@ -1,4 +1,4 @@
-		<?php
+<?php
 //requiring Event.php as some of its elements are needed in this page
 require_once 'Vehicle.php';
 require_once 'Connection.php';
@@ -53,6 +53,8 @@ if (!isset($_SESSION['username'])) {
             echo '<p>' . $message . '</p>';
         }
         ?>
+        
+        <!-- Create Bus Form -->
         <div class="container-fluid">
             <div class="row">
                 <div class="hidden-xs col-sm-3 col-md-2 sidebar">

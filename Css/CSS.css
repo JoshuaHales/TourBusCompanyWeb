@@ -270,7 +270,7 @@ ul.nav a:focus {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #FFFFFF !important;
     padding: 12px 30px;
-    background: #e8645a;
+    background: #ffcc33;
     line-height: 20px;
     text-transform: uppercase;
     border: none;
@@ -285,16 +285,16 @@ ul.nav a:focus {
     -moz-border-radius: 2px;
     -o-border-radius: 2px;
     box-shadow: inset 0px -4px 0px #e2534b;
-    -webkit-box-shadow: inset 0px -4px 0px #e2534b;
-    -moz-box-shadow: inset 0px -4px 0px #e2534b;
-    -o-box-shadow: inset 0px -4px 0px #e2534b;
+    -webkit-box-shadow: inset 0px -4px 0px #f39c12;
+    -moz-box-shadow: inset 0px -4px 0px #f39c12;
+    -o-box-shadow: inset 0px -4px 0px #f39c12;
     margin-top: 0px;
     margin-bottom: 10px;
     text-align: center;
     font-size: 17px;
 }
 .btn6:hover {
-    background: #e2534b;
+    background: #f39c12;
 }
 .btn1 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -498,7 +498,7 @@ ul.nav a:focus {
 
 .f_list li a:hover {
     text-decoration:none;
-    color: #3C5A5A;
+    color: #e2534b;
 }
 
 .footer_of_3 h4 span {
@@ -545,7 +545,7 @@ ul.nav a:focus {
 }
 
 .f_text p:hover {
-    color: #3C5A5A;
+    color: #e2534b;
 }
 
 .f_text span {
@@ -1280,6 +1280,7 @@ p {
 .indexBody
 {
     background-image: url(../img/indexB.jpg);
+    background-repeat: no-repeat;
 }
 
 .registerP

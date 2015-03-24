@@ -1,5 +1,4 @@
 <?php
-
 //requiring Event.php as some of its elements are needed in this page
 require_once 'Vehicle.php';
 require_once 'Connection.php';

@@ -82,6 +82,7 @@ if (!isset($_SESSION['username'])) {
         ?>
         <div class="container-fluid">
             <div class="row">
+                <!-- SideBar -->
                 <div class="hidden-xs col-sm-3 col-md-2 sidebar">
                     <ul class="nav nav-sidebar">
                         <img class="img userL img-circle" src="img/userL.jpg" height="130px" width="130px" alt="">

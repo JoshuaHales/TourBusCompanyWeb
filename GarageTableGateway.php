@@ -1,12 +1,10 @@
 <?php
-
 class GarageTableGateway {
-    
     private $connection;
-    
     public function __construct($c) {
         $this->connection = $c;
     }
+    
     public function getGarages() {
         // Execute A Query To Get All Garages:
         $sqlQuery = "SELECT * FROM garages";
