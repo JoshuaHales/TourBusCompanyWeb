@@ -7,13 +7,17 @@ class BusTableGateway {
     public function __construct($c) {
         $this->connection = $c;
     }
-    public function getBuses() {
+    public function getBuses($sortOrder) {
         // Execute A Query To Get All Buses:
         $sqlQuery = "SELECT b.*, g.garageName FROM buses b
                      LEFT JOIN garages g ON g.garageID = b.garageID
-                     WHERE 1";
+                     ORDER BY " . $sortOrder;
         
         $statement = $this->connection->prepare($sqlQuery);
+        //$params = array(
+         //   "sortOrder" => $sortOrder
+       // );
+
         $status = $statement->execute();
         
         if (!$status) {

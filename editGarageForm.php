@@ -12,10 +12,15 @@ if ($id == "") {
 }
 
 /* Starts a new session if session is == to nothing */
-if (!isset($_GET) || !isset($_GET['id'])) {
+if (isset($_GET) && isset($_GET['id'])) {
+    $garageID = $_GET['id'];
+}
+else if (isset($_POST) && isset($_POST['garageID'])) {
+    $garageID = $_POST['garageID'];
+}
+else {
     die('Invalid request');
 }
-$garageID = $_GET['id'];
 
 $connection = Connection::getInstance();
 $gateway = new GarageTableGateway($connection);
@@ -97,7 +102,7 @@ if (!isset($_SESSION['username'])) {
                             <!-- /. ROW  -->
                             <div class="row">
                                 <a href="home.php"><div class="col-md-3 col-sm-6 col-xs-6">           
-                                        <div class="panel panel-backA noti-box" border="1">
+                                        <div class="panel panel-back noti-box" border="1">
                                             <span class="icon-box bg-color-red set-icon">
                                                 <i class="fa fa-bus"></i>
                                             </span>
@@ -108,7 +113,7 @@ if (!isset($_SESSION['username'])) {
                                         </div>
                                     </div></a>
                                 <a href="viewGarage.php"><div class="col-md-3 col-sm-6 col-xs-6">           
-                                        <div class="panel panel-back noti-box">
+                                        <div class="panel panel-backA noti-box">
                                             <span class="icon-box bg-color-green set-icon">
                                                 <i class="fa fa-building-o"></i>
                                             </span>
@@ -144,13 +149,8 @@ if (!isset($_SESSION['username'])) {
 
                         </div>
 
-                        <h2 class="sub-header">Bus Table</h2>
+                        <h2 class="sub-header">Garage Table</h2>
                         <hr>
-                        <?php
-                        if (isset($errorMessage)) {
-                            echo '<p>Error: ' . $errorMessage . '</p>';
-                        }
-                        ?>
                         <!-- form with a action event on createVehicle.php with a submit to validate on the js form createVehicleForm.js -->
                         <div class="col-lg-push-4 col-lg-4 centered">
                             <div class="panel panel-default">

@@ -6,10 +6,21 @@ require_once 'BusTableGateway.php';
 
 require 'ensureUserLoggedIn.php';
 
+if (isset($_GET) && isset($_GET['sortOrder'])) {
+    $sortOrder = ($_GET['sortOrder']);
+    $columnNames = array("busID", "registrationNo", "busMake", "busModel", "busSeats", "busEngineSize", "purchaseDate", "dueServiceDate", "garageID");
+    if (!in_array($sortOrder, $columnNames)) {
+        $sortOrder = 'busID';
+    }
+}
+else {
+    $sortOrder = 'busID';
+}
+
 $connection = Connection::getInstance();
 $gateway = new BusTableGateway($connection);
 
-$statement = $gateway->getBuses();
+$statement = $gateway->getBuses($sortOrder);
 
 /* Starts a new session if session is == to nothing */
 $id = session_id();
@@ -157,17 +168,17 @@ if (!isset($_SESSION['username'])) {
                             <div class="table-responsive">
                                 <table class="table table-striped table-hover">
                                     <thead>
-                                        <tr>
+                                        <tr class="viewA">
                                             <th><input type="checkbox" onclick="checkAll(this)"></th>
-                                            <th>Bus ID</th>
-                                            <th>Registration Number</th>
-                                            <th>Bus Make</th>
-                                            <th>Bus Model </th>
-                                            <th>Bus Seats</th>
-                                            <th>Bus Engine Size</th>
-                                            <th>Purchase Date</th>
-                                            <th>Due Service Date</th>
-                                            <th>Garage ID</th>
+                                            <th><a href="home.php?sortOrder=busID">Bus ID</a></th>
+                                            <th><a href="home.php?sortOrder=registrationNo">Registration Number</a></th>
+                                            <th><a href="home.php?sortOrder=busMake">Bus Make</a></th>
+                                            <th><a href="home.php?sortOrder=busModel">Bus Model</a></th>
+                                            <th><a href="home.php?sortOrder=busSeats">Bus Seats</a></th>
+                                            <th><a href="home.php?sortOrder=busEngineSize">Bus Engine Size</a></th>
+                                            <th><a href="home.php?sortOrder=purchaseDate">Purchase Date</a></th>
+                                            <th><a href="home.php?sortOrder=dueServiceDate">Due Service Date</a></th>
+                                            <th><a href="home.php?sortOrder=garageID">Garage ID</a></th>
                                             <th>Options</th>
                                         </tr>
                                     </thead>

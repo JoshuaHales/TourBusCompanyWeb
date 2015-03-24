@@ -148,11 +148,6 @@ if (!isset($_SESSION['username'])) {
 
                         <h2 class="sub-header">Bus Table</h2>
                         <hr>
-                        <?php
-                        if (isset($errorMessage)) {
-                            echo '<p>Error: ' . $errorMessage . '</p>';
-                        }
-                        ?>
                         <!-- form with a action event on createVehicle.php with a submit to validate on the js form createVehicleForm.js -->
                         <div class="col-lg-push-4 col-lg-4 centered">
                             <div class="panel panel-default">

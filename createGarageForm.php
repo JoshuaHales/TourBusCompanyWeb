@@ -133,7 +133,7 @@ if (!isset($_SESSION['username'])) {
 
                         </div>
 
-                        <h2 class="sub-header">Bus Table</h2>
+                        <h2 class="sub-header">Garage Table</h2>
                         <hr>
                         <!-- form with a action event on createVehicle.php with a submit to validate on the js form createVehicleForm.js -->
                         <div class="col-lg-push-4 col-lg-4 centered">

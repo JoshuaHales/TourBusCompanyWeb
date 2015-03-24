@@ -6,10 +6,21 @@ require_once 'GarageTableGateway.php';
 
 require 'ensureUserLoggedIn.php';
 
+if (isset($_GET) && isset($_GET['sortOrder2'])) {
+    $sortOrder2 = ($_GET['sortOrder2']);
+    $columnNames2 = array("garageID", "garageName", "garageAddress", "garagePhoneNo");
+    if (!in_array($sortOrder2, $columnNames2)) {
+        $sortOrder2 = 'garageID';
+    }
+}
+else {
+    $sortOrder2 = 'garageID';
+}
+
 $connection = Connection::getInstance();
 $gateway = new GarageTableGateway($connection);
 
-$statement = $gateway->getGarages();
+$statement = $gateway->getGarages($sortOrder2);
 
 /* Starts a new session if session is == to nothing */
 $id = session_id();
@@ -17,7 +28,7 @@ if ($id == "") {
     session_start();
 }
 
-//if events session is set add it to the array
+/*//if events session is set add it to the array
 if (!isset($_SESSION['garages'])) {
     $garages = array();
     //hard coding variables into the array through parameters in another page
@@ -26,12 +37,12 @@ if (!isset($_SESSION['garages'])) {
 } else {
     //making this session events
     $garages = $_SESSION['garages'];
-}
+}*/
 
 /* Check if user is logged in */
-if (!isset($_SESSION['username'])) {
+/*if (!isset($_SESSION['username'])) {
     header("Location: checkLogin.php");
-}
+}*/
 ?>
 
 <!DOCTYPE html>
@@ -161,13 +172,13 @@ if (!isset($_SESSION['username'])) {
                             <div class="table-responsive">
                                 <table class="table table-striped table-hover">
                                     <thead>
-                                        <tr>
+                                        <tr class="viewA">
                                             <th><input type="checkbox" onclick="checkAll(this)"></th>
-                                            <th>Garage ID</th>
-                                            <th>Garage Name</th>
-                                            <th>Garage Address</th>
-                                            <th>Garage Phone No</th>
-                                            <th>Manager Name</th>
+                                            <th><a href="viewGarage.php?sortOrder2=garageID">Garage ID</a></th>
+                                            <th><a href="viewGarage.php?sortOrder2=garageName">Garage Name</a></th>
+                                            <th><a href="viewGarage.php?sortOrder2=garageAddress">Garage Address</a></th>
+                                            <th><a href="viewGarage.php?sortOrder2=garagePhoneNo">Garage Phone No</a></th>
+                                            <th><a href="viewGarage.php?sortOrder2=managerName">Manager Name</a></th>
                                             <th>Options</th>
                                         </tr>
                                     </thead>
