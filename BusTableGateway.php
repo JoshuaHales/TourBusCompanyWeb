@@ -6,19 +6,23 @@ class BusTableGateway {
     }
     
     // Get Buses Code:
-    public function getBuses($sortOrder) {
+    public function getBuses($sortOrder, $filterRegistrationNo) {
         // Execute A Query To Get All Buses:
         $sqlQuery = "SELECT b.*, g.garageName FROM buses b
-                     LEFT JOIN garages g ON g.garageID = b.garageID
-                     ORDER BY " . $sortOrder;
-        
-        $statement = $this->connection->prepare($sqlQuery);
-        //$params = array(
-         //   "sortOrder" => $sortOrder
-       // );
+                     LEFT JOIN garages g ON g.garageID = b.garageID " .
+                     (($filterRegistrationNo == NULL) ? "" : "WHERE b.registrationNo LIKE :filterRegistrationNo") .
+                     " ORDER BY " . $sortOrder;
 
-        $status = $statement->execute();
-        
+        $statement = $this->connection->prepare($sqlQuery);
+        if ($filterRegistrationNo != NULL) {          
+            $params = array(
+                "filterRegistrationNo" => "%" . $filterRegistrationNo . "%"
+            );
+            $status = $statement->execute($params);  
+        }
+        else {
+            $status = $statement->execute();
+        }
         if (!$status) {
             die("Could not retrieve users");
         }

@@ -24,7 +24,7 @@ $gateway = new BusTableGateway($connection);
 $conn = Connection::getInstance();
 $garageGateway = new GarageTableGateway($conn);
 
-$garages = $garageGateway->getGarages();
+$garages = $garageGateway->getGarages("garageName");
 
 $statement = $gateway->getbusesById($busID);
 if ($statement->rowCount() !== 1) {

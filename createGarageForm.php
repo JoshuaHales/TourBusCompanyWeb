@@ -8,7 +8,7 @@ require_once 'GarageTableGateway.php';
 $conn = Connection::getInstance();
 $garageGateway = new GarageTableGateway($conn);
 
-$garages = $garageGateway->getGarages();
+$garages = $garageGateway->getGarages("garageName");
 //echo '<pre>';
 //print_r($garages->rowCount());
 //echo '</pre>';

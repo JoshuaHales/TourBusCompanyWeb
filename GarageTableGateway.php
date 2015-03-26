@@ -5,9 +5,9 @@ class GarageTableGateway {
         $this->connection = $c;
     }
     
-    public function getGarages() {
+    public function getGarages($sortOrder) {
         // Execute A Query To Get All Garages:
-        $sqlQuery = "SELECT * FROM garages";
+        $sqlQuery = "SELECT * FROM garages ORDER BY " .$sortOrder;
         
         $statement = $this->connection->prepare($sqlQuery);
         $status = $statement->execute();

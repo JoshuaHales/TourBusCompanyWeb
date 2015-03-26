@@ -17,10 +17,16 @@ else {
     $sortOrder = 'busID';
 }
 
+if (isset($_GET) && isset($_GET['filterRegistrationNo'])) {
+    $filterRegistrationNo = filter_input(INPUT_GET, 'filterRegistrationNo', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+}
+else {
+    $filterRegistrationNo = NULL;
+}
 $connection = Connection::getInstance();
 $gateway = new BusTableGateway($connection);
 
-$statement = $gateway->getBuses($sortOrder);
+$statement = $gateway->getBuses($sortOrder, $filterRegistrationNo);
 
 /* Starts a new session if session is == to nothing */
 $id = session_id();
@@ -162,7 +168,6 @@ if (!isset($_SESSION['username'])) {
                             </div>    
 
                         </div>
-
                         <h2 class="sub-header">Bus Table</h2>
                         <hr>
                         <form id="homePageForm" method="POST" action="deleteSelectedBuses.php">
@@ -216,6 +221,26 @@ if (!isset($_SESSION['username'])) {
                             <input class="btn5" type="button" value="Register Bus" name="forgot" onclick="document.location.href = 'createVehicleForm.php'" />
                         </form>
                     </div>
+                    <br>
+                     <div class="col-lg-12">
+                         <form class="form-horizontal col-lg-2" role="form" action="home.php?sortOrder=<?php echo $sortOrder; ?>" method="GET">
+                                <div class="form-group">
+                                    <label class="control-label" for="registrationNo">Registration Number</label>
+                                    <div>
+                                        <input type="text"
+                                               name="filterRegistrationNo"
+                                               class="form-control"
+                                               value="<?php echo $filterRegistrationNo; ?>" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label"></label>
+                                    <div>
+                                        <button type="submit" name="filterBtn" id="filterBtn" class="btn5 btn-success">Filter</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     <h2 class="sub-header">Dashboard</h2>
                     <hr class="hrs">
                     <div class="col-lg-4">
