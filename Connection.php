@@ -10,10 +10,11 @@ class Connection {
             $database = 'N00133834'; 
             $username = 'N00133834'; 
             $password = 'N00133834';
+            
             //Home Connection:
             //$host = 'localhost'; 
             //$database = 'n00133834'; 
-            //$username = 'root'; 
+            ////$username = 'root'; 
             //$password = ''; 
             $dsn = 'mysql:dbname='.$database.";host=".$host;
 

@@ -15,6 +15,7 @@
         require 'styles.php';
         require 'scripts.php';
 
+        // Start The Session:
         $id = session_id();
         if ($id == "") {
             session_start();
@@ -301,14 +302,17 @@
             <a href="Tour_Ireland.php" class="btn5 pull-right">View More</a>
             <!-- Tours Boxs End -->
         </div>
-        <!-- ==== SECTION DIVIDER1 -->
+        
+        <!-- SECTION DIVIDER1 -->
         <section class="section-divider textdivider divider1">
             <div class="container tourB1">
                 <h1>PLAN YOUR JOURNEY WITH TOUR | IRELAND.IE</h1>
                 <hr>
                 <p>To achieve real change, we have to expand boundaries. Because the Wild West of what-could-be is unexplored but rife with opportunity.</p>
-            </div><!-- container -->
-        </section><!-- section -->
+            </div>
+        </section>
+        
+        <!-- Journey Planner -->
         <div class="container">
             <p class="tourtxt">Journey Planer</p>
             <hr>
@@ -462,12 +466,12 @@
                     </div>
                     <hr class="colorgraph">
                     <div class="row">
-                            <!--<div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>-->
                         <div class="col-xs-12 col-md-6"><a href="#" class="btn5 btn-success btn-block btn-lg">Book now</a></div>
                     </div>
                 </form>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">             
+            <div class="col-lg-6 col-md-6 col-sm-6">  
+                
                 <!-- Map -->
                 <!-- visible-xs -->
                 <div class="visible-xl hidden-xs hidden-md hidden-sm">
@@ -485,7 +489,7 @@
             </div>
         </div>  
         
-        <!-- Services Section -->
+        <!-- Services Section1 -->
         <section id="services">
             <div class="container">
                 <p class="tourtxt3">Our Services</p>
@@ -520,14 +524,15 @@
                 </div>
             </div>
         </section>
-        <!-- ==== SECTION DIVIDER2 -->
+        
+        <!-- SECTION DIVIDER2 -->
         <section class="section-divider textdivider divider2">
             <div class="container tourB1">
                 <h1>THE TEAM OF TOUR | IRELAND.IE</h1>
                 <hr>
                 <p>To develop a deeper and more meaningful connection with consumers, we believe that is a must to invite them to take part in the conversation.</p>
-            </div><!-- container -->
-        </section><!-- section -->
+            </div>
+        </section>
 
         <!-- TEAM MEMBERS -->
         <br>
@@ -590,10 +595,10 @@
                         <a href="Tour_Ireland.php" class="btn5 pull-right">Read More</a>
                     </div><!-- col-lg-3 -->
                 </center>
-            </div><!-- row -->
-        </div><!-- container -->
-        <br>
-        <br>
+            </div>
+        </div>
+        <br><br>
+        
         <!-- About Section -->
         <section id="about">
             <div class="container">  
@@ -672,6 +677,7 @@
             </div>
         </section>
         <?php require 'footer.php' ?>
+        
         <!-- Model Box One -->
         <div id="pop1" class="modal fade" tabindex="-1">
             <div class="modal-dialog">
@@ -702,6 +708,7 @@
                 </div>
             </div>
         </div>
+        
         <!-- Model Box Two -->
         <div id="pop2" class="modal fade" tabindex="-1">
             <div class="modal-dialog">
@@ -919,12 +926,15 @@
                 </div>
             </div>
         </div>
+        
         <!-- Script to Activate the Carousel -->
         <script>
             $('.carousel').carousel({
                 interval: 50000 //changes the speed
             });
         </script>
+        
+        <!-- Back To Top -->
         <ul class="hidden-xs nav pull-right scroll-top">
             <li><a class="scrollup" href="#" title="Scroll to top"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
         </ul>

@@ -196,7 +196,7 @@ if (!isset($_SESSION['garages'])) {
                                             echo '<td>'
                                             . '<a data-tooltip="View Garage" href="viewGarage2.php?id=' . $row['garageID'] . '"><span class = "glyphicon glyphicon-eye-open btn btn-view"></span></a> '
                                             . '<a data-tooltip1="Edit Garage" href="editGarageForm.php?id=' . $row['garageID'] . '"><span class = "glyphicon glyphicon-cog btn btn-edit"></span></a> '
-                                            . '<a data-tooltip2="View Garage" class="deleteGarage" <a href="deleteGarage.php?id=' . $row['garageID'] . '"><span class = "glyphicon glyphicon-trash btn btn-delete"></span></a> '
+                                            . '<a data-tooltip2="Delete Garage" class="deleteGarage" <a href="deleteGarage.php?id=' . $row['garageID'] . '"><span class = "glyphicon glyphicon-trash btn btn-delete"></span></a> '
                                             . '</td>';
                                             echo '</tr>';
 

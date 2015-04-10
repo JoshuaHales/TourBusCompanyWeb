@@ -5,6 +5,7 @@ class GarageTableGateway {
         $this->connection = $c;
     }
     
+    // Get Garage Code;
     public function getGarages($sortOrder) {
         // Execute A Query To Get All Garages:
         $sqlQuery = "SELECT * FROM garages ORDER BY " .$sortOrder;
@@ -19,6 +20,7 @@ class GarageTableGateway {
         return $statement;
     }
     
+    // Get GaragesbyGarageID:
     public function getGaragesById($garageID) {
         // Execute A Query To Get The User With The Specified garageID:
         $sqlQuery = "SELECT * FROM garages WHERE garageID = :garageID";
@@ -98,10 +100,6 @@ class GarageTableGateway {
             "garagePhoneNo" => $gpn,
             "managerName" => $mn
         );
-        
-        /*echo '<pre>';
-        print_r($params);
-        echo '</pre>';*/
         
         $status = $statement->execute($params);
         

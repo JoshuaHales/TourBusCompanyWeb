@@ -238,7 +238,7 @@ if (!isset($_SESSION['username'])) {
         <div class="br"></div>
         
         <!-- start Lower Footer -->
-        <div class="footer1_bg navbar-fixed-bottom">
+        <div class="footer1_bg">
             <div class="container">
                 <div class="footer1">
                     <div class="copy pull-left">
