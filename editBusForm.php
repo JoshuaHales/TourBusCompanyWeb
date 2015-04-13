@@ -335,7 +335,7 @@ if (!isset($_SESSION['username'])) {
                     </div>
                 </div>               
             </div>
-        </div>
+        </div><br><br>
         <div class="br"></div>
         <!-- start Lower Footer -->
         <div class="footer1_bg"><!-- start footer1 -->

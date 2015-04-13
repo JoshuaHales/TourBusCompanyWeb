@@ -222,7 +222,7 @@ if (!isset($_SESSION['username'])) {
                         </form>
                     </div>
                     <br>
-                     <div class="col-lg-12">
+                    <div class="col-lg-12">
                          <form class="form-horizontal col-lg-2" role="form" action="home.php?sortOrder=<?php echo $sortOrder; ?>" method="GET">
                                 <div class="form-group">
                                     <label class="control-label" for="registrationNo">Registration Number</label>
